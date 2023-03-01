@@ -60,6 +60,8 @@
    1. [Abstract Classes](#abstract-classes--components)
    2. [Derived Classes](#derived-classes--component-compositions)
 6. [Graphics](#graphics)
+   1. [Illustrations](#illustrations)
+   2. [Visual References](#visual-references)
    1. [Style Attributes](#style-attributes)
    2. [Graphics Needed](#graphics-needed)
 7. [Sounds/Music](#soundsmusic)
@@ -221,6 +223,15 @@ _(example)_
 ## _Graphics_
 
 ---
+
+### **Illustrations** !
+
+At least 3 drawings that you make about your game: The main character, the design for the game logo, a sketch of the main game scene (with UI elements).
+Optionally add maps, level designs, etc.
+
+### **Visual References** !
+
+At least 3 screenshots of similar games you are based on. If your game is a completely original idea, you can list other material that may be related (music, films, books, etc.)
 
 ### **Style Attributes**
 
