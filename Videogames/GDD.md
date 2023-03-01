@@ -34,9 +34,16 @@
 
 1. [Index](#index)
 2. [Game Design](#game-design)
+
    1. [Summary](#summary)
-   2. [Gameplay](#gameplay)
-   3. [Mindset](#mindset)
+   2. [Idea Pitch](#idea-pitch)
+   3. [Game Genre](#game-genre)
+   4. [Gameplay](#gameplay)
+   5. [Mindset](#mindset)
+   6. [RPG Elements](#rpg-elements)
+   7. [Game Mechanics and Rules](#game-mechanics-and-rules)
+   8. [Stats](#stats)
+
 3. [Technical](#technical)
    1. [Screens](#screens)
    2. [Controls](#controls)
@@ -69,6 +76,17 @@
 
 Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
 
+### **Idea Pitch** !
+
+One or two paragraphs that describe the idea.
+The type of game is clear and unambiguous.
+The main distinctive features of the game that set it apart.
+Attractive description of the game.
+
+### **Game Genre** !
+
+Estilo visual del juego y género
+
 ### **Gameplay**
 
 What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in the way? What tactics should the player use to overcome them?
@@ -76,6 +94,18 @@ What should the gameplay be like? What is the goal of the game, and what kind of
 ### **Mindset**
 
 What kind of mindset do you want to provoke in the player? Do you want them to feel powerful, or weak? Adventurous, or nervous? Hurried, or calm? How do you intend to provoke those emotions?
+
+### **RPG Elements** !
+
+Elementos de RPG que contiene el juego
+
+### **Game Mechanics and Rules** !
+
+Reglas y mecánicas básicas del juego
+
+### **Stats** !
+
+Listado de estadísticas va a recopilar el juego dentro de la base de datos
 
 ## _Technical_
 
