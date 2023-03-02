@@ -62,8 +62,8 @@
 6. [Graphics](#graphics)
    1. [Illustrations](#illustrations)
    2. [Visual References](#visual-references)
-   1. [Style Attributes](#style-attributes)
-   2. [Graphics Needed](#graphics-needed)
+   3. [Style Attributes](#style-attributes)
+   4. [Graphics Needed](#graphics-needed)
 7. [Sounds/Music](#soundsmusic)
    1. [Style Attributes](#style-attributes-1)
    2. [Sounds Needed](#sounds-needed)
@@ -80,18 +80,27 @@ Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
 
 ### **Idea Pitch** !
 
-One or two paragraphs that describe the idea.
-The type of game is clear and unambiguous.
-The main distinctive features of the game that set it apart.
-Attractive description of the game.
+In this game, you play as the son of one of the most important Maya generals of the time. Trained to be a skilled warrior, you are now faced with the threat of the Spanish conquistadors who want to take everything from you - your resources, your friends, your family, and even your religion. Despite the Spanish having superior weaponry, you seek out the help of the gods to gain an advantage in the battle. When your brother is killed by a Spanish conquistador, you must channel your anger and frustration to defeat the invaders and protect your people.
+
+You must journey through treacherous dungeons to find the Mayan god who will grant you the power to beat the invaders. These dungeons are filled with traps, puzzles, and enemies that will test your skills as a warrior. You will need to use your wit and strength to overcome these challenges and prove yourself worthy of the god's power.
+
+Along the way, you will face setbacks and obstacles, but you must persevere and continue to improve yourself in order to avenge your brother's death. You will encounter other characters who may help or hinder your progress, and you must choose your allies wisely.
+
+As you progress through the game, you will unlock new abilities and upgrades that will make you stronger and better equipped to take on the Spanish conquerors. With each victory, you will come closer to your ultimate goal of defeating the enemy and saving your people.
+
+Can you harness the power of the gods and become the hero of this story?
 
 ### **Game Genre** !
 
-Estilo visual del juego y género
+Genre: Fantasy RPG Rouge-like Game
 
 ### **Gameplay**
 
-What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in the way? What tactics should the player use to overcome them?
+In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning world, pero PvP is not active in which you can explore and get to know the story in more depth. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon where the real PvP starts. Inside the dungeon the perspective would be side-on to help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die.
+
+This system works in such a way that the more time and enemies you kill inside the dungeon, the more levels and equipment you gain. This dungeon would be randomly generated to motivate players to play it again, and see what has changed. The more time you spend on the dungeon, the harder it will get, keeping the game interesting. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character makes. Once this dungeon is played several times the player will be rewarded with a special ability.
+
+At this moment, when you leave the dungeon the game will tell you that you are ready to go and fight the final boss. This boss will be a very strong enemy that will require a lot of skill to defeat. Once you defeat the boss, you will be able to go back to the main world and explore it; as well as going back to the dungeon to try to find new and better items. If you die against the boss, you will lose your power and need to go back to the dungeons to get it back. This way the player will think twice before ending the final battle, and encourage him to keep exploring the world.
 
 ### **Mindset**
 
@@ -103,11 +112,18 @@ Elementos de RPG que contiene el juego
 
 ### **Game Mechanics and Rules** !
 
-Reglas y mecánicas básicas del juego
+The game will be a 2D game, with a top-down perspective in the main world and a side-on perspective in the dungeon. The game will alow you to explore in the main world and fight in the dungeon. The game will be a RPG, with a lot of items and stats that will alow you to customize your character. Each item would specific stats, and how good these items are would depend on the luck of the player. The game will be a Rogue-like, with a randomly generated dungeon that will alow you to keep playing the game and finding new items.
 
 ### **Stats** !
 
-Listado de estadísticas va a recopilar el juego dentro de la base de datos
+The stats that will alow to diferentiate the characters wil be the following:
+
+- Health (HP): The amount of damage a character can take before dying.
+- Attack (ATK): The amount of damage a character can do per hit to an enemy.
+- Defense (DEF): The amount of damage a character can take per hit from an enemy.
+- Agility (AGI): How fast can the character move and dodge.
+- Mana Points (MP): The amount of damage the character deals with a special attack.
+- Luck (LCK): The chance of getting better or worst items.
 
 ## _Technical_
 
