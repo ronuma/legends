@@ -80,13 +80,13 @@ Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
 
 ### **Idea Pitch** !
 
-In this game, you play as the son of one of the most important Maya generals of the time. Trained to be a skilled warrior, you are now faced with the threat of the Spanish conquistadors who want to take everything from you - your resources, your friends, your family, and even your religion. Despite the Spanish having superior weaponry, you seek out the help of the gods to gain an advantage in the battle. When your brother is killed by a Spanish conquistador, you must channel your anger and frustration to defeat the invaders and protect your people.
+In this game, you play as the son of one of the most important Mayan generals of the time. Trained to be a skilled warrior, you now face the threat of Spanish conquistadors who want to take everything from you: your resources, your friends, your family, and even your religion. Despite the fact that the Spanish have superior weaponry, he seeks the help of the gods to gain an advantage in battle. When your brother is murdered by a Spanish conquistador, you must channel your anger and frustration into defeating the invaders and protecting your people.
 
-You must journey through treacherous dungeons to find the Mayan god who will grant you the power to beat the invaders. These dungeons are filled with traps, puzzles, and enemies that will test your skills as a warrior. You will need to use your wit and strength to overcome these challenges and prove yourself worthy of the god's power.
+You must travel through treacherous dungeons to find the Mayan god who will grant you the power to defeat the invaders. These dungeons are full of traps, puzzles, and enemies that will test your skills as a warrior. You will need to use your wits and strength to overcome these challenges and prove yourself worthy of the god's power.
 
-Along the way, you will face setbacks and obstacles, but you must persevere and continue to improve yourself in order to avenge your brother's death. You will encounter other characters who may help or hinder your progress, and you must choose your allies wisely.
+Along the way, you will face setbacks and obstacles, but you must persevere and continue to overcome yourself in order to avenge your brother's death. You will meet other characters that can either help you or hinder your progress, and you must choose your allies wisely.
 
-As you progress through the game, you will unlock new abilities and upgrades that will make you stronger and better equipped to take on the Spanish conquerors. With each victory, you will come closer to your ultimate goal of defeating the enemy and saving your people.
+As you progress through the game, you'll unlock new abilities and upgrades that will make you stronger and better equipped to take on the Spanish conquistadors. With each victory, you will get closer to your ultimate goal of defeating the enemy and saving your people.
 
 Can you harness the power of the gods and become the hero of this story?
 
