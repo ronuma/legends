@@ -80,7 +80,9 @@ A Mayan general's son must use his wits, strength, and the power of the gods to 
 
 Navigate treacherous dungeons to find the Mayan god who will grant you the power to defeat the invaders and prove yourself worthy of their power.
 
-### **Idea Pitch** !
+<br>
+
+### **Idea Pitch**
 
 In this game, you play as the son of one of the most important Mayan generals of the time. Trained to be a skilled warrior, you now face the threat of Spanish conquistadors who want to take everything from you: your resources, your friends, your family, and even your religion. Despite the fact that the Spanish have superior weaponry, he seeks the help of the gods to gain an advantage in battle. When your brother is murdered by a Spanish conquistador, you must channel your anger and frustration into defeating the invaders and protecting your people.
 
@@ -92,16 +94,21 @@ As you progress through the game, you'll unlock new abilities and upgrades that 
 
 Can you harness the power of the gods and become the hero of this story?
 
+<br>
+
 ### **Game Genre** !
 
-Genre: Fantasy RPG Rouge-like Game
+Genre: Fantasy RPG Rouge-like Game.
+
 This game combines the elements of a fantasy role-playing game with the challenge of a rogue-like game, allowing players to explore a variety of dungeons and battle against dangerous enemies.
 
 The player will have the chance to choose powerful weapons and gear, use clever tactics to defeat enemies, and discover the amazing world.
 
+<br>
+
 ### **Gameplay**
 
-In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning world, pero PvP is not active in which you can explore and get to know the story in more depth. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon where the real PvP starts. Inside the dungeon the perspective would be side-on to help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die.
+In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning world, but PvP is not active in which you can explore and get to know the story in more depth. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon where the real PvP starts. Inside the dungeon the perspective would be side-on to help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die.
 
 This system works in such a way that the more time and enemies you kill inside the dungeon, the more levels and equipment you gain. This dungeon would be randomly generated to motivate players to play it again, and see what has changed. The more time you spend on the dungeon, the harder it will get, keeping the game interesting. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character makes. Once this dungeon is played several times the player will be rewarded with a special ability.
 
@@ -109,11 +116,69 @@ At this moment, when you leave the dungeon the game will tell you that you are r
 
 ### **Mindset**
 
-What kind of mindset do you want to provoke in the player? Do you want them to feel powerful, or weak? Adventurous, or nervous? Hurried, or calm? How do you intend to provoke those emotions?
+We want the playler to feel adventurous, and we also want him to feel pride in the cultures that once lived in the lands that we live now. We want him to wonder about what these cultures were, how they used to live and fight and how the coming of the Spanish people affected forever the fate of our lands. We intend to create these emotions by recreating the scenery and the looks of the native people through our NPCs, and we wish to illustrate the replacement of the religion by introducing a lot of the older religions' visuals, gods and other suchelements.
+
+<br>
 
 ### **RPG Elements** !
 
-Elementos de RPG que contiene el juego
+**Exploration**
+
+You start by the village of where you were born, and move through the place to find resources. Most importantly you found the entrance for a dungeon where you suppose the mayan gods are waiting for the chosen one.
+
+**Quests**
+
+The main quest is to defeat the main boss. But you will find yourself with multiple side quests for leveling up your chararacter.
+
+Such quests have to do with going in the dungeons to recieve items to defeat the boss.
+
+**Items & Weapons**
+
+**Items**
+
+Pickaxe
+
+Axe
+
+**Weapons**
+
+Knife
+
+Spear
+
+Blowgun
+
+**Interface & graphics**
+
+Interface
+
+**GUI with**
+
+Health
+
+Map
+
+Time
+
+**Graphics**
+
+Overworld
+
+Trees
+
+Rocks
+
+Houses
+
+**Dungeon**
+
+Mobs
+
+**Boss Fight**
+
+Boss
+
+<br>
 
 ### **Game Mechanics and Rules** !
 
@@ -247,12 +312,39 @@ _(example)_ -->
 
 ### **Illustrations** !
 
-At least 3 drawings that you make about your game: The main character, the design for the game logo, a sketch of the main game scene (with UI elements).
-Optionally add maps, level designs, etc.
+Main character:
+
+<img src="./images/mainCharacter.png" alt="main character" width="200" height="200"/>
+
+Game logo:
+
+<img src="./images/gameLogo.jpeg" alt="game logo"  width="200" height="200"/>
+
+Main scenery sketch:
+
+<img src="./images/mainScenerySketch.format" alt="main scenery sketch"  width="600" height="400"/>
+
+<br>
 
 ### **Visual References** !
 
-At least 3 screenshots of similar games you are based on. If your game is a completely original idea, you can list other material that may be related (music, films, books, etc.)
+Mario and Luigi Superstar Saga:
+
+<img src="./images/mario.jpeg" alt="mario and luigi" width="600" height="350"/>
+
+Final Fantasy 6:
+
+<img src="./images/finalFantasy.jpeg" alt="final fantasy" width="600" height="350"/>
+
+Castlevania:
+
+<img src="./images/castlevania.jpeg" alt="castlevania" width="600" height="350"/>
+
+Golden sun:
+
+<img src="./images/goldenSun.jpeg" alt="golden sun" width="600" height="350"/>
+
+<br>
 
 ### **Style Attributes**
 
