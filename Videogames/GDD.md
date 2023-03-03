@@ -94,6 +94,8 @@ Can you harness the power of the gods and become the hero of this story?
 
 Genre: Fantasy RPG Rouge-like Game
 
+This game combines the elements of a fantasy role-playing game with the challenge of a rogue-like game, allowing players to explore a variety of dungeons and battle against dangerous enemies. The player will have the chance to choose powerful weapons and gear, use clever tactics to defeat enemies, and discover the amazing world
+
 ### **Gameplay**
 
 In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning world, pero PvP is not active in which you can explore and get to know the story in more depth. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon where the real PvP starts. Inside the dungeon the perspective would be side-on to help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die.
@@ -108,7 +110,40 @@ What kind of mindset do you want to provoke in the player? Do you want them to f
 
 ### **RPG Elements** !
 
-Elementos de RPG que contiene el juego
+The RPG elements that will be used in this game are the following:
+
+**Story**: Just as said in the elevator pitch. You are the son of a powerfull mayan general. Spanish conquest is just begging, and you aid for the gods of your religion to destroy your enemies.
+
+**Setting**: Mexico, Mayan Riviera in the 1500s.
+
+**Exploration**: You start by the village of where you were born, and move through the place to find resources. Most importantly you found the entrance for a dungeon where you suppose the mayan gods are waiting for the chosen one.
+
+**Quests**: The main quest is to defeat the main boss. But you will find yourself with multiple side quests for leveling up your chararacter. Such quests have to do with going in the dungeons to recieve items to defeat the boss.
+
+**Items**:
+
+- Pickaxe: Used to mine resources.
+- Axe: Used to cut trees.
+
+**Weapons**:
+
+- Knife: Used to fight enemies in short range.
+- Spear: Used to fight enemies in medium range.
+- Blowgun: Used to fight enemies from a distance.
+
+**Interface**
+
+- _Health bar_: Shows the amount of health the player has.
+- _Time_: Shows the time inside the game.
+- _Map_: Shows the map of the world.
+
+**Graphics**
+
+| **Overworld** | **Dungeon** | **Boss Fight** |
+| :-----------: | :---------: | :------------: |
+|    - Trees    |   - Mobs    |     - Boss     |
+|    - Rocks    |   - Items   |    -Effects    |
+|    - House    |             |                |
 
 ### **Game Mechanics and Rules** !
 
