@@ -76,7 +76,9 @@
 
 ### **Summary**
 
-Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
+A Mayan general's son must use his wits, strength, and the power of the gods to defeat the Spanish invaders and protect his people.
+
+Navigate treacherous dungeons to find the Mayan god who will grant you the power to defeat the invaders and prove yourself worthy of their power.
 
 ### **Idea Pitch** !
 
@@ -93,6 +95,9 @@ Can you harness the power of the gods and become the hero of this story?
 ### **Game Genre** !
 
 Genre: Fantasy RPG Rouge-like Game
+This game combines the elements of a fantasy role-playing game with the challenge of a rogue-like game, allowing players to explore a variety of dungeons and battle against dangerous enemies.
+
+The player will have the chance to choose powerful weapons and gear, use clever tactics to defeat enemies, and discover the amazing world.
 
 ### **Gameplay**
 
@@ -200,7 +205,7 @@ _(example)_
 
 ---
 
-### **Abstract Classes / Components**
+<!-- ### **Abstract Classes / Components**
 
 1. BasePhysics
    1. BasePlayer
@@ -209,9 +214,9 @@ _(example)_
 2. BaseObstacle
 3. BaseInteractable
 
-_(example)_
+_(example)_ -->
 
-### **Derived Classes / Component Compositions**
+<!-- ### **Derived Classes / Component Compositions**
 
 1. BasePlayer
    1. PlayerMain
@@ -234,7 +239,7 @@ _(example)_
 5. BaseInteractable
    1. InteractableButton
 
-_(example)_
+_(example)_ -->
 
 ## _Graphics_
 
