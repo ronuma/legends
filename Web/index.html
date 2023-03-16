@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetzal</title>
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Rubik+Iso&family=Tilt+Prism&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header vh-100 w-100 text-center">
+        <img class="back-img" src="./images/mainbg.png" alt="image">
+        <div class="title d-flex justify-content-center align-items-center">
+            <div class="titleText" id="letterizeMe">Quetzal</div>
+        </div>
+    </header>
+    <main class="d-flex flex-row vh-100 w-100 justify-content-evenly text-center align-items-center">
+        <h2 class="text-white ms-5 me-5">Las conquistas españolas de los territorios mayas se dieron durante los años 5010 y 5015. Eres el hijo de un gran general maya y un dia te despiertas y te dan la noticia de que tu hermano habia sido asesinado a mano de los españoles.
+            Lleno de rabia escapas de tu pueblo y corres sin direccion alguna en la jungla. Terminas encontradote con un chaman que te dice que los dioses de tus tierras los han abandonado.
+            Pero tu no estas de acuerdo con esto...
+        </h2>
+        <img class="logoimg" src="./images/logo1.png" alt="image">
+    </main>
+    <img class="back-img2" src="./images/secondbg.png" alt="image">
+    <maincont class="d-flex flex-row vh-100 w-100 justify-content-evenly text-center align-items-center">
+        <img class="logoimg" src="./images/icon1.png" alt="image">
+        <img class="logoimg" src="./images/obscurobg.jpeg" alt="image">
+    </maincont>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+    <script>
+        var image = document.getElementsByClassName('back-img');
+        new simpleParallax(image, {
+	        orientation: 'up',
+            overflow: true,
+            scale: 2,
+            delay: .6,
+        });
+        var image2 = document.getElementsByClassName('back-img2');
+        new simpleParallax(image2, {
+	        orientation: 'down',
+            scale: 1.5,
+            delay: .6,
+	        transition: 'cubic-bezier(0,0,0,1)'
+        });
+        const obj = new Letterize({
+            targets: document.getElementById("letterizeMe"),
+            wrapper: "b",
+            className: "letter"
+        });
+        obj.listAll;
+        for (var i = 0; i < obj.listAll.length; i++) {
+            obj.listAll[i].addEventListener("mouseover", function(e) {
+                e.target = anime({
+                    targets: e.target,
+                    duration: 100,
+                    translateX: anime.random(-10,10),
+                    translateY: anime.random(-10,10),
+                    rotate: anime.random(-10,10),
+                    opacity: 0.5
+                });
+            });
+            obj.listAll[i].addEventListener("mouseout", function(e) {
+                e.target = anime({
+                    targets: e.target,
+                    duration: 3000,
+                    opacity: 1
+                });
+            });
+        }
+    </script>
+</body>
+</html>

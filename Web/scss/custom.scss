@@ -1,0 +1,84 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+$primary: #0e1118;
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #27324dc1 #161c2b6e;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #161c2b6e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #27324dc1;
+    border-radius: 10px;
+    border: 3px solid #27324dc1;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: $primary;
+    text-align: center;
+}
+span {
+    display: inline-block;
+}
+.back-img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.title { 
+    grid-area: 2 / 2 / 5 / 6;
+}
+.titleText{
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 12rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 0 0 10px #9a9a9a;
+}
+
+main h2 {
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 400;
+}
+
+.logoimg {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+.back-img2 {
+    width: 100%;
+    height: 80vh;
+}
+
+.letter {
+    display: inline-block;
+}
