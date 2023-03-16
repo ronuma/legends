@@ -107,6 +107,7 @@ The player will have the chance to choose powerful weapons and gear, use clever 
 This game combines the elements of a fantasy role-playing game with the challenge of a rogue-like game, allowing players to explore a variety of dungeons and battle against dangerous enemies. The player will have the chance to choose powerful weapons and gear, use clever tactics to defeat enemies, and discover the amazing world
 
 <br>
+
 ### **Gameplay**
 
 In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning world, but PvP is not active in which you can explore and get to know the story in more depth. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon where the real PvP starts. Inside the dungeon the perspective would be side-on to help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die.
@@ -115,72 +116,17 @@ This system works in such a way that the more time and enemies you kill inside t
 
 At this moment, when you leave the dungeon the game will tell you that you are ready to go and fight the final boss. This boss will be a very strong enemy that will require a lot of skill to defeat. Once you defeat the boss, you will be able to go back to the main world and explore it; as well as going back to the dungeon to try to find new and better items. If you die against the boss, you will lose your power and need to go back to the dungeons to get it back. This way the player will think twice before ending the final battle, and encourage him to keep exploring the world.
 
+<br>
+
 ### **Mindset**
 
-We want the playler to feel adventurous, and we also want him to feel pride in the cultures that once lived in the lands that we live now. We want him to wonder about what these cultures were, how they used to live and fight and how the coming of the Spanish people affected forever the fate of our lands. We intend to create these emotions by recreating the scenery and the looks of the native people through our NPCs, and we wish to illustrate the replacement of the religion by introducing a lot of the older religions' visuals, gods and other suchelements.
+We want the player to feel adventurous, and we also want him to feel pride in the cultures that once lived in the lands that we live now. We want him to wonder about what these cultures were, how they used to live and fight and how the coming of the Spanish people affected forever the fate of our lands. We intend to create these emotions by recreating the scenery and the looks of the native people through our NPCs, and we wish to illustrate the replacement of the religion by introducing a lot of the older religions' visuals, gods and other suchelements.
 
 <br>
 
 ### **RPG Elements** !
 
-<<<<<<< HEAD
-**Exploration**
-
-You start by the village of where you were born, and move through the place to find resources. Most importantly you found the entrance for a dungeon where you suppose the mayan gods are waiting for the chosen one.
-
-**Quests**
-
-The main quest is to defeat the main boss. But you will find yourself with multiple side quests for leveling up your chararacter.
-
-Such quests have to do with going in the dungeons to recieve items to defeat the boss.
-
-**Items & Weapons**
-
-**Items**
-
-Pickaxe
-
-Axe
-
-**Weapons**
-
-Knife
-
-Spear
-
-Blowgun
-
-**Interface & graphics**
-
-Interface
-
-**GUI with**
-
-Health
-
-Map
-
-Time
-
-**Graphics**
-
-Overworld
-
-Trees
-
-Rocks
-
-Houses
-
-**Dungeon**
-
-Mobs
-
-**Boss Fight**
-
-Boss
-
-# <br>
+<br>
 
 The RPG elements that will be used in this game are the following:
 
@@ -216,8 +162,6 @@ The RPG elements that will be used in this game are the following:
 |    - Trees    |   - Mobs    |     - Boss     |
 |    - Rocks    |   - Items   |    -Effects    |
 |    - House    |             |                |
-
-> > > > > > > 1233d99f432298c66d4d7f9372cd276434571b83
 
 ### **Game Mechanics and Rules** !
 
