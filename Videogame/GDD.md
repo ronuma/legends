@@ -32,6 +32,7 @@
 
 ---
 
+<!--
 1. [Index](#index)
 2. [Game Design](#game-design)
 
@@ -68,7 +69,7 @@
    1. [Style Attributes](#style-attributes-1)
    2. [Sounds Needed](#sounds-needed)
    3. [Music Needed](#music-needed)
-8. [Schedule](#schedule)
+8. [Schedule](#schedule) -->
 
 ## _Game Design_
 
@@ -96,7 +97,7 @@ Can you harness the power of the gods and become the hero of this story?
 
 <br>
 
-### **Game Genre** !
+### **Game Genre**
 
 Genre: Fantasy RPG Rouge-like Game.
 
@@ -110,11 +111,13 @@ This game combines the elements of a fantasy role-playing game with the challeng
 
 ### **Gameplay**
 
-In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning world, but PvP is not active in which you can explore and get to know the story in more depth. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon where the real PvP starts. Inside the dungeon the perspective would be side-on to help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die.
+In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning (main) world, where PvP is not active in which you can explore and get to know the story in more depth trough NPC interactions. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon, where the real PvP starts. Inside the dungeon the perspective will also be top down, but the design elements will help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die (or win).
 
-This system works in such a way that the more time and enemies you kill inside the dungeon, the more levels and equipment you gain. This dungeon would be randomly generated to motivate players to play it again, and see what has changed. The more time you spend on the dungeon, the harder it will get, keeping the game interesting. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character makes. Once this dungeon is played several times the player will be rewarded with a special ability.
+This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase. 
 
-At this moment, when you leave the dungeon the game will tell you that you are ready to go and fight the final boss. This boss will be a very strong enemy that will require a lot of skill to defeat. Once you defeat the boss, you will be able to go back to the main world and explore it; as well as going back to the dungeon to try to find new and better items. If you die against the boss, you will lose your power and need to go back to the dungeons to get it back. This way the player will think twice before ending the final battle, and encourage him to keep exploring the world.
+This dungeon would be randomly generated to motivate players to play it again, and see what has changed. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character induces.
+
+At this moment, when you leave the dungeon, the game will tell you that you are ready to go and fight the final boss. This boss will be a very strong enemy that will require a lot of skill to defeat. Once you defeat the boss, you will be able to go back to the main world and explore it; as well as going back to the dungeon to try to find new and better items. If you die against the boss, you will lose your power and need to go back to the dungeons to get it back. This way the player will think twice before ending the final battle, and encourage him to keep exploring the world.
 
 <br>
 
@@ -124,7 +127,7 @@ We want the player to feel adventurous, and we also want him to feel pride in th
 
 <br>
 
-### **RPG Elements** !
+### **RPG Elements**
 
 <br>
 
@@ -137,6 +140,8 @@ The RPG elements that will be used in this game are the following:
 **Exploration**: You start by the village of where you were born, and move through the place to find resources. Most importantly you found the entrance for a dungeon where you suppose the mayan gods are waiting for the chosen one.
 
 **Quests**: The main quest is to defeat the main boss. But you will find yourself with multiple side quests for leveling up your chararacter. Such quests have to do with going in the dungeons to recieve items to defeat the boss.
+
+Since this game is a RPG, we will be using items to give the player a sense of progression. These items will be used to increase the player's stats, and will be used to fight against enemies.
 
 **Items**:
 
@@ -152,7 +157,7 @@ The RPG elements that will be used in this game are the following:
 **Interface**
 
 - _Health bar_: Shows the amount of health the player has.
-- _Time_: Shows the time inside the game.
+- _Time_: Shows the time inside the game (or inside the dungeon).
 - _Map_: Shows the map of the world.
 
 **Graphics**
@@ -165,18 +170,42 @@ The RPG elements that will be used in this game are the following:
 
 ### **Game Mechanics and Rules** !
 
-The game will be a 2D game, with a top-down perspective in the main world and a side-on perspective in the dungeon. The game will alow you to explore in the main world and fight in the dungeon. The game will be a RPG, with a lot of items and stats that will alow you to customize your character. Each item would specific stats, and how good these items are would depend on the luck of the player. The game will be a Rogue-like, with a randomly generated dungeon that will alow you to keep playing the game and finding new items.
+<!-- General Info -->
 
-### **Stats** !
+#### **General Info**
 
-The stats that will alow to diferentiate the characters wil be the following:
+The game will be 2D, with a top-down perspective in the main world, dungeons and boss fight. The game will alow you to explore in the main world and fight in the dungeons.
+
+The game will be rogue-like, meaning that the dungeons will be randomly generated, and the player will have to fight against enemies and bosses to get better items and get a sense of achievement.
+
+At the beginning of the game, the player will be able to choose between 3 different classes, each with different stats and abilities. This will allow the player to choose the class that best suits his playstyle. The classes are:
+
+- Warrior: high health, high agility, low attack.
+- Archer: high agility, low health, high attack.
+- Hunter: high attack, low agility, high health.
+
+Each item has a specific effect on the following player's stats
+
+### **Stats**
+
+There's three stats that are affected by the class the player chooses at the beginning of the game (and which can be increased or decreased by finding items in the dungeon):
 
 - Health (HP): The amount of damage a character can take before dying.
 - Attack (ATK): The amount of damage a character can do per hit to an enemy.
-- Defense (DEF): The amount of damage a character can take per hit from an enemy.
 - Agility (AGI): How fast can the character move and dodge.
+
+The following two stats start at 0 and can only be increased by finding items in the dungeon:
+
 - Mana Points (MP): The amount of damage the character deals with a special attack.
-- Luck (LCK): The chance of getting better or worst items.
+- Defense (DEF): The amount of damage a character can take per hit from an enemy.
+
+### **Items**
+
+<!-- Enemies -->
+
+#### **Enemies**
+
+The enemies will be randomly generated, and will have different stats and abilities. The enemies will be divided into 3 different types:
 
 ## _Technical_
 
