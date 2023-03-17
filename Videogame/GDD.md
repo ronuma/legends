@@ -334,6 +334,34 @@ The controls for the game are keyboard only. The player will be able to move aro
 
 Regarding menus, the player will be able to navigate through them with the arrow keys, and select an option with the space bar and/or enter key. Mouse support might be added later on.
 
+### **Listado de clases a programar**
+
+1. Player Classes
+   - **PlayerHealth**:Reduces player health in case of recieving damage
+   - **PlayerShooting**: Controls player shooting with mouse
+   - **PlayerMovement**: Controls player movement with w,a,s,d keys
+   - **PlayerStats**: Compiles and stores all player stats
+   - **PlayerMeleeAttack**: Controls player melee attack with mouse
+2. Enemy Classes
+   - **EnemyHealth**: Reduces enemy health in case of recieving damage
+   - **EnemyMovement**: Controls enemy movement according to player's position
+   - **EnemyShooting**: Controls enemy shooting style
+   - **EnemyStats**: Compiles and stores all enemy stats
+3. Dungeon and Boss fight Classes
+   - **GameTracker**: Tracks the game's progress, such as number enemies alive, or state of the game
+   - **MapGenerator**: Generates the map of the dungeon
+   - **LevelGenerator**: Generates the enemies and items of the dungeon
+   - **DoorsManager**: Incharge of openinng or clossing sections of the dungoen to control the flow of the game
+   - **LevelManager**: Incharge of loading the next levels of the dungeon
+4. Item Classes
+   - **ItemStats**: Stores all item stats and modifies player stats accordingly
+5. Audio Classes
+   - **MusicManager**: Controls the music of the game in each scene
+6. OverWorld Classes
+   - **OverWorldManager**: Controls the flow of the overworld
+   - **OverWorldUI**: Incharge of the triggers of the overworld
+   - **DungeonEntrance**: Initiates the dungeon
+
 ## _Level Design_
 
 ---
@@ -514,7 +542,7 @@ _(example)_
 ### **Music Needed**
 
 1. Slow-paced, nerve-racking &quot;forest&quot; track
-2. Exciting &quot;castle&quot; track
+2. Exciting &quot;castleb&quot; track
 3. Creepy, slow &quot;dungeon&quot; track
 4. Happy ending credits track
 5. Rick Astley&#39;s hit #1 single &quot;Never Gonna Give You Up&quot;
