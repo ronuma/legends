@@ -113,7 +113,7 @@ This game combines the elements of a fantasy role-playing game with the challeng
 
 In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning (main) world, where PvP is not active in which you can explore and get to know the story in more depth trough NPC interactions. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon, where the real PvP starts. Inside the dungeon the perspective will also be top down, but the design elements will help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die (or win).
 
-This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase. 
+This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase.
 
 This dungeon would be randomly generated to motivate players to play it again, and see what has changed. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character induces.
 
@@ -225,11 +225,9 @@ _(example)_
 
 ### **Controls**
 
-How will the player interact with the game? Will they be able to choose the controls? What kind of in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
+The controls for the game are keyboard only. The player will be able to move around the world with the arrow keys, and interact with the environment with the space bar and/or enter key. In addition to the arrow keys, the player will be able to use the WASD keys to move around the world.
 
-### **Mechanics**
-
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+Regarding menus, the player will be able to navigate through them with the arrow keys, and select an option with the space bar and/or enter key. Mouse support might be added later on.
 
 ## _Level Design_
 
