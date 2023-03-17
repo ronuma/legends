@@ -213,13 +213,12 @@ The enemies will be randomly generated, and will have different stats and abilit
 
 ### **Screens**
 
-1. Title Screen
-   1. Options
-2. Level Select
-3. Game
-   1. Inventory
-   2. Assessment / Next Level
-4. End Credits
+1. Title Screen: has a title and a start button.
+2. Game
+   1. Overworld: has a map, a health bar, a time bar, and a button to go to the dungeon once the player has found the entrance.
+   2. Dungeon: has a map, a health bar, a time bar, and a button to go back to the overworld once the player has finished the dungeon.
+   3. Boss Fight: has a health bar, a time bar, and a button to go back to the overworld once the player has defeated the boss.
+4. End Screen: has a restart button, a credits button.
 
 _(example)_
 
