@@ -165,10 +165,10 @@ Since this game is a RPG, we will be using items to give the player a sense of p
 | **Overworld** | **Dungeon** | **Boss Fight** |
 | :-----------: | :---------: | :------------: |
 |    - Trees    |   - Mobs    |     - Boss     |
-|    - Rocks    |   - Items   |    -Effects    |
+|    - Rocks    |   - Items   |    - Effects    |
 |    - House    |             |                |
 
-### **Game Mechanics and Rules** !
+### **Game Mechanics and Rules**
 
 <!-- General Info -->
 
@@ -228,9 +228,58 @@ There's three stats that are affected by the class the player chooses at the beg
 The following two stats start at 0 and can only be increased by finding items in the dungeon:
 
 - Mana Points (MP): The amount of damage the character deals with a special attack. Range: 0-100.
-- Defense (DEF): The amount of damage a character can take per hit from an enemy. Range: 0-100.
+- Defense (DEF): The amount of damage a character can take per hit from an enemy. It's a divider of the attack stat. Range: 0-100.
 
 ### **Items**
+
+The odds of finding an item in the dungeon will be based on the dungeon level (which is related to the time the player spends inside the dungeon). The higher the dungeon level, the higher the chance of finding a rare or godly item.
+
+<!-- Class upgrades -->
+
+#### **Class upgrades:**
+
+- Knives:
+
+  - Iron Knife: +10 ATK (common)
+  - Steel Knife: +20 ATK (rare)
+  - Diamond Knife: +30 ATK (godly)
+
+- Spears:
+
+  - Iron Spear: +10 ATK (common)
+  - Steel Spear: +20 ATK (rare)
+  - Diamond Spear: +30 ATK (godly)
+
+- Bows:
+  - Iron Bow: +10 ATK (common)
+  - Steel Bow: +20 ATK (rare)
+  - Diamond Bow: +30 ATK (godly)
+
+#### **HP Recovery:**
+
+- Health Potion: +50 HP (common)
+
+#### **Armor:**
+
+- Leather Armor (Light) (common)
+
+  - +20 AGI
+  - -10 DEF
+
+- Iron Armor (Medium) (rare)
+
+  - -10 AGI
+  - +15 DEF
+
+- Diamond Armor (Heavy) (godly)
+  - -20 AGI
+  - +25 DEF
+
+#### **HP upgrades:**
+
+- Blue Ring: +100 HP (common)
+- Red Ring: +200 HP (rare)
+- Green Ring: +300 HP (godly)
 
 #### **Enemies**
 
