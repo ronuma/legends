@@ -143,7 +143,7 @@ The RPG elements that will be used in this game are the following:
 
 Since this game is a RPG, we will be using items to give the player a sense of progression. These items will be used to increase the player's stats, and will be used to fight against enemies.
 
-**Items**:
+**Tools**:
 
 - Pickaxe: Used to mine resources.
 - Axe: Used to cut trees.
@@ -152,7 +152,7 @@ Since this game is a RPG, we will be using items to give the player a sense of p
 
 - Knife: Used to fight enemies in short range.
 - Spear: Used to fight enemies in medium range.
-- Blowgun: Used to fight enemies from a distance.
+- Bow: Used to fight enemies from a distance.
 
 **Interface**
 
@@ -180,9 +180,40 @@ The game will be rogue-like, meaning that the dungeons will be randomly generate
 
 At the beginning of the game, the player will be able to choose between 3 different classes, each with different stats and abilities. This will allow the player to choose the class that best suits his playstyle. The classes are:
 
-- Warrior: high health, high agility, low attack.
-- Archer: high agility, low health, high attack.
-- Hunter: high attack, low agility, high health.
+- Warrior: starts with knife
+
+  - high health (500 HP)
+  - mid agility (50 AGI)
+  - low attack (25 ATK)
+
+    | HP  | ATK | AGI |
+    | :-- | :-: | :-: |
+    | 500 | 50  | 25  |
+
+- Archer: starts with bow
+
+  - high agility (75 AGI)
+  - low health (150 HP)
+  - mid attack (50 ATK)
+
+    | HP  | ATK | AGI |
+    | :-- | :-: | :-: |
+    | 150 | 50  | 75  |
+
+- Hunter: starts with spear
+
+  - mid health (250 HP)
+  - low agility (25 AGI)
+  - high attack (75 ATK)
+
+    | HP  | ATK | AGI |
+    | :-- | :-: | :-: |
+    | 250 | 75  | 25  |
+
+Note:
+
+- All classes start with an axe and a pickaxe.
+- Since classes will be stored on a database, initial stats can be changed easily and will be balanced after more testing.
 
 Each item has a specific effect on the following player's stats
 
@@ -190,20 +221,48 @@ Each item has a specific effect on the following player's stats
 
 There's three stats that are affected by the class the player chooses at the beginning of the game (and which can be increased or decreased by finding items in the dungeon):
 
-- Health (HP): The amount of damage a character can take before dying.
-- Attack (ATK): The amount of damage a character can do per hit to an enemy.
-- Agility (AGI): How fast can the character move and dodge.
+- Health (HP): The amount of damage a character can take before dying. Range: 0-1000.
+- Attack (ATK): The amount of damage a character can do per hit to an enemy. Range: 0-100.
+- Agility (AGI): How fast can the character move and dodge. Range: 0-100.
 
 The following two stats start at 0 and can only be increased by finding items in the dungeon:
 
-- Mana Points (MP): The amount of damage the character deals with a special attack.
-- Defense (DEF): The amount of damage a character can take per hit from an enemy.
+- Mana Points (MP): The amount of damage the character deals with a special attack. Range: 0-100.
+- Defense (DEF): The amount of damage a character can take per hit from an enemy. Range: 0-100.
 
 ### **Items**
 
 #### **Enemies**
 
-The enemies will be randomly generated, and will have different stats and abilities. The enemies will be divided into 3 different types:
+The enemies will have different stats and abilities. The enemies only exist in the dungeon, and their stats will be multiplied by the dungeon level (which will increase along with the time the player spends inside the dungeon).
+
+- Musketeer (Ranged): Has a musket that shoots three bullets at a time. The bullets will travel in a straight line until it hits an enemy or a wall.
+
+  | HP  |       ATK       | AGI |
+  | :-- | :-------------: | :-: |
+  | 80  | 30 (per bullet) | 25  |
+
+- Captain (Ranged): Has a gun that shoots one bullet at a time. The bullet will travel in a straight line until it hits an enemy or a wall.
+
+  | HP  | ATK | AGI |
+  | :-- | :-: | :-: |
+  | 125 | 40  | 50  |
+
+- Dog (Melee): The dog will chase the player until it reaches him, and will attack him if it gets close enough.
+
+  | HP  | ATK | AGI |
+  | :-- | :-: | :-: |
+  | 50  | 25  | 75  |
+
+<!-- Boss -->
+
+- Boss: The boss will have a lot of health, and will have a special attack that will deal a lot of damage to the player. The boss will also have a special ability that will allow him to teleport to a random location in the dungeon.
+
+  | HP  | ATK | AGI |
+  | :-- | :-: | :-: |
+  | 750 | 100 | 75  |
+
+Note: the boss's stats won't be affected by the time spent in the dungeon.
 
 ## _Technical_
 
