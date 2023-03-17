@@ -113,7 +113,7 @@ This game combines the elements of a fantasy role-playing game with the challeng
 
 In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning (main) world, where PvP is not active in which you can explore and get to know the story in more depth trough NPC interactions. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon, where the real PvP starts. Inside the dungeon the perspective will also be top down, but the design elements will help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die (or win).
 
-This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase. 
+This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase.
 
 This dungeon would be randomly generated to motivate players to play it again, and see what has changed. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character induces.
 
@@ -201,8 +201,6 @@ The following two stats start at 0 and can only be increased by finding items in
 
 ### **Items**
 
-<!-- Enemies -->
-
 #### **Enemies**
 
 The enemies will be randomly generated, and will have different stats and abilities. The enemies will be divided into 3 different types:
@@ -213,68 +211,44 @@ The enemies will be randomly generated, and will have different stats and abilit
 
 ### **Screens**
 
-1. Title Screen
-   1. Options
-2. Level Select
-3. Game
-   1. Inventory
-   2. Assessment / Next Level
-4. End Credits
+The basic screens of the game are the following:
 
-_(example)_
+1. Title Screen: has a title and a start button.
+2. Game
+   1. Overworld: has a map, a health bar, a time bar, and a button to go to the dungeon once the player has found the entrance.
+   2. Dungeon: has a map, a health bar, a time bar, and a button to go back to the overworld once the player has finished the dungeon.
+   3. Boss Fight: has a health bar, a time bar, and a button to go back to the overworld once the player has defeated the boss.
+3. End Screen: has a restart button, a credits button.
 
 ### **Controls**
 
-How will the player interact with the game? Will they be able to choose the controls? What kind of in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
+The controls for the game are keyboard only. The player will be able to move around the world with the arrow keys, and interact with the environment with the space bar and/or enter key. In addition to the arrow keys, the player will be able to use the WASD keys to move around the world.
 
-### **Mechanics**
-
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+Regarding menus, the player will be able to navigate through them with the arrow keys, and select an option with the space bar and/or enter key. Mouse support might be added later on.
 
 ## _Level Design_
 
 ---
 
-_(Note : These sections can safely be skipped if they&#39;re not relevant, or you&#39;d rather go about it another way. For most games, at least one of them should be useful. But I&#39;ll understand if you don&#39;t want to use them. It&#39;ll only hurt my feelings a little bit.)_
-
-### **Themes**
-
-1. Forest
-   1. Mood
-      1. Dark, calm, foreboding
-2. Objects
-   1. _Ambient_
-      1. Fireflies
-      2. Beams of moonlight
-      3. Tall grass
-   2. _Interactive_
-      1. Wolves
-      2. Goblins
-      3. Rocks
-3. Castle
-   1. Mood
-      1. Dangerous, tense, active
-   2. Objects
-      1. _Ambient_
-         1. Rodents
-         2. Torches
-         3. Suits of armor
-      2. _Interactive_
-         1. Guards
-         2. Giant rats
-         3. Chests
-
-_(example)_
-
 ### **Game Flow**
 
-1. Player starts in forest
-2. Pond to the left, must move right
-3. To the right is a hill, player jumps to traverse it (&quot;jump&quot; taught)
-4. Player encounters castle - door&#39;s shut and locked
-5. There&#39;s a window within jump height, and a rock on the ground
-6. Player picks up rock and throws at glass (&quot;throw&quot; taught)
-7. … etc.
+1. The player starts in the overworld, and has to find the entrance to the dungeon.
+2. The player talks to the NPC, and gets a quest.
+3. The player gets context about the quest by exploring the overworld.
+4. The player finds keys to open the door to the dungeon.
+5. The player enters the dungeon and can't exit until he has defeated all the enemies. The player can stay in the dungeon as long as he wants, but the complexity of the dungeon will increase as time passes.
+6. If the player defeats all the enemies, he can exit the dungeon and go back to the overworld.
+7. If the player dies, he has to restart.
+8. The player can accept a challenge from the boss, and enter the boss fight.
+9. If the player defeats the boss, he wins the game.
+
+10. Player starts in forest
+11. Pond to the left, must move right
+12. To the right is a hill, player jumps to traverse it (&quot;jump&quot; taught)
+13. Player encounters castle - door&#39;s shut and locked
+14. There&#39;s a window within jump height, and a rock on the ground
+15. Player picks up rock and throws at glass (&quot;throw&quot; taught)
+16. … etc.
 
 _(example)_
 
