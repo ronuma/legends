@@ -362,6 +362,53 @@ Regarding menus, the player will be able to navigate through them with the arrow
    - **OverWorldUI**: Incharge of the triggers of the overworld
    - **DungeonEntrance**: Initiates the dungeon
 
+
+
+### **Listado de assets**
+
+1. Character sprites:
+   - Hunter sprite sequence
+   - Warrior sprite sequence
+   - Archer sprite sequence
+2. Tools sprites:
+   - Pickaxe sprite
+   - Axe sprite
+3. Weapons sprites:
+   - Knife sprite
+   - Spear sprite
+   - Bow sprite
+4. Enemies:
+   - Musketeer sprite sequence
+   - Captain sprite sequence
+   - Dog sprite sequence
+   - Boss sprite sequence
+5. Enviroment sprites:
+   - Rocks 
+   - Huts / Houses 
+   - Main Plateau 
+   - Dungeons
+   - Boss fight 
+   - Trees
+   - Chest opening/closing
+   - Fire
+   - Doors
+6. Sound
+   - Walking on grass
+   - Walking on the dungeon
+   - Punching tree
+   - Rock
+   - NPC's sounds
+   - Fighting sounds (shooting, taking damage, etc)
+   - Plateau / Dungeon / Boss fight music
+   - Door
+   - Fire
+   - Chest 
+   
+
+
+   
+ 
+
 ## _Level Design_
 
 ---
