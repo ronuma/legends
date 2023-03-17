@@ -113,7 +113,7 @@ This game combines the elements of a fantasy role-playing game with the challeng
 
 In order to develop a fluent game we decided to construct a scenario in which our main character needs to explore new places in order to fulfill its mission. To do so, we would create a spawning (main) world, where PvP is not active in which you can explore and get to know the story in more depth trough NPC interactions. In this first area, the camera would be placed in a top-down perspective that allows the character to explore in any direction. Once in this world, the player is going to be able to find a dungeon, where the real PvP starts. Inside the dungeon the perspective will also be top down, but the design elements will help the payer understand he entered a completely different space. This dungeon would force you to keep exploring through it by not allowing you to exit unless you die (or win).
 
-This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase. 
+This system works in such a way that the more time you spend inside the dungeon, the difficulty increases but the chance of getting more items to improve your player also increase.
 
 This dungeon would be randomly generated to motivate players to play it again, and see what has changed. Inside the dungeon there will be items that boost certain stats in a specific way, like a sword that increases the damage a character induces.
 
@@ -230,6 +230,34 @@ How will the player interact with the game? Will they be able to choose the cont
 ### **Mechanics**
 
 Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+
+### **Listado de clases a programar**
+
+1. Player Classes
+   - **PlayerHealth**:Reduces player health in case of recieving damage
+   - **PlayerShooting**: Controls player shooting with mouse
+   - **PlayerMovement**: Controls player movement with w,a,s,d keys
+   - **PlayerStats**: Compiles and stores all player stats
+   - **PlayerMeleeAttack**: Controls player melee attack with mouse
+2. Enemy Classes
+   - **EnemyHealth**: Reduces enemy health in case of recieving damage
+   - **EnemyMovement**: Controls enemy movement according to player's position
+   - **EnemyShooting**: Controls enemy shooting style
+   - **EnemyStats**: Compiles and stores all enemy stats
+3. Dungeon and Boss fight Classes
+   - **GameTracker**: Tracks the game's progress, such as number enemies alive, or state of the game
+   - **MapGenerator**: Generates the map of the dungeon
+   - **LevelGenerator**: Generates the enemies and items of the dungeon
+   - **DoorsManager**: Incharge of openinng or clossing sections of the dungoen to control the flow of the game
+   - **LevelManager**: Incharge of loading the next levels of the dungeon
+4. Item Classes
+   - **ItemStats**: Stores all item stats and modifies player stats accordingly
+5. Audio Classes
+   - **MusicManager**: Controls the music of the game in each scene
+6. OverWorld Classes
+   - **OverWorldManager**: Controls the flow of the overworld
+   - **OverWorldUI**: Incharge of the triggers of the overworld
+   - **DungeonEntrance**: Initiates the dungeon
 
 ## _Level Design_
 
@@ -432,7 +460,7 @@ _(example)_
 ### **Music Needed**
 
 1. Slow-paced, nerve-racking &quot;forest&quot; track
-2. Exciting &quot;castle&quot; track
+2. Exciting &quot;castleb&quot; track
 3. Creepy, slow &quot;dungeon&quot; track
 4. Happy ending credits track
 5. Rick Astley&#39;s hit #1 single &quot;Never Gonna Give You Up&quot;
