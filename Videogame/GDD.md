@@ -201,8 +201,6 @@ The following two stats start at 0 and can only be increased by finding items in
 
 ### **Items**
 
-<!-- Enemies -->
-
 #### **Enemies**
 
 The enemies will be randomly generated, and will have different stats and abilities. The enemies will be divided into 3 different types:
@@ -213,14 +211,14 @@ The enemies will be randomly generated, and will have different stats and abilit
 
 ### **Screens**
 
+The basic screens of the game are the following:
+
 1. Title Screen: has a title and a start button.
 2. Game
    1. Overworld: has a map, a health bar, a time bar, and a button to go to the dungeon once the player has found the entrance.
    2. Dungeon: has a map, a health bar, a time bar, and a button to go back to the overworld once the player has finished the dungeon.
    3. Boss Fight: has a health bar, a time bar, and a button to go back to the overworld once the player has defeated the boss.
-4. End Screen: has a restart button, a credits button.
-
-_(example)_
+3. End Screen: has a restart button, a credits button.
 
 ### **Controls**
 
@@ -232,46 +230,25 @@ Regarding menus, the player will be able to navigate through them with the arrow
 
 ---
 
-_(Note : These sections can safely be skipped if they&#39;re not relevant, or you&#39;d rather go about it another way. For most games, at least one of them should be useful. But I&#39;ll understand if you don&#39;t want to use them. It&#39;ll only hurt my feelings a little bit.)_
-
-### **Themes**
-
-1. Forest
-   1. Mood
-      1. Dark, calm, foreboding
-2. Objects
-   1. _Ambient_
-      1. Fireflies
-      2. Beams of moonlight
-      3. Tall grass
-   2. _Interactive_
-      1. Wolves
-      2. Goblins
-      3. Rocks
-3. Castle
-   1. Mood
-      1. Dangerous, tense, active
-   2. Objects
-      1. _Ambient_
-         1. Rodents
-         2. Torches
-         3. Suits of armor
-      2. _Interactive_
-         1. Guards
-         2. Giant rats
-         3. Chests
-
-_(example)_
-
 ### **Game Flow**
 
-1. Player starts in forest
-2. Pond to the left, must move right
-3. To the right is a hill, player jumps to traverse it (&quot;jump&quot; taught)
-4. Player encounters castle - door&#39;s shut and locked
-5. There&#39;s a window within jump height, and a rock on the ground
-6. Player picks up rock and throws at glass (&quot;throw&quot; taught)
-7. … etc.
+1. The player starts in the overworld, and has to find the entrance to the dungeon.
+2. The player talks to the NPC, and gets a quest.
+3. The player gets context about the quest by exploring the overworld.
+4. The player finds keys to open the door to the dungeon.
+5. The player enters the dungeon and can't exit until he has defeated all the enemies. The player can stay in the dungeon as long as he wants, but the complexity of the dungeon will increase as time passes.
+6. If the player defeats all the enemies, he can exit the dungeon and go back to the overworld.
+7. If the player dies, he has to restart.
+8. The player can accept a challenge from the boss, and enter the boss fight.
+9. If the player defeats the boss, he wins the game.
+
+10. Player starts in forest
+11. Pond to the left, must move right
+12. To the right is a hill, player jumps to traverse it (&quot;jump&quot; taught)
+13. Player encounters castle - door&#39;s shut and locked
+14. There&#39;s a window within jump height, and a rock on the ground
+15. Player picks up rock and throws at glass (&quot;throw&quot; taught)
+16. … etc.
 
 _(example)_
 
