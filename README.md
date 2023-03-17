@@ -1,56 +1,34 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
+<img src="Web/images/logo1.png" alt="Logo" width="80" height="80">
+<h3 align="center">Quetzal</h3>
 
   <p align="center">
-    project_description
+    RPG Game development for ITESM course TC2005B
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    </p>
+     <a href="https://github.com/ronuma/legends">
+    <img src="Web/images/Logo_TEC.svg" alt="Logo" width="80" height="80">
+  </a>
+
+  <p>
+  <a href="https://github.com/ronuma/legends"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://legends-gilt.vercel.app/">View Deployed Game</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -59,7 +37,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#tech-stack">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -73,99 +51,95 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#resources">Resources</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This project is a RPG game developed for the course TC2005B at ITESM.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Tech Stack
 
+#### Web
 
-### Built With
+[![Bootstrap][bootstrap.com]][bootstrap-url]
+[![CSS][css3.com]][css3-url]
+[![HTML][html.com]][html-url]
+[![JavaScript][javascript.com]][javascript-url]
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+#### Game
+
+[![Unity][unity.com]][unity-url]
+[![C#][c#.com]][c#-url]
+
+#### Database
+
+[![MySQL][mysql.com]][mysql-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+If you are interested in running the project locally, you can clone the repository and follow the instructions below:
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+<!-- Unity -->
+
+- Unity 2021.3.19f1 LTS or higher
+- [Unity Hub](https://unity3d.com/get-unity/download)
+- [Node.js](https://nodejs.org/en/download/).
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- [MySQL Server](https://dev.mysql.com/downloads/mysql/)
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
+In order to run the game, you will need to have a MySQL server running. You will also need to recreate the database and tables. You can find the database creation script in the folder "DB".
+
+Once the database is running, you can open the unity project and run the game by opening the project using Unity Hub (the project can be found in the Videogame directory of this repo). You will need to change the database connection script to match your database configuration.
+
+To edit the landing page for the game, you will need to install the dependencies for the project. You can do this by running the following command in the folder "Web":
+
+```sh
+npm install
+```
+You can then run the bootstrap project locally and edit the landing page to your liking.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+The game can be played at [https://legends-gilt.vercel.app/](https://legends-gilt.vercel.app/). An account is required to play the game. You can create an account by clicking on the "Sign Up" button on the page. Once you have an account, you can log in and start playing!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+The roadmap for this project can be found in the [Trello Board]([trello-url]). The board is private, so you will need to request access to view it. You can contact the team members to request access.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ronuma/legends/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -181,67 +155,84 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Resources used (aknowledgement)-->
 
+## Resources
+
+- LDtk: [https://ldtk.io/](https://ldtk.io/) for level design
+- draw.io: [https://app.diagrams.net/](https://app.diagrams.net/) for UML diagrams
+- Trello: [https://trello.com/](https://trello.com/) for SCRUM project management
 
 <!-- CONTACT -->
+
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+#### **Colaborators: Team "LEGENDS"**
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+- Gabriel Rodríguez De Los Reyes
+- Iker García Germán
+- Rodrigo Núñez Magallanes
+- Enrique Cabrera Aguilar
+- Alejandro Arouesty Galván
+- Pablo Banzo Prida
+
+#### **Instructors:**
+
+- Esteban Castillo Juarez
+- Gilberto Echeverría Furió
+- Octavio Navarro Hinojosa
+
+Project Link: [https://github.com/ronuma/legends](https://github.com/ronuma/legends)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+
+<!-- Trello link -->
+
+[trello-url]: https://trello.com/b/JOlK8rpX/sprint-1
+
+<!-- GitHub Shields -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/ronuma/legends.svg?style=for-the-badge
+[contributors-url]: https://github.com/ronuma/legends/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ronuma/legends.svg?style=for-the-badge
+[forks-url]: https://github.com/ronuma/legends/network/members
+[stars-shield]: https://img.shields.io/github/stars/ronuma/legends.svg?style=for-the-badge
+[stars-url]: https://github.com/ronuma/legends/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ronuma/legends.svg?style=for-the-badge
+[issues-url]: https://github.com/ronuma/legends/issues
+[license-shield]: https://img.shields.io/github/license/ronuma/legends.svg?style=for-the-badge
+[license-url]: https://github.com/ronuma/legends/blob/master/LICENSE.txt
+
+<!-- Stack Shields -->
+<!-- Web Shields -->
+
+[bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[bootstrap-url]: https://getbootstrap.com
+[css3.com]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[css3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[html.com]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[javascript.com]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+<!-- Game Shields -->
+
+[unity.com]: https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white
+[unity-url]: https://unity.com/
+[c#.com]: https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
+[c#-url]: https://docs.microsoft.com/en-us/dotnet/csharp/
+
+<!-- Database Shields -->
+
+[mysql.com]: https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
+[mysql-url]: https://www.mysql.com/
