@@ -320,13 +320,18 @@ Note: the boss's stats won't be affected by the time spent in the dungeon.
 ### **Screens**
 
 The basic screens of the game are the following:
-
-1. Title Screen: has a title and a start button.
-2. Game
+1. Login Screen: There will be a main input area where you can either register (a dropdown menu) or log in with a complementing login button.
+<img width="1196" alt="image" src="https://user-images.githubusercontent.com/89561198/226076185-818d9e0c-46ab-4fef-9294-d149ded8dd6a.png">
+2. Title Screen: as a central focus point it has a large start button and the title of the game on top. As for scondary items on the right side there will be smaller buttons that enlagre when hovered; they will include the an "about", several ones related to relevant social medias, and a bug reporting button. On the upper right corner there will be a greeting for the player as well as the username.
+<img width="1196" alt="image" src="https://user-images.githubusercontent.com/89561198/226075875-1fd94d18-302d-4d77-865e-a37dd90e8972.png">
+3. Game
    1. Overworld: has a map, a health bar, a time bar, and a button to go to the dungeon once the player has found the entrance.
+   <img width="1196" alt="image" src="https://user-images.githubusercontent.com/89561198/226076402-9c6f1c9d-f793-4f83-bad4-de0b006b530f.png">
    2. Dungeon: has a map, a health bar, a time bar, and a button to go back to the overworld once the player has finished the dungeon.
    3. Boss Fight: has a health bar, a time bar, and a button to go back to the overworld once the player has defeated the boss.
-3. End Screen: has a restart button, a credits button.
+   <img width="1196" alt="image" src="https://user-images.githubusercontent.com/89561198/226076461-6dbd8997-916e-48cc-83bd-16fd46ca3797.png">
+4. End Screen: has a restart button, a credits button.
+   <img width="1196" alt="image" src="https://user-images.githubusercontent.com/89561198/226076655-66862e43-a32b-4234-a816-620e1c829876.png">
 
 ### **Controls**
 
