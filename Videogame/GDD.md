@@ -320,6 +320,28 @@ The basic screens of the game are the following:
 4. End Screen: has a restart button, a credits button.
    <img width="1196" alt="image" src="https://user-images.githubusercontent.com/89561198/226076655-66862e43-a32b-4234-a816-620e1c829876.png">
 
+### **Level Screens**
+
+The game will have the following screens (some of them might be added later on):
+
+<!-- Overworld Level Design -->
+
+- Overworld Level Design
+   <img width="1196" alt="OverworldLevelDesign" src="images/overworld_img.png">
+
+<!-- Dungeon Level Design -->
+
+- Dungeon Level Design
+   <img width="1196" alt="DungeonLevelDesign" src="images/dungeon_1.jpeg">
+
+   <img width="1196" alt="DungeonLevelDesign" src="images/dungeon_2.jpeg">
+
+   <img width="1196" alt="DungeonLevelDesign" src="images/dungeon_3.jpeg">
+
+   - Dungeon Hallway
+
+      <img width="1196" alt="DungeonLevelDesign" src="images/dungeon_hallway.jpeg">
+
 ### **Controls**
 
 The controls for the game are keyboard only. The player will be able to move around the world with the arrow keys, and interact with the environment with the space bar and/or enter key. In addition to the arrow keys, the player will be able to use the WASD keys to move around the world.
