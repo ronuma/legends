@@ -1,5 +1,11 @@
 {
+  "name": "webquetzal",
+  "version": "1.0.0",
+  "description": "Web Quetzal",
   "dependencies": {
-    "bootstrap": "^5.3.0-alpha1"
+    "animejs": "^3.2.1",
+    "bootstrap": "^5.3.0-alpha1",
+    "letterizejs": "^2.0.1",
+    "simple-parallax-js": "^5.6.2"
   }
 }
