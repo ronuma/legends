@@ -1,0 +1,4843 @@
+fileFormatVersion: 2
+guid: 6163e9b94eef64a4593ec43321494496
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainCH-BOW_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1792
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c46d2b606794755b6150f347be184b
+      internalID: 1394583616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1792
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93df75a8632f94c7f9687d907d7a0a72
+      internalID: -559510305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1792
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb3a47eb06e24defa5572ab56081a9f
+      internalID: 805167197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1792
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7427cffde0e477ca5308d699cbd58f
+      internalID: -2032618917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1792
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046e9f807e69f464e918575af84943cc
+      internalID: 1316445230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1792
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6056c916314ed4a3b8bc3129a4a10ed6
+      internalID: -1003657408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1792
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286bb58b482eb4b0095df0272ef92d55
+      internalID: 176385020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1728
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d604ae251c0401483a2f348dd45408
+      internalID: -1196635591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1728
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0ae3908b3f249d9bf0da6eb715684f
+      internalID: -1774836823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1728
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ee99fc1bf4149d1920a41997b6d5de
+      internalID: -1417164742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1728
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b045b731a600448bb6a35510c4b2a25
+      internalID: 1528105263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_11
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1728
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d512297de54454cacdde5decece0c5
+      internalID: -1777002796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_12
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1728
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5e22ed9c484409192943a1bbb22d8a
+      internalID: 1822385256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1728
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5d92be587d042299b0bfee3b72f93a
+      internalID: -452303743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1664
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13206b9ac098547e7abf2df1bacc57f7
+      internalID: 1600579321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1664
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baffe79828b14c22a2104d0639de84b
+      internalID: 2022129680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_16
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1664
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05ff0c59269e4b4e9d0bc2e1f4983dc
+      internalID: -2077679476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1664
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c8b1180db7c40d392cdc448a884f64
+      internalID: 387879515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1664
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316e1959c7fb143e4bc25fe75aa680c5
+      internalID: 534236250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1664
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea7b2a278cd74a93ba087098b9072ab
+      internalID: -360214840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1664
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc99b670df394452f829febdd7154d5f
+      internalID: 556529596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_21
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1600
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2edb6e10c7f4e6d9df1a774ea60647
+      internalID: -1606578876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_22
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1600
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdf2aa8e80964823bf1a137baaf26f6
+      internalID: 784318122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_23
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1600
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44a072e6bb7c478782979d07c587e2d
+      internalID: -682212004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1600
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a897dbf77be456c8d78f9aeecd15a9
+      internalID: -1184977105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1600
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d302d61d020410d92abd2ee0ad60c0
+      internalID: -1052792233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1600
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53007634b0ec48cb9b5c60fc21f06ca
+      internalID: 1029426700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1600
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd642ae97cd5455394a27ff70a92870
+      internalID: -98271148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1536
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409c11a502adf45c49fc1bbeb3192592
+      internalID: 1900959595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1536
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4f7fca891ee4d1fba6e28ece786afc
+      internalID: -1268969750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_30
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1536
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6275074fb4e4a2baedd1dd66fd648b
+      internalID: 133343877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_31
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1536
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af7134fac5ca484398758d7cb84c3e1
+      internalID: 983520123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_32
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1536
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db9f3bda0ba6486b86f163c50e6e65d
+      internalID: 1176448072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_33
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1536
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5278e41b9013b4900ab6c0b5042c0c0d
+      internalID: -386236792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_34
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1536
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef328e27f695b4974b42afd34a1f2f47
+      internalID: -341588503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_35
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1536
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fa3e4a831394083be5301b70117566
+      internalID: -2042202199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_36
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1472
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbf751a7fba64a22936eefe2155b9b5
+      internalID: -1380687966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_37
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1472
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c946cf9a2e11e4d988eaf27448ed2900
+      internalID: -129698398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_38
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1472
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cae3671ac7c471bba4dc06e7f31e11
+      internalID: -782939799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_39
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1472
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88872ec84d4744e71abbd2010804e107
+      internalID: -1222228791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_40
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1472
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c404a253a612a4feb9b01655d764b36a
+      internalID: -789883236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1472
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c2c8190e3b94ab880ba411290eb971
+      internalID: -1983222409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_42
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1472
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646ff501dd10f42a789a38a9cac5673c
+      internalID: -1865513764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_43
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1472
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82054d43ee2c461ba5d921face90d19
+      internalID: 598193458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1408
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70bcc950739c4b6681cb7e603b798df
+      internalID: 280811121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_45
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1408
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a63590b393ca4b4bb3280d8b286f7c4
+      internalID: 499912075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_46
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1408
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b5859b35654498b9bd3817a8245af1
+      internalID: -1716703522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1409
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668dce1fceb0a422eb0c5f85bf736f98
+      internalID: -1653142545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_48
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1409
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8739dfd704414ac18db1acbbcf9a820
+      internalID: -827381235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_49
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1408
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caf76116142941a08e9b40675facfb9
+      internalID: 867598924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_50
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1409
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bb0e2c555b64e64a739a21d8e8fe85
+      internalID: -847089512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_51
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1409
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63add09c2a0534c6a8e2e63a7ea76c5b
+      internalID: 769676361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_52
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1344
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f47930766abe42de862bee805417058
+      internalID: -1496894841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_53
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1344
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05d7bf502afb4098934c48d32f1c884
+      internalID: -363409113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_54
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1344
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd9baba4af7c4e4fbe78080e3ca58d2
+      internalID: -916637774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_55
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1344
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab84cfdbd41034de694fe7b331d01bc8
+      internalID: 94289522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_56
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1344
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5291660c00b1f47f3927aa679ff4fdc5
+      internalID: 2049197343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_57
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1344
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88fb2237a6a049bf9c08e4a73a88990
+      internalID: -1702749534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_58
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1344
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534f69d8e6ba140d18e868ab63ac1307
+      internalID: -1776708196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_59
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1344
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7ce990f30f345dab3d70c432b5e345
+      internalID: 969759825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_60
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a59eea11e564cd895df48a8f32813e
+      internalID: 656556273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_61
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fde2c0b20b84d50b17d4dfc8052c58
+      internalID: 775930843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_62
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5981fecd1e2194e0a87139a6d5b17ad9
+      internalID: -880658129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_63
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1280
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c1dd5aed6e44ff6a91ba23bab938fe
+      internalID: -478570120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_64
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a247255ca6d4e46c0b1680e021837ac9
+      internalID: 383138602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_65
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6623745664147c4bfc97fbfc6f5d07
+      internalID: -2026631480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_66
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f67509eb2d5d4694afd23df4e2506e9
+      internalID: 1898064398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_67
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1280
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4183181590fc7416caaa5a1548b4c8d7
+      internalID: 180099013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_68
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1280
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a32f4c9c7e614779a46d0b44b34dfce
+      internalID: 794465828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1216
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3238168258f364a2ead6e963b12229f4
+      internalID: -1083170561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_70
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1216
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb322093fd214429888542ed70cbc720
+      internalID: -650412082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_71
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1216
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e41317f4a6be474e9fbc667bcb8a9cb
+      internalID: -1981944180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_72
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1216
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6784ca037b4a04745bbd3c02e684738b
+      internalID: -119597330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_73
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1216
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca53fb7aa4fd49cfbfc3785419a1b80
+      internalID: -777276308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_74
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1216
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1851544de7b4bcd98e0422904dbe22
+      internalID: -901087175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_75
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1216
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0802670c1eb544ec78f0d6504178abf7
+      internalID: 1278447094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_76
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1216
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd026111a85414dea9b065de098333ba
+      internalID: 712465209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_77
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1216
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dc53d6a5bb046199bea3fb21a429d7
+      internalID: -659653737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_78
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd80d8365eba4b48968423f2944f6ca
+      internalID: -861931707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_79
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82dab15865254d638434915ee88f370
+      internalID: 339063704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_80
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb16277c688b74f079229428331eeef4
+      internalID: -1824731528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_81
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1152
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e643a26579a1452a856bcea3663fa4c
+      internalID: 1782095169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_82
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d254e2b2283514b91bcc0fe2009877b1
+      internalID: 1889646566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_83
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fa4baf916d145d1ad8a529eccc222b
+      internalID: 1793347515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_84
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956d458371dce4d7392ecc8089aa47cd
+      internalID: -1949242563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_85
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1152
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b27e519f9564ddab91c058c0d8ef16
+      internalID: 275477799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_86
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1152
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14abf9de3a1149748707579d17631d3
+      internalID: 577981829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_87
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1088
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6805dd390fd204a0293de659e6315bb8
+      internalID: -2009092278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_88
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1088
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4ba8d0a51b04e0a8ed59030d3d6504
+      internalID: -1855233138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_89
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1088
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438e21a139fb640ac96330d6090ca927
+      internalID: -1907770373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_90
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1088
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13829cf20b2543058b393f543911ca5
+      internalID: -336750778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_91
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1088
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d70c962c33644dab826082227d4dd1c
+      internalID: 1879643590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_92
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1088
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728006e571f4e4d988b709623d3a8b70
+      internalID: -716365641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_93
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1088
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e269b9114924dcebc5e4b75ca6b1b0
+      internalID: 579016513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_94
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1088
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d349867c70f1e426dbecb96b57648f0a
+      internalID: -256972918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_95
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1088
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f970835865be4407a8eee72a25de5ab2
+      internalID: 14686045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1024
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09a6073007ab43748b6b26100267cd9
+      internalID: 159805575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_97
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1024
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a1079eea43744b68e1d1ba4acb76ac
+      internalID: 1448886603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_98
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1024
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb71f7524186146b3ac35738baded506
+      internalID: -1094227266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_99
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1024
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d104e0844fe8246afaebb96d20b75d2c
+      internalID: -164870964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_100
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1024
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be504384099484fa6a97c652c2780c9d
+      internalID: -314409091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_101
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1024
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae4293ee768f41cfb5014e9e710fff7
+      internalID: -1747839206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_102
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 960
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6919ca16faa543eea4005f82ab1bf1b
+      internalID: -1109585967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_103
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 960
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c22fd210c0ce41cb9919233271fcd4b
+      internalID: -671156488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_104
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 960
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b6253c8904b4429930992892d4013c
+      internalID: -1923092358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_105
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 960
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171b505529ef54e0cb3ed32758fee0cf
+      internalID: 505152598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_106
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 960
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880bdd9148ded470fb46fe0645448a37
+      internalID: 1986592819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_107
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 960
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8be0783d4292401d9b5ef8dbe5c7704
+      internalID: 152044011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_108
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 896
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c747570560e447caaa18e92a2fbd97b
+      internalID: -1606350632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_109
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 896
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d74a2e4dd6340e1a1fde02c8a0e271
+      internalID: 979377863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_110
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 896
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c89bbb1fe824c8089916f98f3da46d
+      internalID: 972759538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_111
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 896
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea877a7a807b54efab21409caecfb9bb
+      internalID: -1401820634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_112
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 896
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcec85abb4d94bd0ab4003e895c69ff
+      internalID: 1348458851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_113
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 896
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1582e6d62e13f43628b1de90cffc7a1e
+      internalID: 947866049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_114
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 832
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bee600987334403bb340bff627d13da
+      internalID: 350418833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_115
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 832
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f5fade9509042d5953b94f6c5e1a0c
+      internalID: 1080584111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_116
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 832
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a53376649084edbbb4d2b30897c91c
+      internalID: -2127270594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 832
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe3271ca564d49aeb94d0ec9dba81c0
+      internalID: 1578634983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_118
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 832
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd8afc3e483943acb9c68f314f9491e
+      internalID: -1086349795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_119
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 832
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf67eb3ecbb24bf19d14673e48833a1
+      internalID: -932549802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_120
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 768
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030e66207649a4d8d9b921e24d42e480
+      internalID: 534305130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_121
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 768
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20a4c26ea7464de48196acc35e9dc2a
+      internalID: -341559745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_122
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 768
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a614e5702c9ff450a9542e3f5c48e6fa
+      internalID: 2007795127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_123
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 768
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07894e12befa44e60ab00c3bb551fe99
+      internalID: 542443880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_124
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 768
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a478f02beefae49a3b080fe5e3522bf4
+      internalID: 462137085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_125
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 768
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8270f8e7f9749a8bb4c6176cec0c8f
+      internalID: -24105826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_126
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 768
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef11e9cdebedd45b983f80701b5a3034
+      internalID: -746075892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_127
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 768
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fec0cda01c448ccbf7e23e7855b5be
+      internalID: -1794212046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_128
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 768
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23dc1b22d2cfc4ef8ac9c22a4dd85c35
+      internalID: -2032011933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_129
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 768
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3842a66de5fc4426e9d77711f036e1ac
+      internalID: -455738768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_130
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 768
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ecda79645d447fd82a9650c9a94401
+      internalID: -1244966150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_131
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 768
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c27a6a05f11498d91f6002c89f9e80
+      internalID: -1008994008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_132
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 768
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb8f56eea5814f1281f7aea8af29961
+      internalID: 2058992855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_133
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 704
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656ea851a94174a60b03406de2ce66a8
+      internalID: 1074976602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_134
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 704
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f45a9b44bbe46ca98d35d517168afd
+      internalID: 1016670631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_135
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 704
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb68fd4a8035e43ab9427255e854e138
+      internalID: -520554777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_136
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 704
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2ee573eee58425a8e7939e84426ccf
+      internalID: 2060597123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_137
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 704
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af79c5a32094e473ea333059179afff7
+      internalID: -1163788105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f58a6bd35faa420b84ab97b8f0413dc
+      internalID: -853664383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_139
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 704
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b1217df789c4d38a1fa1f945feaad2
+      internalID: 1451002876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_140
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 704
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4cae4a0727e44008de31724297081a
+      internalID: 579544126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_141
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 704
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049c9c592572949118d20911f11c62a9
+      internalID: -672698896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_142
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 704
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece22bb4b9853439e93fd4573c12b881
+      internalID: 1940747112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_143
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 704
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb164a10f509041699ce7622895caecf
+      internalID: -224244355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_144
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 704
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2638a7c058ad345a8ba170fe3eea5a23
+      internalID: -350297940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_145
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 704
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57315eded921d4ebcb872e6260b5eedc
+      internalID: 1607436614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_146
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 640
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08640acec1edd465c95a2b3a42df9eac
+      internalID: 431224468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_147
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 640
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86149082bbac45b98f73528bf606d7e
+      internalID: 1027319720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_148
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 640
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1335207b03794ac2a384514ba038328
+      internalID: -1631913339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_149
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 640
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a9c6e6902fb42e4ac45e6bb2c4b17c
+      internalID: 155855201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_150
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df32ca25512aa4f8895f4adb099fe7b6
+      internalID: 1669792228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_151
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d19da73600274b3a95cfd7c1769754f
+      internalID: 595554182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_152
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a6c041adbd04583bea8342e8872660
+      internalID: 355480266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_153
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8c8eabdcce840beb7278b208adf30d
+      internalID: 937813667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_154
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02560c9352fb245c68c6ea486f477516
+      internalID: 1533495149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_155
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaf14558d82740ad8bc9c6d4e8c329f
+      internalID: -1135309685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_156
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 640
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06fdce7410884ddeb97a2723a5323fc
+      internalID: 1726344727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_157
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 640
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93ad3b72eeff4226aadc3763c6cc57b
+      internalID: 231370480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_158
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 640
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7b610c7031b47919bd85fb7c81947a
+      internalID: -383634380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_159
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 576
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a2560ffa0734f8db6954aee870956e
+      internalID: 1635867162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_160
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 576
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c1f99149e2d47a398cd406d1124b00
+      internalID: -1933649963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_161
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 576
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d0669b3b58d40678812612d20326ae
+      internalID: 1781076909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_162
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 576
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0fe59b2d4e94f478dd88fb139ec7e9
+      internalID: -1379666157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_163
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 576
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c814ec1633e419cb008d04be5cd41e
+      internalID: 643260417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_164
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 576
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3803c199ebbcb4ff2a4f946275a971ca
+      internalID: -1161485972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_165
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 576
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4280b2567cb2c41ef882150308cb326c
+      internalID: -1831278312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_166
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 576
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50202114fb73a47cd8110202ce5cee7f
+      internalID: -1713350269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_167
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 576
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892aaed01112a417aab378f329976dfb
+      internalID: -934753119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_168
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 576
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b7677607b334d2f9b44e864d99395a
+      internalID: 194074070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_169
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 576
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b326a9593d143478fbd175c5aa8e574c
+      internalID: -1461546227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_170
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 576
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f837fedf835a44adf8c7f1ea2cfc60fb
+      internalID: 1952471346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_171
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 576
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b83d00dd755469499bf46aa6fb49d7
+      internalID: 1066823347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_172
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 512
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb3ba5043e264d7cbce96ab9692f1ab
+      internalID: -1016256541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_173
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 512
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928d6b1903d8744be88af05b7181811c
+      internalID: -1361761996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_174
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 512
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3456831e26e41c5855d46231d6e543
+      internalID: 1072777129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_175
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 512
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbb208ad4f7348c78cf2c1a4aa2aab7
+      internalID: -886563064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_176
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 513
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d35418fdc344bd5bdca9c2e941df4b
+      internalID: -1769123297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_177
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 512
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd41192f94f94438d8f6daf89fbab480
+      internalID: -1691722528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_178
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bf910d98721458e9c1a65eb2160fa7
+      internalID: -1969389396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_179
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db93f5e5088fc4b938256ae4d9a4c869
+      internalID: -1549590893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_180
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c3f7bdcbc2d46f18c2dc7c2c7e65f7
+      internalID: -709243279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_181
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 416
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fddf7d6e871045f8ac45c83f25e354d
+      internalID: -1222943983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_182
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9f1160ca58e46c38921518165d0483
+      internalID: 1305598721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_183
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe229be0b7ef4a5792da637fb044262
+      internalID: -875211050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_184
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74fe05ab6e1f432fa74e10b638122cf
+      internalID: 1180889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_185
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 416
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3825adf62cb74ea0b2902e830befd86
+      internalID: -676612060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_186
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 416
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5d3b4976e854667a3a9b1950b47dc5
+      internalID: -1031105513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_187
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 288
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4367a3ad6994ddbb1d06ff8183bea4
+      internalID: -1489469978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_188
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 288
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403d4c331ee204660b4fb896f6d5aae6
+      internalID: 807129218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_189
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 288
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd932d073eb84c8595f3591560d9462
+      internalID: 570992714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_190
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 288
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edec7982f075e45358f22757feae1cc1
+      internalID: -365183201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_191
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 288
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082cddd31873940d48b399c95dfd1a38
+      internalID: 122054432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_192
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 288
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac459127b47d4d4ea7748ef17878caa
+      internalID: -530452856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_193
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 288
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067930fd1e8b34ad98014db1329fc11e
+      internalID: -352281833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_194
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 288
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60dd0f80be6a4c8487205ee5baf0416
+      internalID: 1546071778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_195
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 288
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4ae52492b17420dbf7920b4d1614b9
+      internalID: -2105540957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_196
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d21a8a970f074463a10aba2919d3236
+      internalID: 1126098157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_197
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431e0962ec0054b61814544a91f674ab
+      internalID: -1677933794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_198
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b36262bcea734064879b1c5d1cf7f85
+      internalID: 1467175637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_199
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 160
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e52ce91452034a7f931dc6595b4d2a6
+      internalID: -209065647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_200
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ecb9cb55854dce8ebb9b4fc56a5be
+      internalID: 1882951834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_201
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c33ef0cc773b4db0a8ec21a0f4a29ad
+      internalID: -1479209384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_202
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e422089ca58a84593adba9a76925335d
+      internalID: -1301033083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_203
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 160
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46626a860136d47cf9b72fb5c5158d84
+      internalID: 844714355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_204
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 160
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d56afbd3bea04118a09d360a6e77c7a
+      internalID: 1933796141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_205
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e8d7d4d09a148eaaf750d1ba85a893
+      internalID: -1972540452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_206
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 32
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af5e21f22e134047981de3be0e19e11
+      internalID: 2051483815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_207
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 32
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81a4a369d1764edab14c3b5f78dfd0a
+      internalID: 946448893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_208
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 32
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895b7a91200f7490db495173661908be
+      internalID: -1689307035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_209
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 32
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4456dddf7597948038e2da67e4faccab
+      internalID: 847862202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_210
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 32
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8bad6bf7c7a444db66bbedeb4399df
+      internalID: -2065612281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_211
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 32
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddfcbf51d6b74972a889256c7f99a22
+      internalID: -1306320994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_212
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 32
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c5ca71316944cc6bbd14846ba3c1df
+      internalID: 1779732478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCH-BOW_213
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 32
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab54555828c34fc4a7fdb8ea16399b6
+      internalID: -737303366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MainCH-BOW_0: 1394583616
+      MainCH-BOW_1: -559510305
+      MainCH-BOW_10: 1528105263
+      MainCH-BOW_100: -314409091
+      MainCH-BOW_101: -1747839206
+      MainCH-BOW_102: -1109585967
+      MainCH-BOW_103: -671156488
+      MainCH-BOW_104: -1923092358
+      MainCH-BOW_105: 505152598
+      MainCH-BOW_106: 1986592819
+      MainCH-BOW_107: 152044011
+      MainCH-BOW_108: -1606350632
+      MainCH-BOW_109: 979377863
+      MainCH-BOW_11: -1777002796
+      MainCH-BOW_110: 972759538
+      MainCH-BOW_111: -1401820634
+      MainCH-BOW_112: 1348458851
+      MainCH-BOW_113: 947866049
+      MainCH-BOW_114: 350418833
+      MainCH-BOW_115: 1080584111
+      MainCH-BOW_116: -2127270594
+      MainCH-BOW_117: 1578634983
+      MainCH-BOW_118: -1086349795
+      MainCH-BOW_119: -932549802
+      MainCH-BOW_12: 1822385256
+      MainCH-BOW_120: 534305130
+      MainCH-BOW_121: -341559745
+      MainCH-BOW_122: 2007795127
+      MainCH-BOW_123: 542443880
+      MainCH-BOW_124: 462137085
+      MainCH-BOW_125: -24105826
+      MainCH-BOW_126: -746075892
+      MainCH-BOW_127: -1794212046
+      MainCH-BOW_128: -2032011933
+      MainCH-BOW_129: -455738768
+      MainCH-BOW_13: -452303743
+      MainCH-BOW_130: -1244966150
+      MainCH-BOW_131: -1008994008
+      MainCH-BOW_132: 2058992855
+      MainCH-BOW_133: 1074976602
+      MainCH-BOW_134: 1016670631
+      MainCH-BOW_135: -520554777
+      MainCH-BOW_136: 2060597123
+      MainCH-BOW_137: -1163788105
+      MainCH-BOW_138: -853664383
+      MainCH-BOW_139: 1451002876
+      MainCH-BOW_14: 1600579321
+      MainCH-BOW_140: 579544126
+      MainCH-BOW_141: -672698896
+      MainCH-BOW_142: 1940747112
+      MainCH-BOW_143: -224244355
+      MainCH-BOW_144: -350297940
+      MainCH-BOW_145: 1607436614
+      MainCH-BOW_146: 431224468
+      MainCH-BOW_147: 1027319720
+      MainCH-BOW_148: -1631913339
+      MainCH-BOW_149: 155855201
+      MainCH-BOW_15: 2022129680
+      MainCH-BOW_150: 1669792228
+      MainCH-BOW_151: 595554182
+      MainCH-BOW_152: 355480266
+      MainCH-BOW_153: 937813667
+      MainCH-BOW_154: 1533495149
+      MainCH-BOW_155: -1135309685
+      MainCH-BOW_156: 1726344727
+      MainCH-BOW_157: 231370480
+      MainCH-BOW_158: -383634380
+      MainCH-BOW_159: 1635867162
+      MainCH-BOW_16: -2077679476
+      MainCH-BOW_160: -1933649963
+      MainCH-BOW_161: 1781076909
+      MainCH-BOW_162: -1379666157
+      MainCH-BOW_163: 643260417
+      MainCH-BOW_164: -1161485972
+      MainCH-BOW_165: -1831278312
+      MainCH-BOW_166: -1713350269
+      MainCH-BOW_167: -934753119
+      MainCH-BOW_168: 194074070
+      MainCH-BOW_169: -1461546227
+      MainCH-BOW_17: 387879515
+      MainCH-BOW_170: 1952471346
+      MainCH-BOW_171: 1066823347
+      MainCH-BOW_172: -1016256541
+      MainCH-BOW_173: -1361761996
+      MainCH-BOW_174: 1072777129
+      MainCH-BOW_175: -886563064
+      MainCH-BOW_176: -1769123297
+      MainCH-BOW_177: -1691722528
+      MainCH-BOW_178: -1969389396
+      MainCH-BOW_179: -1549590893
+      MainCH-BOW_18: 534236250
+      MainCH-BOW_180: -709243279
+      MainCH-BOW_181: -1222943983
+      MainCH-BOW_182: 1305598721
+      MainCH-BOW_183: -875211050
+      MainCH-BOW_184: 1180889
+      MainCH-BOW_185: -676612060
+      MainCH-BOW_186: -1031105513
+      MainCH-BOW_187: -1489469978
+      MainCH-BOW_188: 807129218
+      MainCH-BOW_189: 570992714
+      MainCH-BOW_19: -360214840
+      MainCH-BOW_190: -365183201
+      MainCH-BOW_191: 122054432
+      MainCH-BOW_192: -530452856
+      MainCH-BOW_193: -352281833
+      MainCH-BOW_194: 1546071778
+      MainCH-BOW_195: -2105540957
+      MainCH-BOW_196: 1126098157
+      MainCH-BOW_197: -1677933794
+      MainCH-BOW_198: 1467175637
+      MainCH-BOW_199: -209065647
+      MainCH-BOW_2: 805167197
+      MainCH-BOW_20: 556529596
+      MainCH-BOW_200: 1882951834
+      MainCH-BOW_201: -1479209384
+      MainCH-BOW_202: -1301033083
+      MainCH-BOW_203: 844714355
+      MainCH-BOW_204: 1933796141
+      MainCH-BOW_205: -1972540452
+      MainCH-BOW_206: 2051483815
+      MainCH-BOW_207: 946448893
+      MainCH-BOW_208: -1689307035
+      MainCH-BOW_209: 847862202
+      MainCH-BOW_21: -1606578876
+      MainCH-BOW_210: -2065612281
+      MainCH-BOW_211: -1306320994
+      MainCH-BOW_212: 1779732478
+      MainCH-BOW_213: -737303366
+      MainCH-BOW_22: 784318122
+      MainCH-BOW_23: -682212004
+      MainCH-BOW_24: -1184977105
+      MainCH-BOW_25: -1052792233
+      MainCH-BOW_26: 1029426700
+      MainCH-BOW_27: -98271148
+      MainCH-BOW_28: 1900959595
+      MainCH-BOW_29: -1268969750
+      MainCH-BOW_3: -2032618917
+      MainCH-BOW_30: 133343877
+      MainCH-BOW_31: 983520123
+      MainCH-BOW_32: 1176448072
+      MainCH-BOW_33: -386236792
+      MainCH-BOW_34: -341588503
+      MainCH-BOW_35: -2042202199
+      MainCH-BOW_36: -1380687966
+      MainCH-BOW_37: -129698398
+      MainCH-BOW_38: -782939799
+      MainCH-BOW_39: -1222228791
+      MainCH-BOW_4: 1316445230
+      MainCH-BOW_40: -789883236
+      MainCH-BOW_41: -1983222409
+      MainCH-BOW_42: -1865513764
+      MainCH-BOW_43: 598193458
+      MainCH-BOW_44: 280811121
+      MainCH-BOW_45: 499912075
+      MainCH-BOW_46: -1716703522
+      MainCH-BOW_47: -1653142545
+      MainCH-BOW_48: -827381235
+      MainCH-BOW_49: 867598924
+      MainCH-BOW_5: -1003657408
+      MainCH-BOW_50: -847089512
+      MainCH-BOW_51: 769676361
+      MainCH-BOW_52: -1496894841
+      MainCH-BOW_53: -363409113
+      MainCH-BOW_54: -916637774
+      MainCH-BOW_55: 94289522
+      MainCH-BOW_56: 2049197343
+      MainCH-BOW_57: -1702749534
+      MainCH-BOW_58: -1776708196
+      MainCH-BOW_59: 969759825
+      MainCH-BOW_6: 176385020
+      MainCH-BOW_60: 656556273
+      MainCH-BOW_61: 775930843
+      MainCH-BOW_62: -880658129
+      MainCH-BOW_63: -478570120
+      MainCH-BOW_64: 383138602
+      MainCH-BOW_65: -2026631480
+      MainCH-BOW_66: 1898064398
+      MainCH-BOW_67: 180099013
+      MainCH-BOW_68: 794465828
+      MainCH-BOW_69: -1083170561
+      MainCH-BOW_7: -1196635591
+      MainCH-BOW_70: -650412082
+      MainCH-BOW_71: -1981944180
+      MainCH-BOW_72: -119597330
+      MainCH-BOW_73: -777276308
+      MainCH-BOW_74: -901087175
+      MainCH-BOW_75: 1278447094
+      MainCH-BOW_76: 712465209
+      MainCH-BOW_77: -659653737
+      MainCH-BOW_78: -861931707
+      MainCH-BOW_79: 339063704
+      MainCH-BOW_8: -1774836823
+      MainCH-BOW_80: -1824731528
+      MainCH-BOW_81: 1782095169
+      MainCH-BOW_82: 1889646566
+      MainCH-BOW_83: 1793347515
+      MainCH-BOW_84: -1949242563
+      MainCH-BOW_85: 275477799
+      MainCH-BOW_86: 577981829
+      MainCH-BOW_87: -2009092278
+      MainCH-BOW_88: -1855233138
+      MainCH-BOW_89: -1907770373
+      MainCH-BOW_9: -1417164742
+      MainCH-BOW_90: -336750778
+      MainCH-BOW_91: 1879643590
+      MainCH-BOW_92: -716365641
+      MainCH-BOW_93: 579016513
+      MainCH-BOW_94: -256972918
+      MainCH-BOW_95: 14686045
+      MainCH-BOW_96: 159805575
+      MainCH-BOW_97: 1448886603
+      MainCH-BOW_98: -1094227266
+      MainCH-BOW_99: -164870964
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
