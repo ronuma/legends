@@ -21,6 +21,7 @@
    <br>
 
 ### **Team "LEGENDS"**
+
 #### Gabriel Rodríguez De Los Reyes - a01027384@tec.mx
 
 #### Iker García Germán - a01782767@tec.mx
@@ -44,7 +45,6 @@
 #### Octavio Navarro Hinojosa
 
 </div>
-
 
 ## _Index_
 
@@ -193,7 +193,7 @@ At the beginning of the game, the player will be able to choose between 3 differ
 
     | HP  | ATK | AGI |
     | :-- | :-: | :-: |
-    | 500 | 50  | 25  |
+    | 200 | 20  | 4.5 |
 
 - Archer: starts with bow
 
@@ -203,7 +203,7 @@ At the beginning of the game, the player will be able to choose between 3 differ
 
     | HP  | ATK | AGI |
     | :-- | :-: | :-: |
-    | 150 | 50  | 75  |
+    | 100 | 40  |  6  |
 
 - Hunter: starts with spear
 
@@ -213,7 +213,7 @@ At the beginning of the game, the player will be able to choose between 3 differ
 
     | HP  | ATK | AGI |
     | :-- | :-: | :-: |
-    | 250 | 75  | 25  |
+    | 150 | 60  |  3  |
 
 Note:
 
@@ -237,54 +237,52 @@ The following two stats start at 0 and can only be increased by finding items in
 
 ### **Items**
 
+- Armor
+
+  - HP: +100
+  - ATK: 0
+  - AGI: -1
+  - DEF: +50
+  - MAN: 0
+
+- Shield
+
+  - HP: +50
+  - ATK: 0
+  - AGI: -0.5
+  - DEF: +50
+  - MAN: 0
+
+- RedPotion
+
+  - HP: -75
+  - ATK: +20
+  - AGI: 0
+  - DEF: 0
+  - MAN: +30
+
+- GreenPotion
+
+  - HP: 0
+  - ATK: -25
+  - AGI: +0.5
+  - DEF: -20
+  - MAN: +50
+
+- Sword
+  - HP: 0
+  - ATK: +40
+  - AGI: 0
+  - DEF: 0
+  - MAN: -30
+
 The odds of finding an item in the dungeon will be based on the dungeon level (which is related to the time the player spends inside the dungeon). The higher the dungeon level, the higher the chance of finding a rare or godly item.
 
 <!-- Class upgrades -->
 
-#### **Class upgrades:**
-
-- Knives:
-
-  - Iron Knife: +10 ATK (common)
-  - Steel Knife: +20 ATK (rare)
-  - Diamond Knife: +30 ATK (godly)
-
-- Spears:
-
-  - Iron Spear: +10 ATK (common)
-  - Steel Spear: +20 ATK (rare)
-  - Diamond Spear: +30 ATK (godly)
-
-- Bows:
-  - Iron Bow: +10 ATK (common)
-  - Steel Bow: +20 ATK (rare)
-  - Diamond Bow: +30 ATK (godly)
-
 #### **HP Recovery:**
 
 - Health Potion: +50 HP (common)
-
-#### **Armor:**
-
-- Leather Armor (Light) (common)
-
-  - +20 AGI
-  - -10 DEF
-
-- Iron Armor (Medium) (rare)
-
-  - -10 AGI
-  - +15 DEF
-
-- Diamond Armor (Heavy) (godly)
-  - -20 AGI
-  - +25 DEF
-
-#### **HP upgrades:**
-
-- Blue Ring: +100 HP (common)
-- Red Ring: +200 HP (rare)
-- Green Ring: +300 HP (godly)
 
 #### **Enemies**
 
@@ -292,29 +290,29 @@ The enemies will have different stats and abilities. The enemies only exist in t
 
 - Musketeer (Ranged): Has a musket that shoots three bullets at a time. The bullets will travel in a straight line until it hits an enemy or a wall.
 
-  | HP  |       ATK       | AGI |
-  | :-- | :-------------: | :-: |
-  | 80  | 30 (per bullet) | 25  |
+  | HP  |       ATK       | AGI | Range |
+  | :-- | :-------------: | :-: | :---: |
+  | 80  | 30 (per bullet) |  3  |   7   |
 
 - Captain (Ranged): Has a gun that shoots one bullet at a time. The bullet will travel in a straight line until it hits an enemy or a wall.
 
-  | HP  | ATK | AGI |
-  | :-- | :-: | :-: |
-  | 125 | 40  | 50  |
+  | HP  | ATK | AGI | Range |
+  | :-- | :-: | :-: | :---: |
+  | 125 | 40  |  5  |  10   |
 
 - Dog (Melee): The dog will chase the player until it reaches him, and will attack him if it gets close enough.
 
-  | HP  | ATK | AGI |
-  | :-- | :-: | :-: |
-  | 50  | 25  | 75  |
+  | HP  | ATK | AGI | Range |
+  | :-- | :-: | :-: | :---: |
+  | 200 | 45  |  2  |  15   |
 
 <!-- Boss -->
 
 - Boss: The boss will have a lot of health, and will have a special attack that will deal a lot of damage to the player. The boss will also have a special ability that will allow him to teleport to a random location in the dungeon.
 
-  | HP  | ATK | AGI |
-  | :-- | :-: | :-: |
-  | 750 | 100 | 75  |
+  | HP   | ATK | AGI |
+  | :--- | :-: | :-: |
+  | 2000 | 100 |  7  |
 
 Note: the boss's stats won't be affected by the time spent in the dungeon.
 
