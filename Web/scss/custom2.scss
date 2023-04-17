@@ -1,0 +1,110 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+$primary: #0e1118;
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #27324dc1 #161c2b6e;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $primary;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #27324dc1;
+    border-radius: 10px;
+    border: 3px solid #27324dc1;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: $primary;
+    text-align: center;
+}
+.offcanvas {
+    --bs-offcanvas-width: 200px;
+}
+span {
+    display: inline-block;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+.header {
+    height: 100vh;
+}
+.img1 {
+    overflow: hidden;
+    padding-top: 75px;
+}
+.backI{
+    z-index: -1;
+}
+.logomain {
+    z-index: 1;
+}
+.heroB {
+    height: 200vh;
+    background-image: url(../images/intento1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.heroMB {
+    height: 28rem;
+}
+.heroMT {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 12rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 0 0 10px #9a9a9a;
+}
+.letter {
+    display: inline-block;
+}
+.herobtnT {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-weight: 600;
+}
+.img1-parallax{
+    width: 80%;
+    height: 40rem;
+}
+/* 
+*/

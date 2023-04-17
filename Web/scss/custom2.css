@@ -11690,17 +11690,18 @@ span {
 
 .heroMB {
   height: 28rem;
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+}
+
+.heroMT {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 12rem;
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0 0 10px #9a9a9a;
+}
+
+.letter {
+  display: inline-block;
 }
 
 .herobtnT {
@@ -11713,15 +11714,6 @@ span {
   font-weight: 600;
 }
 
-#one.visible {
-  opacity: 1;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-
 .img1-parallax {
   width: 80%;
   height: 40rem;
@@ -11730,4 +11722,4 @@ span {
 /* 
 */
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=custom2.css.map */
