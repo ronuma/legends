@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public float enemyHealth = 100f;
-    public float enemyDamage = 10f;
-    public float enemySpeed = 5f;
-    public float enemyRange = 10f;
+    public float enemyHealth;
+    public float enemyDamage;
+    public float enemySpeed;
+    public float enemyRange;
 
-    public DungeonGenerator dungeonGenerator;
+    public GameObject dungeonGenerator;
 
     public void Start()
     {
-        enemyHealth = enemyHealth * (dungeonGenerator.dungeonLevel);
-        enemyDamage = enemyDamage * (dungeonGenerator.dungeonLevel);
-        enemySpeed = enemySpeed * (dungeonGenerator.dungeonLevel);
-        enemyRange = enemyRange * (dungeonGenerator.dungeonLevel);
+        enemyHealth = enemyHealth * (dungeonGenerator.GetComponent<DungeonGenerator>().dungeonLevel/2);
+        enemyDamage = enemyDamage * (dungeonGenerator.GetComponent<DungeonGenerator>().dungeonLevel/2);
     }
 }

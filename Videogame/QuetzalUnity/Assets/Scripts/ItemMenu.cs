@@ -45,19 +45,19 @@ public class ItemMenu : MonoBehaviour
             cloneItem2.GetComponent<ItemsBuff>().Start();
             cloneItem3.GetComponent<ItemsBuff>().Start(); 
 
-            statsTextRight.text = "HP: " + Mathf.RoundToInt(cloneItem1.GetComponent<ItemsBuff>().itemHealth) + 
+            statsTextRight.text = " HP: " + Mathf.RoundToInt(cloneItem1.GetComponent<ItemsBuff>().itemHealth) + 
                                 "<br> SPD: " + Mathf.RoundToInt(cloneItem1.GetComponent<ItemsBuff>().itemSpeed) + 
                                 "<br> DEF: " + Mathf.RoundToInt(cloneItem1.GetComponent<ItemsBuff>().itemDefense) +
                                 "<br> ATK:" + Mathf.RoundToInt(cloneItem1.GetComponent<ItemsBuff>().itemDamage) +
                                 "<br> MN: " + Mathf.RoundToInt(cloneItem1.GetComponent<ItemsBuff>().itemMana);
 
-            statsTextLeft.text = "HP: " + Mathf.RoundToInt(cloneItem2.GetComponent<ItemsBuff>().itemHealth) +
+            statsTextLeft.text = " HP: " + Mathf.RoundToInt(cloneItem2.GetComponent<ItemsBuff>().itemHealth) +
                                 "<br> SPD: " + Mathf.RoundToInt(cloneItem2.GetComponent<ItemsBuff>().itemSpeed) +
                                 "<br> DEF: " + Mathf.RoundToInt(cloneItem2.GetComponent<ItemsBuff>().itemDefense) +
                                 "<br> ATK:" + Mathf.RoundToInt(cloneItem2.GetComponent<ItemsBuff>().itemDamage) +
                                 "<br> MN: " + Mathf.RoundToInt(cloneItem2.GetComponent<ItemsBuff>().itemMana);
             
-            statsTextCenter.text = "HP: " + Mathf.RoundToInt(cloneItem3.GetComponent<ItemsBuff>().itemHealth) +
+            statsTextCenter.text = " HP: " + Mathf.RoundToInt(cloneItem3.GetComponent<ItemsBuff>().itemHealth) +
                                 "<br> SPD: " + Mathf.RoundToInt(cloneItem3.GetComponent<ItemsBuff>().itemSpeed) +
                                 "<br> DEF: " + Mathf.RoundToInt(cloneItem3.GetComponent<ItemsBuff>().itemDefense) +
                                 "<br> ATK:" + Mathf.RoundToInt(cloneItem3.GetComponent<ItemsBuff>().itemDamage) +

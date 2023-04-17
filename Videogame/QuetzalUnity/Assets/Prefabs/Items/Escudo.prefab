@@ -97,9 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f18eef78125944adb7653a8f9f2b8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemHealth: 25
-  itemMana: 50
-  itemDamage: 15
-  itemSpeed: 1
-  itemDefense: 4
+  itemHealth: 50
+  itemMana: 0
+  itemDamage: 0
+  itemSpeed: -0.5
+  itemDefense: 50
   itemImage: {fileID: 21300000, guid: fe510af3750b345a7b6a025ea72db416, type: 3}

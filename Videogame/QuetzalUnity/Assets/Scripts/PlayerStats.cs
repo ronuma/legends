@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public float playerHealth = 100f;
-    public float playerMana = 20f;
-    public float playerDamage = 10f;
-    public float playerSpeed = 5f;
-    public float playerDefense = 0;
+    public float playerHealth;
+    public float playerMana;
+    public float playerDamage;
+    public float playerSpeed;
+    public float playerDefense;
 }
  

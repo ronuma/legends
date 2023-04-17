@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ItemsBuff : MonoBehaviour
 {
-    public float itemHealth = 15f;
-    public float itemMana = 50f;
-    public float itemDamage = 20f;
-    public float itemSpeed = 1f;
-    public float itemDefense = 4f;
+    public float itemHealth;
+    public float itemMana;
+    public float itemDamage;
+    public float itemSpeed;
+    public float itemDefense;
 
     public Sprite itemImage;
 
