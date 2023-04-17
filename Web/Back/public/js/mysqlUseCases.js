@@ -7,7 +7,7 @@ function main()
         const data = new FormData(formSelectUser)
         const dataObj = Object.fromEntries(data.entries())
 
-        let response = await fetch(`http://127.0.0.1:5000/api/users/${dataObj['userID']}`,{
+        let response = await fetch(`http://127.0.0.1:8000/api/users/${dataObj['userID']}`,{
             method: 'GET'
         })
         
@@ -64,7 +64,7 @@ function main()
         const data = new FormData(formInsert)
         const dataObj = Object.fromEntries(data.entries())
 
-        let response = await fetch('http://127.0.0.1:5000/api/users',{
+        let response = await fetch('http://127.0.0.1:8000/api/users',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(dataObj)
@@ -89,7 +89,7 @@ function main()
         const data = new FormData(formUpdate)
         const dataObj = Object.fromEntries(data.entries())
 
-        let response = await fetch('http://127.0.0.1:5000/api/users',{
+        let response = await fetch('http://127.0.0.1:8000/api/users',{
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(dataObj)
@@ -114,7 +114,7 @@ function main()
         const data = new FormData(formDelete)
         const dataObj = Object.fromEntries(data.entries())
 
-        let response = await fetch(`http://127.0.0.1:5000/api/users/${dataObj['userID']}`,{
+        let response = await fetch(`http://127.0.0.1:8000/api/users/${dataObj['userID']}`,{
             method: 'DELETE'
         })
         

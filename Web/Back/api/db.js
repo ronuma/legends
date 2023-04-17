@@ -9,8 +9,7 @@ const app = express();
 const port = 8000;
 
 app.use(express.json());
-app.use("/css", express.static("./css"));
-app.use("/js", express.static("./js"));
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   fs.readFile("./public/html/mysqlUseCases.html", "utf8", (err, html) => {
