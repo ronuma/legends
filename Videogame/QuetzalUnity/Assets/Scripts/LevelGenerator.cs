@@ -8,15 +8,17 @@ public class LevelGenerator : MonoBehaviour
     public GameTrack gameTrack;
     private bool rep = false;
 
+    public GameObject cloneEnemy;
+
     public void Update()
     {
         if (gameTrack.gameStatus && !rep)
         {
         rep = true;
         int rand = Random.Range(0, objects.Length); 
-        Instantiate(objects[rand], transform.position, Quaternion.identity);  
-        objects[rand].GetComponent<EnemyStats>().Start();
-        Debug.Log(objects[rand]);
+        cloneEnemy = Instantiate(objects[rand], transform.position, Quaternion.identity);  
+        cloneEnemy.GetComponent<EnemyStats>().Start();
+        //Debug.Log(objects[rand]);
         }
     }
 }
