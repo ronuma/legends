@@ -1,13 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 /*
 This script defines the behavior of the third type of bullet in the game. 
 It assigns a velocity to the bullet, based on the position of the player and a spread value. 
 It also handles collisions with the player and walls, dealing damage to the player 
 if hit and destroying the bullet in either case.
 */
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class BulletThree : MonoBehaviour
 {
