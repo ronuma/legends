@@ -15,7 +15,7 @@ public class ItemsBuff : MonoBehaviour
     public Sprite itemImage;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         // Randomly add a modficiation of 30% to the item's stats
         itemHealth = itemHealth * Random.Range(0.7f, 1.3f);

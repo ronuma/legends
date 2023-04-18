@@ -8,7 +8,7 @@ public class BulletWiz : MonoBehaviour
     private float force = 4f; // Bullet speed
     public GameObject player; // Reference to the player GameObject
     public float damage; // Amount of damage this bullet deals to the player
-    private float distance;/ / Distance between the bullet and the player
+    private float distance; // Distance between the bullet and the player
 
     void Start()
     {

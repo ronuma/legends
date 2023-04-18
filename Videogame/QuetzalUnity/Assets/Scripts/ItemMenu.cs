@@ -14,20 +14,6 @@ public class ItemMenu : MonoBehaviour
     // Array of item prefabs
     public GameObject[] items;
 
-
-
-    public TMPro.TextMeshProUGUI statsTextRight;
-    public TMPro.TextMeshProUGUI statsTextLeft;
-    public TMPro.TextMeshProUGUI statsTextCenter;
-    public Image imageRight;
-    public Image imageCenter;
-    public Image imageLeft;
-
-    public Canvas menu;
-
-    public GameObject cloneItem1 = null;
-    public GameObject cloneItem2 = null;
-    public GameObject cloneItem3 = null;
     // UI elements to display item stats and images
     public TMPro.TextMeshProUGUI statsTextRight;
     public TMPro.TextMeshProUGUI statsTextLeft;
