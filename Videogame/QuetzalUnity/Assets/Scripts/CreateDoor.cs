@@ -2,27 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script handles the creation of the door object.
+// It checks if the game is active and if there are no enemies in the scene.
+
 public class CreateDoor : MonoBehaviour
 {
-    public GameObject door1;
-    public GameTrack gameTrack;
-    private GameObject cloneDoor;
-    private bool rep = false;
+    public GameObject door1; // Prefab for the door object
+    public GameTrack gameTrack; // Reference to the GameTrack script for tracking game status
+    private GameObject cloneDoor; // Clone of the door object
+    private bool rep = false; // Flag for indicating if a new door should be created
 
     void Update()
     {
         if (gameTrack.gameStatus)
         {
-            if (GameObject.FindGameObjectWithTag("Enemies")== null)
+            if (GameObject.FindGameObjectWithTag("Enemies") == null) // Check if there are no enemies in the scene
             {
-                Destroy(cloneDoor);
+                Destroy(cloneDoor); // Destroy the cloned door if there are no enemies in the scene
             }
         }
 
-        if (gameTrack.gameStatus && !rep)
+        if (gameTrack.gameStatus && !rep) // Check if the game is active and a new door has not been created
         { 
-        rep = true;
-        cloneDoor = Instantiate(door1, transform.position, Quaternion.identity);  
+            rep = true; // Set flag to indicate that a new door has been created
+            cloneDoor = Instantiate(door1, transform.position, Quaternion.identity);  // Create a new door object clone at the specified location
         }
     }
 }
