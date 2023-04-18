@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerFinalForm : MonoBehaviour
 {
-    public Animator animator;
-    private Camera mainCam;
+    public Animator animator; // A reference to the animator component
+    private Camera mainCam; // A reference to the main camera
 
-    private bool canTranform = true;
-    private float chargeTimer;
-    private float chargeTime = 10f;
+    private bool canTranform = true; // A flag for indicating if the player can transform
+    private float chargeTimer; // A timer for the charge bar
+    private float chargeTime = 10f; // The time for the charge bar
 
-    public bool isTransformed;
+    public bool isTransformed; // A flag for indicating if the player is transformed
 
-    private float durationTimer;
-    private float duration = 20f;
+    private float durationTimer; // A timer for the duration of the transformation
+    private float duration = 20f; // The duration of the transformation
     
     void Start()
     {
@@ -26,10 +26,10 @@ public class PlayerFinalForm : MonoBehaviour
     {
         if (!canTranform)
         {
-            chargeTimer += Time.deltaTime;
+            chargeTimer += Time.deltaTime; // Update the charge bar
             if (chargeTimer >= chargeTime)
             {
-                canTranform = true;
+                canTranform = true; // Reset the charge bar
                 chargeTimer = 0;
             }
         }
@@ -38,11 +38,13 @@ public class PlayerFinalForm : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canTranform)
         {
             isTransformed = true;
-            animator.SetBool("FinalForm", true);
+            animator.SetBool("FinalForm", true); // Set the animation trigger
             canTranform = false;
 
             GetComponent<PlayerStats>().playerDamage = GetComponent<PlayerStats>().playerDamage * 3;
+            // Increase the player's damage
             GetComponent<PlayerStats>().playerHealth = GetComponent<PlayerStats>().playerHealth * 3;
+            // Increase the player's health
         }
 
         if (isTransformed)
@@ -50,11 +52,13 @@ public class PlayerFinalForm : MonoBehaviour
             durationTimer += Time.deltaTime;
             if (durationTimer >= duration)
             {
-                isTransformed = false;
+                isTransformed = false; // Reset the duration timer
                 durationTimer = 0;
                 animator.SetBool("FinalForm", false);
                 GetComponent<PlayerStats>().playerDamage = GetComponent<PlayerStats>().playerDamage / 3;
+                // Returns the player's damage
                 GetComponent<PlayerStats>().playerHealth = GetComponent<PlayerStats>().playerHealth / 3;
+                // Returns the player's health
             }
         }
     }
