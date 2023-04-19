@@ -5,6 +5,7 @@ import {getNPCs, getEnemies} from "../helpers/characters.js";
 const router = Router();
 
 router.get("/NPCs", async (req, res) => {
+   // needs to get all NPCs and their dialogues
    try {
       const data = await getNPCs();
       if (!data) {
@@ -24,6 +25,7 @@ router.get("/NPCs", async (req, res) => {
 });
 
 router.get("/enemies", async (req, res) => {
+   // done: gets all enemies
    try {
       const data = await getEnemies();
       if (!data) {
