@@ -1,5 +1,6 @@
 import express from "express";
 import itemsRoute from "./routes/items.js";
+import mysql from "mysql2/promise";
 
 const app = express();
 const PORT = 8000;
