@@ -1,5 +1,5 @@
 import express from "express";
-import itemsRoute from "./routes/items.js";
+import {itemsRoute, charactersRoute} from "./routes/routesIndex.js";
 import mysql from "mysql2/promise";
 
 const app = express();
@@ -14,12 +14,12 @@ async function connectToDB() {
       database: "quetzal",
    });
 }
-
 app.get("/", (req, res) => {
    res.send("Hello World!");
 });
 
 app.use("/items", itemsRoute);
+app.use("/characters", charactersRoute);
 
 app.listen(PORT, () => {
    console.log(`Server running on port ${PORT}`);
