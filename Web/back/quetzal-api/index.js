@@ -1,5 +1,10 @@
 import express from "express";
-import {itemsRoute, charactersRoute, usersRoute} from "./routes/routesIndex.js";
+import {
+   itemsRoute,
+   charactersRoute,
+   usersRoute,
+   statsRoute,
+} from "./routes/routesIndex.js";
 import mysql from "mysql2/promise";
 
 const app = express();
@@ -21,6 +26,7 @@ app.get("/", (req, res) => {
 app.use("/items", itemsRoute);
 app.use("/characters", charactersRoute);
 app.use("/users", usersRoute);
+app.use("/stats", statsRoute);
 
 app.listen(PORT, () => {
    console.log(`Server running on port ${PORT}`);
