@@ -182,9 +182,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 50
-  enemyDamage: 15
+  enemyDamage: 10
   enemySpeed: 4
-  enemyRange: 5
+  enemyRange: 7
 --- !u!114 &4488917112654330450
 MonoBehaviour:
   m_ObjectHideFlags: 0

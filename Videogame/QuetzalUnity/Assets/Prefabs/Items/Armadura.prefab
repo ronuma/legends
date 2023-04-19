@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemHealth: 100
-  itemMana: 0
-  itemDamage: 0
+  itemMana: -20
+  itemDamage: -5
   itemSpeed: -1
   itemDefense: 50
   itemImage: {fileID: 21300000, guid: 66dd90ee80e234335a7a38945b44c920, type: 3}

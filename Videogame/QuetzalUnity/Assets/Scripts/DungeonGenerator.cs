@@ -20,6 +20,13 @@ public class DungeonGenerator : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (dungeonLevel == 5)
+            {
+                player.transform.position = new Vector3(320, 0, 0);
+            }
+            else
+            {
             DungeonMap[] dungeonMaps = FindObjectsOfType<DungeonMap>();
             foreach (DungeonMap map in dungeonMaps)
             {
@@ -28,9 +35,9 @@ public class DungeonGenerator : MonoBehaviour
             dungeonLevel++;
             levelText.text = "Level: " + dungeonLevel;  
 
-            player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(-20, 0, 0);
             chest.transform.position = new Vector3(144, 0, 0);
+            }
         }
     }
 
