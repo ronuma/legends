@@ -10,4 +10,3 @@ public class PlayerStats : MonoBehaviour
     public float playerSpeed;
     public float playerDefense;
 }
- 

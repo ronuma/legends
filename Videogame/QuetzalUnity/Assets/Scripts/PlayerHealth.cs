@@ -12,8 +12,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         healthBar = GameObject.Find("HealthBar").GetComponent<Image>();
-        maxHealth = GetComponent<PlayerStats>().playerHealth;
-        playerHealth = maxHealth;
+        ResetHealth();
     }
 
     // Update is called once per frame
@@ -25,5 +24,11 @@ public class PlayerHealth : MonoBehaviour
             //Destroy(gameObject);
             healthBar.fillAmount = 0;
         }
+    }
+
+    public void ResetHealth()
+    {
+        maxHealth = GetComponent<PlayerStats>().playerHealth;
+        playerHealth = maxHealth;
     }
 }

@@ -161,12 +161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 200
-  enemyDamage: 0.012207031
+  enemyDamage: 5
   enemySpeed: 3
   enemyRange: 7
-  preEnemyHealth: 0.078125
-  preEnemyDamage: 0.024414062
-  dungeonGenerator: {fileID: 6916287278036456425, guid: ada3c151758824e2bacc8a9612265751, type: 3}
 --- !u!50 &-5891085042624663189
 Rigidbody2D:
   serializedVersion: 4

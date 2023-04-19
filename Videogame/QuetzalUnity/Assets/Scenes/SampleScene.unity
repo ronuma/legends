@@ -2801,6 +2801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 6916287278036456425, guid: ada3c151758824e2bacc8a9612265751, type: 3}
+      propertyPath: m_TagString
+      value: DungeonGenerator
+      objectReference: {fileID: 0}
     - target: {fileID: 6916287278036456430, guid: ada3c151758824e2bacc8a9612265751, type: 3}
       propertyPath: m_RootOrder
       value: 8

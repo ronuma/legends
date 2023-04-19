@@ -13,6 +13,7 @@ TagManager:
   - Menu
   - HealthBar
   - ExpoBar
+  - DungeonGenerator
   layers:
   - Default
   - TransparentFX

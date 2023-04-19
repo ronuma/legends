@@ -15,6 +15,7 @@ public class ItemsBuff : MonoBehaviour
     public void Start()
     {
         itemHealth = itemHealth * Random.Range(0.7f, 1.3f);
+        itemHealth = itemHealth * Random.Range(0.7f, 1.3f);
         itemMana = itemMana * Random.Range(0.7f, 1.3f);
         itemDamage = itemDamage * Random.Range(0.7f, 1.3f);
         itemSpeed = itemSpeed * Random.Range(0.7f, 1.3f);
