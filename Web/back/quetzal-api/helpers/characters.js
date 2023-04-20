@@ -11,3 +11,9 @@ export async function getEnemies() {
    const [results, fields] = await db.execute("SELECT * FROM quetzal.Enemies");
    return results;
 }
+
+export async function getHeroes() {
+   const db = await connectToDB();
+   const [results, fields] = await db.execute("SELECT * FROM quetzal.Heroes");
+   return results;
+}
