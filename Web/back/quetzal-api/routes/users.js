@@ -1,6 +1,6 @@
 import {Router} from "express";
 
-import {getStats, getData} from "../helpers/users.js";
+import {getStats, getData, addData} from "../helpers/users.js";
 
 const router = Router();
 
@@ -37,6 +37,31 @@ router.get("/data", async (req, res) => {
       console.log("GET user data error: ", error);
       res.status(500).json({
          msg: "GET user data error",
+         error,
+      });
+   }
+});
+
+router.post("/add", async (req, res) => {
+   try {
+      console.log("req: ", req);
+      const {email, user_name} = req.body;
+
+      const data = await addData(email, user_name);
+      if (!data) {
+         res.status(404).json({
+            msg: "User data not added",
+         });
+         return;
+      }
+      res.status(200).json({
+         msg: "User data added",
+         data,
+      });
+   } catch (error) {
+      console.log("POST user data error: ", error);
+      res.status(500).json({
+         msg: "POST user data error",
          error,
       });
    }

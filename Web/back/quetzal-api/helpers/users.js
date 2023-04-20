@@ -11,3 +11,11 @@ export async function getStats() {
    const [results, fields] = await db.execute("SELECT * FROM quetzal.Sessions");
    return results;
 }
+
+export async function addData(email, user_name) {
+   const db = await connectToDB();
+   const [results, fields] = await db.execute(
+      `INSERT INTO quetzal.Players(email, user_name) VALUES(\'${email}\', \'${user_name}\')`
+   );
+   return results;
+}
