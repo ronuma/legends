@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -558516835357530798}
   - component: {fileID: 1624776721322825072}
   - component: {fileID: 5777672435814740021}
+  - component: {fileID: -3568626094866693635}
   m_Layer: 0
   m_Name: boss_1_15
   m_TagString: Untagged
@@ -174,6 +175,7 @@ MonoBehaviour:
   bulletPushBack: {fileID: 7791068504515456044, guid: 73293295e6c8340dba4d828b6af7dcbe, type: 3}
   bulletThree: {fileID: 1298581905227046706, guid: 90973c8d65a2343859493863b48fceb1, type: 3}
   bulletWiz: {fileID: 1298581905227046706, guid: f040e945a27f64973a674cf9fdb04073, type: 3}
+  direction: {x: 0, y: 0, z: 0}
   firePoint: {fileID: 213369827966101823}
 --- !u!114 &-558516835357530798
 MonoBehaviour:
@@ -225,3 +227,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   maxHealth: 0
+--- !u!114 &-3568626094866693635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6053868098619391645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3232f434ea564491f80a221f2fb8b884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4660257639777954330}

@@ -41,7 +41,6 @@ public class BOSSmovement : MonoBehaviour
         animator.SetFloat("Horizontal", direction.x);
         animator.SetFloat("Vertical", direction.y);
         animator.SetFloat("Speed", direction.sqrMagnitude);
-        Debug.Log(direction.sqrMagnitude);
         transform.position = Vector2.MoveTowards(transform.position, dir, speed * Time.deltaTime);
         transform.rotation = Quaternion.identity;
     }

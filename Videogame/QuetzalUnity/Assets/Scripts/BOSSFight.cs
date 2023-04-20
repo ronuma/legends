@@ -11,6 +11,7 @@ public class BOSSFight : MonoBehaviour
     public GameObject bulletPushBack;
     public GameObject bulletThree;
     public GameObject bulletWiz;
+    public Vector3 direction;
 
     public Transform firePoint;
     private float timer;
@@ -22,7 +23,7 @@ public class BOSSFight : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
-        Vector3 direction = player.transform.position - transform.position;
+        direction = player.transform.position - transform.position;
         Vector3 rotation = transform.position - player.transform.position;
     }
 
@@ -49,6 +50,8 @@ public class BOSSFight : MonoBehaviour
                     AttackBulletPushBack();
                     break;
             }
+
+            GetComponent<BossAttack>().Attack(direction.x, direction.y);
         }
     }
 
