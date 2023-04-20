@@ -41,8 +41,8 @@ Entrega todos los jugadores que hay.
 
 `/users/getSessionData/:id`
 
-Entrega los datos del usuario pasando el id de la sesión. Este se obtendría al
-tener la información del usuario, en donde cada slot suyo tendría un id de
+Entrega los datos la sesión pasando el id. Este se obtendría al tener la
+información del usuario previamente, en donde cada slot suyo tendría un id de
 sesión asociado.
 
 ### POST
