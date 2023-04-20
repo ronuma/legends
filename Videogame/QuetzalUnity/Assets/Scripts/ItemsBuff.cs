@@ -10,10 +10,13 @@ public class ItemsBuff : MonoBehaviour
     public float itemSpeed;
     public float itemDefense;
 
+    // Public variable to hold the sprite for the item
     public Sprite itemImage;
 
+    // Start is called before the first frame update
     public void Start()
     {
+        // Randomly add a modficiation of 30% to the item's stats
         itemHealth = itemHealth * Random.Range(0.7f, 1.3f);
         itemHealth = itemHealth * Random.Range(0.7f, 1.3f);
         itemMana = itemMana * Random.Range(0.7f, 1.3f);

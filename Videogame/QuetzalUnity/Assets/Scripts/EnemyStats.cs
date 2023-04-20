@@ -1,3 +1,8 @@
+/*
+This script defines the stats of an enemy character, including health, damage, speed, and range.
+It multiplies the stats based on the current dungeon level, obtained from the DungeonGenerator component.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

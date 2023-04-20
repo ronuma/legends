@@ -1,3 +1,13 @@
+/*
+This script generates a new dungeon level when the player enters a trigger area.
+It finds all objects with the "DungeonMap" component and destroys them to clear the previous level.
+It then increments the dungeon level and updates the level text on the screen.
+It repositions the player and chest objects to their starting positions in the new level.
+When the player exits the trigger area, it finds all objects with the "MapGenerator" component and generates a new map.
+
+Note: The script assumes that the player and chest objects have the "Player" and "Chest" tags respectively.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,9 +23,11 @@ public class DungeonGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set the initial level text to the current dungeon level
         levelText.text = "Level: " + dungeonLevel;
     }
 
+    // Handle trigger enter events
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -32,8 +44,6 @@ public class DungeonGenerator : MonoBehaviour
             {
                 Destroy(map.gameObject);
             }
-            dungeonLevel++;
-            levelText.text = "Level: " + dungeonLevel;  
 
             player.transform.position = new Vector3(-20, 0, 0);
             chest.transform.position = new Vector3(144, 0, 0);
@@ -41,16 +51,17 @@ public class DungeonGenerator : MonoBehaviour
         }
     }
 
+    // Handle trigger exit events
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            // Generate a new map by calling the createMap() method on all MapGenerator objects
             MapGenerator[] mapGenerators = FindObjectsOfType<MapGenerator>();
             foreach (MapGenerator map in mapGenerators)
             {
                 map.createMap();
-            } 
+            }
         }
     }
 }
-
