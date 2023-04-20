@@ -6,41 +6,43 @@ public class BOSSmovement : MonoBehaviour
 {
     public float speed;
     private float dist;
-    public GameObject player;
     public Animator animator;
 
-    private float distToPlayer;
-    public float distToStop;
+    public List<Vector3> directionsList;
+
+    private float timer;
+    private float timebtwMove= 3f;
+
+    private int rand;
 
     void Start()
     {
-        distToStop = GetComponent<EnemyStats>().enemyRange;
-        speed = GetComponent<EnemyStats>().enemySpeed;
-        player = GameObject.FindGameObjectWithTag("Player");
+        speed = GetComponent<BossStats>().enemySpeed;
+        rand = Random.Range(0, directionsList.Count);
     }
 
     void Update()
-    {    
-        distToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distToPlayer > distToStop)
+    {   
+        timer += Time.deltaTime;
+        if (timer >= timebtwMove)
         {
-            moveToPlayer(1);
+            rand = Random.Range(0, directionsList.Count);
+            timer = 0;
         }
-        else if (distToPlayer < distToStop)
-        {
-            moveToPlayer(-1);
-        }
+        moveToPlace(directionsList[rand]);
+        
     }
 
-    private void moveToPlayer(int dir)
+    private void moveToPlace(Vector3 dir)
     {
-        dist = Vector3.Distance(transform.position, player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
-
+        //dist = Vector3.Distance(transform.position, dir);
+        Vector2 direction = dir - transform.position;
+        
         animator.SetFloat("Horizontal", direction.x);
         animator.SetFloat("Vertical", direction.y);
         animator.SetFloat("Speed", direction.sqrMagnitude);
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * dir * Time.deltaTime);
+        Debug.Log(direction.sqrMagnitude);
+        transform.position = Vector2.MoveTowards(transform.position, dir, speed * Time.deltaTime);
         transform.rotation = Quaternion.identity;
     }
 }

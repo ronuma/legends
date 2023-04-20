@@ -8,7 +8,7 @@ public class BOSSFight : MonoBehaviour
     private float deadTime = 2f;
 
     public GameObject bullet;
-    public GameObject BulletPushBack;
+    public GameObject bulletPushBack;
     public GameObject bulletThree;
     public GameObject bulletWiz;
 
@@ -32,11 +32,12 @@ public class BOSSFight : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= timebtwShots)
         {
-            int rand = Random.Range(0, 3);
+            int rand = Random.Range(0, 4);
+            
             switch(rand)
             {
                 case 0:
-                    AttackBullet(bullet);
+                    AttackBullet();
                     break;
                 case 1:
                     AttackBulletThree();
@@ -44,18 +45,18 @@ public class BOSSFight : MonoBehaviour
                 case 2:
                     AttackBulletWiz();
                     break;
-                case 3:
-                    AttackBullet(BulletPushBack);
+                default:
+                    AttackBulletPushBack();
                     break;
             }
         }
     }
 
-    void AttackBullet(GameObject bull)
+    void AttackBullet()
     {
         timer = 0;
-        GameObject newShot = Instantiate(bull, firePoint.position, Quaternion.identity);
-        newShot.GetComponent<EnemyBullet>().damage = GetComponent<EnemyStats>().enemyDamage;
+        GameObject newShot = Instantiate(bullet, firePoint.position, Quaternion.identity);
+        newShot.GetComponent<EnemyBullet>().damage = GetComponent<BossStats>().enemyDamage;
         Destroy(newShot, deadTime);
     }
 
@@ -64,15 +65,15 @@ public class BOSSFight : MonoBehaviour
         timer = 0;
         GameObject newShot = Instantiate(bulletThree, firePoint.position, Quaternion.identity);
         newShot.GetComponent<BulletThree>().spread = 3;
-        newShot.GetComponent<BulletThree>().damage = GetComponent<EnemyStats>().enemyDamage;
+        newShot.GetComponent<BulletThree>().damage = GetComponent<BossStats>().enemyDamage;
 
         GameObject newShot2 = Instantiate(bulletThree, firePoint.position, Quaternion.identity);
         newShot2.GetComponent<BulletThree>().spread = -3;
-        newShot2.GetComponent<BulletThree>().damage = GetComponent<EnemyStats>().enemyDamage;
+        newShot2.GetComponent<BulletThree>().damage = GetComponent<BossStats>().enemyDamage;
 
         GameObject newShot3 = Instantiate(bulletThree, firePoint.position, Quaternion.identity);
         newShot3.GetComponent<BulletThree>().spread = 0;
-        newShot3.GetComponent<BulletThree>().damage = GetComponent<EnemyStats>().enemyDamage;
+        newShot3.GetComponent<BulletThree>().damage = GetComponent<BossStats>().enemyDamage;
 
         Destroy(newShot, deadTime);
         Destroy(newShot2, deadTime);
@@ -83,10 +84,17 @@ public class BOSSFight : MonoBehaviour
     {
         timer = 0;
         GameObject newShot = Instantiate(bulletWiz, firePoint.position, Quaternion.identity);
-        newShot.GetComponent<BulletWiz>().damage = GetComponent<EnemyStats>().enemyDamage;
+        newShot.GetComponent<BulletWiz>().damage = GetComponent<BossStats>().enemyDamage;
         Destroy(newShot, deadTime);
     }
 
+    void AttackBulletPushBack()
+    {
+        timer = 0;
+        GameObject newShot = Instantiate(bulletPushBack, firePoint.position, Quaternion.identity);
+        newShot.GetComponent<BulletPushBack>().damage = GetComponent<BossStats>().enemyDamage;
+        Destroy(newShot, deadTime);
+    }
     
 
 }

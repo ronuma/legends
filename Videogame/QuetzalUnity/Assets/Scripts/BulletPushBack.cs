@@ -7,6 +7,7 @@ public class BulletPushBack : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject player;
     private float force = 10f;
+    private float impulse = 100f;
     public float damage;
     
     // Start is called before the first frame update
@@ -28,8 +29,15 @@ public class BulletPushBack : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerHealth>().playerHealth -= damage;
             Vector2 pushbackDirection = (other.transform.position - transform.position).normalized;
-            other.gameObject.GetComponent<Rigidbody2D>().AddForce(pushbackDirection * force, ForceMode2D.Impulse);
-            Destroy(gameObject); 
+            other.gameObject.GetComponent<Rigidbody2D>().AddForce(pushbackDirection * impulse, ForceMode2D.Impulse); 
+            StartCoroutine(StopPushBack(other));
         }
+    }
+
+    private IEnumerator StopPushBack(Collider2D other)
+    {
+        yield return new WaitForSeconds(0.1f);
+        other.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        Destroy(gameObject);
     }
 }
