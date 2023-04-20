@@ -746,6 +746,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1359c4b186cf4dd3b1115eb68cd315f, type: 3}
+--- !u!1 &349463912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349463915}
+  - component: {fileID: 349463914}
+  - component: {fileID: 349463913}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &349463913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349463912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521a8a64eef5241a1bfc40f7f82154d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 8507737819183352519, guid: c72d1e6bf90d44c2181f55d316dcf835, type: 3}
+  - {fileID: 7013586546428059166, guid: 760e90b45da7841c4b81980d0d5ac0aa, type: 3}
+  - {fileID: 2349924466873188753, guid: 6bf382b0f508144cb8f4eb2cd6925c59, type: 3}
+  - {fileID: 7652359276343875113, guid: beb8f47caf2944c7da0220c30794affc, type: 3}
+  - {fileID: 6817866674215833506, guid: aa088adda31594eb49a7ffa8a0eeee7f, type: 3}
+--- !u!114 &349463914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349463912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843e1899d24c342d0be40af4337ddfa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: http://127.0.0.1:8000
+  getUsersEP: /Items
+  errorText: {fileID: 0}
+  allItems:
+    items: []
+--- !u!4 &349463915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349463912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5851393, y: -3.14631, z: -0.3368313}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &458211680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2934,6 +3002,14 @@ PrefabInstance:
       propertyPath: statsTextCenter
       value: 
       objectReference: {fileID: 1905977259}
+    - target: {fileID: 6063530108525551498, guid: 03ca39766b3c447408cea283d905a8b7, type: 3}
+      propertyPath: items.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6063530108525551498, guid: 03ca39766b3c447408cea283d905a8b7, type: 3}
+      propertyPath: items.Array.data[5]
+      value: 
+      objectReference: {fileID: 8507737819183352519, guid: c72d1e6bf90d44c2181f55d316dcf835, type: 3}
     - target: {fileID: 6063530108525551499, guid: 03ca39766b3c447408cea283d905a8b7, type: 3}
       propertyPath: m_Name
       value: Chest

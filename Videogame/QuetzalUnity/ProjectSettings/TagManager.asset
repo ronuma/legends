@@ -14,6 +14,7 @@ TagManager:
   - HealthBar
   - ExpoBar
   - DungeonGenerator
+  - ApiItem
   layers:
   - Default
   - TransparentFX

@@ -22,5 +22,4 @@ public class BOSSHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

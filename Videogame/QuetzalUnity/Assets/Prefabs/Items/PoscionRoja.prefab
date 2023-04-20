@@ -103,3 +103,4 @@ MonoBehaviour:
   itemSpeed: 0
   itemDefense: 0
   itemImage: {fileID: 21300000, guid: 4ec7ee877268545e690716e6f2174847, type: 3}
+  itemID: 3

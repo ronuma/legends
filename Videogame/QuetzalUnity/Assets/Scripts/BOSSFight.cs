@@ -19,41 +19,44 @@ public class BOSSFight : MonoBehaviour
     private GameObject player;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-        rb = GetComponent<Rigidbody2D>();
-        direction = player.transform.position - transform.position;
-        Vector3 rotation = transform.position - player.transform.position;
-    }
+  void Start()
+{
+    player = GameObject.FindGameObjectWithTag("Player");
+    rb = GetComponent<Rigidbody2D>();
+    direction = player.transform.position - transform.position;
+    direction.Normalize(); 
+}
 
-    // Update is called once per frame
-    void Update()
+
+    
+void Update()
+{
+    timer += Time.deltaTime;
+    if (timer >= timebtwShots)
     {
-        timer += Time.deltaTime;
-        if (timer >= timebtwShots)
+        int rand = Random.Range(0, 4);
+        
+        switch(rand)
         {
-            int rand = Random.Range(0, 4);
-            
-            switch(rand)
-            {
-                case 0:
-                    AttackBullet();
-                    break;
-                case 1:
-                    AttackBulletThree();
-                    break;
-                case 2:
-                    AttackBulletWiz();
-                    break;
-                default:
-                    AttackBulletPushBack();
-                    break;
-            }
-
-            GetComponent<BossAttack>().Attack(direction.x, direction.y);
+            case 0:
+                AttackBullet();
+                break;
+            case 1:
+                AttackBulletThree();
+                break;
+            case 2:
+                AttackBulletWiz();
+                break;
+            default:
+                AttackBulletPushBack();
+                break;
         }
+
+        direction = player.transform.position - transform.position;
+        GetComponent<BossAttack>().Attack(direction.x, direction.y);
     }
+}
+
 
     void AttackBullet()
     {
