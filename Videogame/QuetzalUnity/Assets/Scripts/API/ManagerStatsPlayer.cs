@@ -14,13 +14,12 @@ public class ManagerStatsPlayer // Same object as in the API (JSON) response
 
 void Start()
  {
-// //     player = GameObject.FindGameObjectWithTag("Player");
-// //     playerHealth = player.GetComponent<PlayerStats>().playerHealth;
-// //     playerMana = player.GetComponent<PlayerStats>().playerMana;
-// //     playerDamage = player.GetComponent<PlayerStats>().playerDamage;
-// //     playerSpeed = player.GetComponent<PlayerStats>().playerSpeed;
-// //     playerDefense = player.GetComponent<PlayerStats>().playerDefense;
-
-// //     //StartCoroutine(StartItem());
+    // player = GameObject.FindGameObjectWithTag("Player");
+    // GetComponent<patchStatsPlayer>().allUsers.users[0].playerHealth = player.GetComponent<PlayerStats>().playerHealth;
+    // GetComponent<patchStatsPlayer>().allUsers.users[0].playerMana = player.GetComponent<PlayerStats>().playerMana;
+    // GetComponent<patchStatsPlayer>().allUsers.users[0].playerDamage = player.GetComponent<PlayerStats>().playerDamage;
+    // GetComponent<patchStatsPlayer>().allUsers.users[0].playerSpeed = player.GetComponent<PlayerStats>().playerSpeed;
+    // GetComponent<patchStatsPlayer>().allUsers.users[0].playerDefense = player.GetComponent<PlayerStats>().playerDefense;
+    
  }
 }

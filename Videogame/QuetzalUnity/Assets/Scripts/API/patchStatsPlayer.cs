@@ -88,30 +88,6 @@
 //     // These functions make the connection to the API //
 //     ////////////////////////////////////////////////////
 
-//     IEnumerator GetUsers() // Async function to get the users from the API
-//     {
-//         using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP)) // UNITY class request for API (UnityWebRequest)
-//         {
-//             yield return www.SendWebRequest(); // Await for the response
-
-//             if (www.result == UnityWebRequest.Result.Success) // If the response is successful
-//             {
-//                 // Debug.Log("Response: " + www.downloadHandler.text); // The response is in the downloadHandler
-//                 // Compose the response to look like the object we want to extract
-//                 // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
-//                 string jsonString = "{\"users\":" + www.downloadHandler.text + "}"; // add {} to make it an object
-//                 allUsers = JsonUtility.FromJson<UserList>(jsonString);
-//                 DisplayUsers();
-//                 if (errorText != null) errorText.text = "";
-//             }
-//             else
-//             {
-//                 Debug.Log("Error: " + www.error);
-//                 if (errorText != null) errorText.text = "Error: " + www.error;
-//             }
-//         }
-//     }
-
 //     IEnumerator AddUser()
 //     {
 //         /*
@@ -156,35 +132,34 @@
 
 //     // Sending the data back to the caller of the Coroutine, using a callback
 //     // https://answers.unity.com/questions/24640/how-do-i-return-a-value-from-a-coroutine.html
-//     IEnumerator GetUsersString(System.Action<string> callback)
-//     {
-//         using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
-//         {
-//             yield return www.SendWebRequest();
+//     // IEnumerator GetUsersString(System.Action<string> callback)
+//     // {
+//     //     using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
+//     //     {
+//     //         yield return www.SendWebRequest();
 
-//             if (www.result == UnityWebRequest.Result.Success)
-//             {
-//                 //Debug.Log("Response: " + www.downloadHandler.text);
-//                 // Compose the response to look like the object we want to extract
-//                 // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
-//                 string jsonString = "{\"users\":" + www.downloadHandler.text + "}";
-//                 callback(jsonString);
-//                 if (errorText != null) errorText.text = "";
-//             }
-//             else
-//             {
-//                 Debug.Log("Error: " + www.error);
-//                 if (errorText != null) errorText.text = "Error: " + www.error;
-//             }
-//         }
-//     }
+//     //         if (www.result == UnityWebRequest.Result.Success)
+//     //         {
+//     //             //Debug.Log("Response: " + www.downloadHandler.text);
+//     //             // Compose the response to look like the object we want to extract
+//     //             // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
+//     //             string jsonString = "{\"users\":" + www.downloadHandler.text + "}";
+//     //             callback(jsonString);
+//     //             if (errorText != null) errorText.text = "";
+//     //         }
+//     //         else
+//     //         {
+//     //             Debug.Log("Error: " + www.error);
+//     //             if (errorText != null) errorText.text = "Error: " + www.error;
+//     //         }
+//     //     }
+//     // }
 
 //     // Show the results of the Query in the Unity UI elements,
 //     // via another script that fills a scrollview
 //     void DisplayUsers()
 //     {
-//         // TMPro_Test texter = GetComponent<TMPro_Test>();
-//         // texter.LoadNames(allUsers);
+
 //     }
 
 // }

@@ -362,6 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 0
+  healthBar: {fileID: 0}
 --- !u!114 &1137521677758966098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +378,7 @@ MonoBehaviour:
   playerHealth: 100
   playerMana: 150
   playerDamage: 60
-  playerSpeed: 5
+  playerSpeed: 30
   playerDefense: 0
 --- !u!114 &3060137785032393423
 MonoBehaviour:
