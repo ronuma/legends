@@ -523,7 +523,7 @@ MonoBehaviour:
   playerPrefabBow: {fileID: 6937680040743552094, guid: b1359c4b186cf4dd3b1115eb68cd315f, type: 3}
   playerPrefabSpear: {fileID: 5526421035581363963, guid: 23715a20c46c84bfc8e6c7425abad653, type: 3}
   playerPrefabs: []
-  playerChosen: 2
+  playerChosen: 0
 --- !u!4 &146815581
 Transform:
   m_ObjectHideFlags: 0
@@ -741,6 +741,7 @@ GameObject:
   - component: {fileID: 349463915}
   - component: {fileID: 349463914}
   - component: {fileID: 349463913}
+  - component: {fileID: 349463916}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -798,6 +799,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349463916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349463912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cee50461b674f309a663763be21cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: http://127.0.0.1:8000
+  getUsersEP: /users/updateStats
+  errorText: {fileID: 0}
+  allUsers:
+    users: []
 --- !u!1001 &458211680
 PrefabInstance:
   m_ObjectHideFlags: 0

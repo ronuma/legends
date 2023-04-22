@@ -45,6 +45,7 @@ public class CenterButton : MonoBehaviour
         player.GetComponent<PlayerStats>().playerDefense = result5;
 
         player.GetComponent<PlayerHealth>().ResetHealth();
+        
     }
 }
 

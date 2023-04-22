@@ -139,6 +139,7 @@ public class getItems : MonoBehaviour
         // Debug.Log(allItems.items.Count);
         // Debug.Log(allItems.items[0].health_change);
         // Debug.Log(allItems.items[4].name);
+        Debug.Log("Items loaded");
     }
 
 }

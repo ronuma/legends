@@ -140,7 +140,7 @@ router.post("/createSession", async (req, res) => {
 });
 
 // updates user stats (when saving a session)
-router.patch("/updateStats", async (req, res) => {
+router.put("/updateStats", async (req, res) => {
    try {
       const data = await updateStats(req.body);
       if (!data) {
