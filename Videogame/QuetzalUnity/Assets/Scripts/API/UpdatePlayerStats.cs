@@ -10,8 +10,8 @@ public class UpdatePlayerStats : MonoBehaviour
 
     IEnumerator Start()
     {
-        // si no se la pongo aquí directo no me jala, no se por qué
-        var request = UnityWebRequest.Put(apiUrl, "{\"session_id\": 27,\"health\": 50,\"mana\": 5,\"defense\": 42,\"speed\": 2,\"damage\": 5}");
+        // si no se la pongo aquí directo el body no me jala, no se por qué
+        var request = UnityWebRequest.Put(apiUrl, "{\"session_id\": 12,\"health\": 50,\"mana\": 5,\"defense\": 42,\"speed\": 2,\"damage\": 5}");
         request.method = "PATCH";
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
