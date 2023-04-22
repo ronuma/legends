@@ -10,6 +10,8 @@ import mysql from "mysql2/promise";
 const app = express();
 const PORT = 8000;
 
+app.use(express.json());
+
 // Helper function to connect to the database
 async function connectToDB() {
    return await mysql.createConnection({
