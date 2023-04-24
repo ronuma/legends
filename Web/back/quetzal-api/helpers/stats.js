@@ -18,7 +18,7 @@ export async function getStats() {
    } = stats[0];
 
    const averageSessionStats = {damage, health, mana, defense, speed};
-
+   db.end();
    return {
       mostUsedItems: items,
       totalGameRuns,

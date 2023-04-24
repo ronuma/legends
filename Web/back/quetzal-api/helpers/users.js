@@ -3,12 +3,14 @@ import connectToDB from "../index.js";
 export async function getData() {
    const db = await connectToDB();
    const [results] = await db.execute("SELECT * FROM quetzal.Players");
+   db.end();
    return results;
 }
 
 export async function getStats() {
    const db = await connectToDB();
    const [results] = await db.execute("SELECT * FROM quetzal.Sessions");
+   db.end();
    return results;
 }
 
@@ -17,6 +19,7 @@ export async function getCurrentSession(sessionId) {
    const [results] = await db.execute(
       `SELECT * FROM quetzal.Sessions WHERE session_id = ${sessionId}`
    );
+   db.end();
    return results[0];
 }
 
@@ -41,6 +44,7 @@ export async function createSession(data) {
    await db.execute(
       `UPDATE quetzal.Players SET ${slotString} = ${session_id} WHERE email = \'${email}\'`
    );
+   db.end();
    return sessionData[0];
 }
 
@@ -49,6 +53,7 @@ export async function addData(email, user_name) {
    const [results] = await db.execute(
       `INSERT INTO quetzal.Players(email, user_name) VALUES(\'${email}\', \'${user_name}\')`
    );
+   db.end();
    return results;
 }
 
@@ -59,6 +64,7 @@ export async function updateStats(data) {
       "UPDATE quetzal.Sessions SET health = ?, mana = ?, defense = ?, speed = ?, damage = ? WHERE session_id = ?",
       [health, mana, defense, speed, damage, session_id]
    );
+   db.end();
    return newResults;
 }
 
@@ -67,5 +73,6 @@ export async function getUser(email) {
    const [results] = await db.execute(
       `SELECT * FROM quetzal.Players WHERE email = \'${email}\'`
    );
+   db.end();
    return results[0];
 }
