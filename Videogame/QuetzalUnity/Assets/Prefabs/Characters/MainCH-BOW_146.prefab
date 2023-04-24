@@ -379,10 +379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507e3639e91e240ba906fc8bfe2e386c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 1000
+  playerHealth: 50
   playerMana: 150
-  playerDamage: 50
-  playerSpeed: 5
+  playerDamage: 5
+  playerSpeed: 2.5
   playerDefense: 0
 --- !u!95 &4687891140964880407
 Animator:

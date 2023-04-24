@@ -160,11 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de8f17c8737c43439f364711af638f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 100
-  enemyDamage: 10
-  enemySpeed: 2
-  enemyRange: 6
-  dungeonGenerator: {fileID: 6916287278036456424, guid: ada3c151758824e2bacc8a9612265751, type: 3}
+  enemyHealth: 200
+  enemyDamage: 5
+  enemySpeed: 3
+  enemyRange: 7
 --- !u!50 &-5891085042624663189
 Rigidbody2D:
   serializedVersion: 4
@@ -198,8 +197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fbcd005557f464f9a3faece767dd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timebtwShots: 0
-  deadTime: 3
   bullet: {fileID: 1298581905227046706, guid: 90973c8d65a2343859493863b48fceb1, type: 3}
   firePoint: {fileID: 8040244294336343377}
 --- !u!95 &-1209784643751267625
