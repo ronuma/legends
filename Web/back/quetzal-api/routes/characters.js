@@ -1,6 +1,6 @@
 import {Router} from "express";
 
-import {getNPCs, getEnemies, getDialogs} from "../helpers/characters.js";
+import {getNPCs, getEnemies, getDialogs, getHeroes} from "../helpers/characters.js";
 
 const router = Router();
 
@@ -59,6 +59,26 @@ router.get("/dialogs", async (req, res) => {
       console.log("GET dialogs error: ", error);
       res.status(500).json({
          msg: "GET dialogs error",
+         error,
+      });
+   }
+});
+
+router.get("/heroes", async (req, res) => {
+   // done: gets all heroes
+   try {
+      const data = await getHeroes();
+      if (!data) {
+         res.status(404).json({
+            msg: "No heroes found",
+         });
+         return;
+      }
+      res.status(200).json(data);
+   } catch (error) {
+      console.log("GET heroes error: ", error);
+      res.status(500).json({
+         msg: "GET heroes error",
          error,
       });
    }

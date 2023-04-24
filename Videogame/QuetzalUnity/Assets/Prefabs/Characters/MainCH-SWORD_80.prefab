@@ -537,8 +537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 100
   playerMana: 150
-  playerDamage: 50
-  playerSpeed: 5
+  playerDamage: 7.5
+  playerSpeed: 2.5
   playerDefense: 0
 --- !u!114 &5679573565166741387
 MonoBehaviour:

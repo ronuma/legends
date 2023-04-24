@@ -15,10 +15,10 @@ using UnityEngine.UI;
 
 public class DungeonGenerator : MonoBehaviour
 {
-    [SerializeField] TMPro.TextMeshProUGUI levelText; // Reference to the level text on the UI
-    public int dungeonLevel = 1; // The current dungeon level
-    private GameObject player; // Reference to the player object
-    public GameObject chest; // Reference to the chest object
+    [SerializeField] TMPro.TextMeshProUGUI levelText;
+    public float dungeonLevel = 1f;
+    private GameObject player;
+    public GameObject chest;
 
     // Start is called before the first frame update
     void Start()
@@ -32,21 +32,22 @@ public class DungeonGenerator : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            // Destroy all DungeonMap objects to clear the previous level
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (dungeonLevel == 5)
+            {
+                player.transform.position = new Vector3(320, 0, 0);
+            }
+            else
+            {
             DungeonMap[] dungeonMaps = FindObjectsOfType<DungeonMap>();
             foreach (DungeonMap map in dungeonMaps)
             {
                 Destroy(map.gameObject);
             }
 
-            // Increment the dungeon level and update the level text
-            dungeonLevel++;
-            levelText.text = "Level: " + dungeonLevel;
-
-            // Reposition the player and chest objects to their starting positions in the new level
-            player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(-20, 0, 0);
             chest.transform.position = new Vector3(144, 0, 0);
+            }
         }
     }
 
