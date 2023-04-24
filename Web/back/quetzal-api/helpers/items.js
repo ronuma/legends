@@ -5,6 +5,7 @@ export async function getItems() {
    const [results, fields] = await db.execute(
       "SELECT * FROM quetzal.Items ORDER BY item_id"
    );
+   db.end();
    return results;
 }
 
@@ -14,5 +15,6 @@ export async function getItem(id) {
       "SELECT * FROM quetzal.Items WHERE item_id = ?",
       [id]
    );
+   db.end();
    return results;
 }
