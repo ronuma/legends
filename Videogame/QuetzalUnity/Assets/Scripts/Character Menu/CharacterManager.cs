@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CharacterManager : MonoBehaviour
 {
     public CharacterData characterData;
-    public SpriteRenderer characterSprite;
+    public Image characterSprite;
     public TMPro.TextMeshProUGUI characterName;
     public TMPro.TextMeshProUGUI characterDescription;
 
@@ -41,7 +41,7 @@ public class CharacterManager : MonoBehaviour
     private void UpdateCharacter(int index)
     {
         Characters character = characterData.GetCharacter(index);
-        characterSprite.sprite = character.characterSprite; 
+        characterSprite.sprite = character.characterSprite;
         characterName.text = character.characterName;
         characterDescription.text = character.characterDescription;
     }
