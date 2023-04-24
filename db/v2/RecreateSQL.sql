@@ -19,7 +19,7 @@ CREATE TABLE Players (
 CREATE INDEX idx_players_user_name ON Players(user_name);
 
 CREATE TABLE Sessions (
-    session_id INT PRIMARY KEY NOT NULL UNIQUE,
+    session_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL,
     damage FLOAT NOT NULL,
     health FLOAT NOT NULL,
@@ -38,14 +38,14 @@ CREATE TABLE Sessions (
 CREATE INDEX idx_sessions_player_id ON Sessions(email);
 CREATE INDEX idx_sessions_finished ON Sessions(finished);
 
--- Add foreign key constraints to Players table
+-- Add foreign key constraints to Players table with cascading behavior
 ALTER TABLE Players
-ADD FOREIGN KEY (slot_1) REFERENCES Sessions (session_id),
-ADD FOREIGN KEY (slot_2) REFERENCES Sessions (session_id),
-ADD FOREIGN KEY (slot_3) REFERENCES Sessions (session_id);
+ADD FOREIGN KEY (slot_1) REFERENCES Sessions (session_id) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD FOREIGN KEY (slot_2) REFERENCES Sessions (session_id) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD FOREIGN KEY (slot_3) REFERENCES Sessions (session_id) ON DELETE CASCADE ON UPDATE CASCADE;
 
 CREATE TABLE Items (
-    item_id INT PRIMARY KEY NOT NULL UNIQUE,
+    item_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
     name VARCHAR(20) NOT NULL,
     damage_change FLOAT,
     defense_change FLOAT,
@@ -63,21 +63,21 @@ CREATE TABLE Items (
 CREATE INDEX idx_items_name ON Items(name);
 
 CREATE TABLE Dialogs (
-    dialog_id INT PRIMARY KEY NOT NULL UNIQUE,
+    dialog_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
     text VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE NPCs (
-    npc_id INT PRIMARY KEY NOT NULL UNIQUE,
+    npc_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
     dialog_id INT NOT NULL,
     name VARCHAR(20) NOT NULL,
-    FOREIGN KEY (dialog_id) REFERENCES Dialogs (dialog_id)
+    FOREIGN KEY (dialog_id) REFERENCES Dialogs (dialog_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE INDEX idx_npcs_dialog_id ON NPCs(dialog_id);
 
 CREATE TABLE Enemies (
-    enemy_id INT PRIMARY KEY NOT NULL UNIQUE,
+    enemy_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
     health FLOAT NOT NULL,
     damage FLOAT NOT NULL,
     speed FLOAT NOT NULL,
@@ -91,7 +91,7 @@ CREATE INDEX idx_enemies_name ON Enemies(name);
 
 -- Add Heroes table
 CREATE TABLE Heroes (
-    id INT PRIMARY KEY NOT NULL UNIQUE,
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
     hero_name VARCHAR(20),
     health FLOAT,
     mana FLOAT,
