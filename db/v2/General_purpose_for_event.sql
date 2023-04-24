@@ -1,0 +1,6 @@
+	-- Code for selecting the top 3 players
+-- SELECT * FROM top_players LIMIT 3;
+	-- Get the latest information about the eval_top_players EVENT
+-- SELECT * FROM INFORMATION_SCHEMA.EVENTS WHERE EVENT_NAME = 'eval_top_players';
+	-- ALTER EVENT eval_top_players DISABLE;
+-- Deactivate the EVENT eval_top_players (it normally runs every 60 secs)
