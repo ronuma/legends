@@ -1,0 +1,23 @@
+{
+	"identifier": "MainBossArea",
+	"uniqueIdentifer": "2c85fc00-c640-11ed-ad17-3b97e02d629f",
+	"x": 0,
+	"y": 0,
+	"width": 2304,
+	"height": 1600,
+	"bgColor": "#696A79",
+	"neighbourLevels": [
+		{
+			"levelIid": "a3f3d380-c640-11ed-a2fe-c15bf6f6bb9d",
+			"dir": "s"
+		}
+	],
+	"customFields" : {},
+	"layers": [
+		"Default_Grounds.png",
+		"Custom_Grounds.png",
+		"Collisions.png",
+		"Custom_Tiles.png"
+	],
+	"entities" : {}
+}

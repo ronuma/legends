@@ -1,0 +1,26 @@
+{
+	"identifier": "Level_0",
+	"uniqueIdentifer": "6b020900-c640-11ed-96e8-8f1a5d92c216",
+	"x": 0,
+	"y": 0,
+	"width": 2304,
+	"height": 1600,
+	"bgColor": "#4C4D58",
+	"neighbourLevels": [
+		{
+			"levelIid": "319a9bf0-c640-11ed-96e8-b593b5b484a3",
+			"dir": "s"
+		}
+	],
+	"customFields" : {},
+	"layers": [
+		"Reflective.png",
+		"Floor.png",
+		"Walls.png",
+		"Decal.png",
+		"Objects.png",
+		"InFrontAndBehind.png",
+		"Overall.png"
+	],
+	"entities" : {}
+}

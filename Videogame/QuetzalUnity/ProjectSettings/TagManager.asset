@@ -13,6 +13,8 @@ TagManager:
   - Menu
   - HealthBar
   - ExpoBar
+  - DungeonGenerator
+  - ApiItem
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Mobs
   - Water
   - UI
-  - 
+  - TOP
   - 
   - 
   - 
