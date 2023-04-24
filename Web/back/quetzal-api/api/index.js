@@ -5,7 +5,7 @@ import {
    charactersRoute,
    usersRoute,
    statsRoute,
-} from "./routes/routesIndex.js";
+} from "../routes/routesIndex.js";
 import mysql from "mysql2/promise";
 
 const app = express();

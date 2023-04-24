@@ -1,4 +1,4 @@
-import connectToDB from "../index.js";
+import connectToDB from "../api/index.js";
 
 export async function getData() {
    const db = await connectToDB();
