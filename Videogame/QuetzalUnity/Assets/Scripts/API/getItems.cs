@@ -136,7 +136,7 @@ public class getItems : MonoBehaviour
     {
         //TMPro_Test texter = GetComponent<TMPro_Test>();
         //texter.LoadNames(allItems);
-        // Debug.Log(allItems.items.Count);
+        Debug.Log(allItems.items.Count);
         // Debug.Log(allItems.items[0].health_change);
         // Debug.Log(allItems.items[4].name);
         Debug.Log("Items loaded");
