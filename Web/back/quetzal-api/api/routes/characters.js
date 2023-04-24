@@ -1,6 +1,11 @@
 import {Router} from "express";
 
-import {getNPCs, getEnemies, getDialogs, getHeroes} from "../helpers/characters.js";
+import {
+   getNPCs,
+   getEnemies,
+   getDialogs,
+   getHeroes,
+} from "../helpers/characters.js";
 
 const router = Router();
 
