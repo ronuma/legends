@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0decaf4d3142b4605b9bdb4c55730bc1, type: 3}
+  m_Name: CharacterSelection
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: Arquero
+    characterSprite: {fileID: 431224468, guid: 6163e9b94eef64a4593ec43321494496, type: 3}
+    characterDescription: "Un arquero es r\xE1pido y \xE1gil, con una punter\xEDa
+      excepcional, pero su cuerpo es fr\xE1gil "
+  - characterName: Guerrero
+    characterSprite: {fileID: -2118650693, guid: af665415ef6e149b984cbc4a6310379d, type: 3}
+    characterDescription: "Un luchador resistente y poderoso, capaz de causar un
+      gran da\xF1o con cada ataque, pero es un poco torpe"
+  - characterName: Cazador
+    characterSprite: {fileID: 506354487, guid: c3c0e08eb9ee74a71a9b33910652848e, type: 3}
+    characterDescription: "Un explorador astuto y fuerte, capaz de soportar mucho
+      da\xF1o antes de caer. "
