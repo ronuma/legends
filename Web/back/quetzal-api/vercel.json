@@ -2,8 +2,7 @@
    "functions": {
       "./index.js": {
          "memory": 512,
-         "maxDuration": 10,
-         "runtime": "nodejs16.x"
+         "maxDuration": 10
       }
    }
 }
