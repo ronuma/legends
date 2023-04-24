@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import {
    itemsRoute,
    charactersRoute,
@@ -11,6 +12,7 @@ const app = express();
 const PORT = 8000;
 
 app.use(express.json());
+app.use(cors);
 
 // Helper function to connect to the database
 async function connectToDB() {
