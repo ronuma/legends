@@ -1,6 +1,6 @@
 {
    "functions": {
-      "api/index.js": {
+      "api/*": {
          "memory": 512,
          "maxDuration": 10
       }
