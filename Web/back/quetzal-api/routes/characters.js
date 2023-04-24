@@ -1,6 +1,6 @@
 import {Router} from "express";
 
-import {getNPCs, getEnemies} from "../helpers/characters.js";
+import {getNPCs, getEnemies, getHeroes} from "../helpers/characters.js";
 
 const router = Router();
 
@@ -39,6 +39,26 @@ router.get("/enemies", async (req, res) => {
       console.log("GET enemies error: ", error);
       res.status(500).json({
          msg: "GET enemies error",
+         error,
+      });
+   }
+});
+
+router.get("/heroes", async (req, res) => {
+   // done: gets all heroes
+   try {
+      const data = await getHeroes();
+      if (!data) {
+         res.status(404).json({
+            msg: "No heroes found",
+         });
+         return;
+      }
+      res.status(200).json(data);
+   } catch (error) {
+      console.log("GET heroes error: ", error);
+      res.status(500).json({
+         msg: "GET heroes error",
          error,
       });
    }
