@@ -1,6 +1,5 @@
 -- Insert data into Items table
-INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-1,
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
 "Armadura",
 -5,
 100,
@@ -9,8 +8,7 @@ INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_cha
 0
 );
 
-INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-2,
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
 "Escudo",
 0,
 50,
@@ -19,8 +17,7 @@ INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_cha
 0
 );
 
-INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-3,
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
 "Posion Roja",
 20,
 -75,
@@ -29,8 +26,7 @@ INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_cha
 0
 );
 
-INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-4,
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
 "Posion Verde",
 -25,
 0,
@@ -39,8 +35,7 @@ INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_cha
 0
 );
 
-INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-5,
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
 "Sword",
 40,
 0,
@@ -50,40 +45,34 @@ INSERT INTO quetzal.Items (item_id, name, damage_change, health_change, mana_cha
 );
 
 -- Insert data into Dialogs table
-INSERT INTO quetzal.Dialogs (dialog_id, text) VALUES (
-1,
+INSERT INTO quetzal.Dialogs (text) VALUES (
 "Welcome to our village, traveler!"
 );
 
-INSERT INTO quetzal.Dialogs (dialog_id, text) VALUES (
-2,
+INSERT INTO quetzal.Dialogs (text) VALUES (
 "Be careful out there, the monsters are dangerous!"
 );
 
 -- Insert data into NPCs table
-INSERT INTO quetzal.NPCs (npc_id, dialog_id, name) VALUES (
-1,
+INSERT INTO quetzal.NPCs (dialog_id, name) VALUES (
 1,
 "Villager"
 );
 
-INSERT INTO quetzal.NPCs (npc_id, dialog_id, name) VALUES (
-2,
+INSERT INTO quetzal.NPCs (dialog_id, name) VALUES (
 2,
 "Guard"
 );
 
 -- Insert data into Enemies table
-INSERT INTO quetzal.Enemies (enemy_id, health, damage, speed, name) VALUES (
-1,
+INSERT INTO quetzal.Enemies (health, damage, speed, name) VALUES (
 500,
 50,
 3,
 "Goblin"
 );
 
-INSERT INTO quetzal.Enemies (enemy_id, health, damage, speed, name) VALUES (
-2,
+INSERT INTO quetzal.Enemies (health, damage, speed, name) VALUES (
 1000,
 100,
 4,
@@ -91,8 +80,7 @@ INSERT INTO quetzal.Enemies (enemy_id, health, damage, speed, name) VALUES (
 );
 
 -- Insert data into Heroes table
-INSERT INTO quetzal.Heroes (id, hero_name, health, mana, damage, defense, speed) VALUES (
-1,
+INSERT INTO quetzal.Heroes (hero_name, health, mana, damage, defense, speed) VALUES (
 "Warrior",
 1000,
 100,
@@ -101,8 +89,7 @@ INSERT INTO quetzal.Heroes (id, hero_name, health, mana, damage, defense, speed)
 5
 );
 
-INSERT INTO quetzal.Heroes (id, hero_name, health, mana, damage, defense, speed) VALUES (
-2,
+INSERT INTO quetzal.Heroes (hero_name, health, mana, damage, defense, speed) VALUES (
 "Mage",
 600,
 300,
@@ -131,8 +118,7 @@ NULL
 );
 
 -- Insert data into Sessions table
-INSERT INTO quetzal.Sessions (session_id, email, damage, health, mana, speed, defense, play_time, finished) VALUES (
-1,
+INSERT INTO quetzal.Sessions (email, damage, health, mana, speed, defense, play_time, finished) VALUES (
 "user1@example.com",
 100,
 500,
@@ -143,8 +129,7 @@ INSERT INTO quetzal.Sessions (session_id, email, damage, health, mana, speed, de
 TRUE
 );
 
-INSERT INTO quetzal.Sessions (session_id, email, damage, health, mana, speed, defense, play_time, finished) VALUES (
-2,
+INSERT INTO quetzal.Sessions (email, damage, health, mana, speed, defense, play_time, finished) VALUES (
 "user2@example.com",
 120,
 400,
