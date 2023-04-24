@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3942161592609209731, guid: d028b3db0521e42d6b8ade606508793d, type: 3}
       propertyPath: playerSpeed
-      value: 4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7214666835648206750, guid: d028b3db0521e42d6b8ade606508793d, type: 3}
       propertyPath: healthBar

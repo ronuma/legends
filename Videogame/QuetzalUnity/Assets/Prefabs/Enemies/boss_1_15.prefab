@@ -18,9 +18,9 @@ GameObject:
   - component: {fileID: 1624776721322825072}
   - component: {fileID: 5777672435814740021}
   - component: {fileID: -3568626094866693635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: boss_1_15
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad95bd73138764bbf89e9b0c406c4516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 2000
+  enemyHealth: 60
   enemyDamage: 80
   enemySpeed: 15
 --- !u!114 &5777672435814740021
@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 0
   maxHealth: 0
+  animator: {fileID: 4660257639777954330}
 --- !u!114 &-3568626094866693635
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ TagManager:
   - ExpoBar
   - DungeonGenerator
   - ApiItem
+  - Boss
   layers:
   - Default
   - TransparentFX
