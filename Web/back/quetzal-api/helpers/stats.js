@@ -3,48 +3,24 @@ import connectToDB from "../index.js";
 export async function getStats() {
    const db = await connectToDB();
 
-   const [items] = await db.execute("SELECT name, times_chosen FROM Items");
-   const [players] = await db.execute("SELECT * FROM Players");
-   const [sessions] = await db.execute("SELECT * FROM Sessions");
+   const [items] = await db.query("SELECT * FROM sorted_items_view");
+   const [stats] = await db.execute("SELECT * FROM stats_view");
 
-   const mostUsedItems = items.sort((a, b) => b.times_chosen - a.times_chosen);
-   const totalGameRuns = players.length;
+   const {
+      total_game_runs: totalGameRuns,
+      average_play_time: averagePlayTime,
+      average_damage: damage,
+      average_health: health,
+      average_mana: mana,
+      average_defense: defense,
+      average_speed: speed,
+      total_sessions_finished: totalSessionsFinished,
+   } = stats[0];
 
-   let totalPlayTime = 0;
-   let totalSessionStats = {
-      damage: 0,
-      health: 0,
-      mana: 0,
-      defense: 0,
-      speed: 0,
-   };
-   let totalSessionsFinished = 0;
-
-   for (const session of sessions) {
-      totalPlayTime += session.play_time;
-      totalSessionStats.damage += session.damage;
-      totalSessionStats.health += session.health;
-      totalSessionStats.mana += session.mana;
-      totalSessionStats.defense += session.defense;
-      totalSessionStats.speed += session.speed;
-
-      if (session.finished) {
-         totalSessionsFinished++;
-      }
-   }
-
-   const averagePlayTime = totalPlayTime / sessions.length;
-
-   const averageSessionStats = {
-      damage: totalSessionStats.damage / sessions.length,
-      health: totalSessionStats.health / sessions.length,
-      mana: totalSessionStats.mana / sessions.length,
-      defense: totalSessionStats.defense / sessions.length,
-      speed: totalSessionStats.speed / sessions.length,
-   };
-
+   const averageSessionStats = {damage, health, mana, defense, speed};
+   db.end();
    return {
-      mostUsedItems,
+      mostUsedItems: items,
       totalGameRuns,
       averagePlayTime,
       averageSessionStats,

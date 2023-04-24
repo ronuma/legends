@@ -11,6 +11,6 @@ public class BossAttack : MonoBehaviour
         animator.SetFloat("Attack-X", coordX);
         animator.SetFloat("Attack-y", coordY);
         animator.SetTrigger("Attack");
-        Debug.Log("Aquiiiii");
+        
     }
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"
+      integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" defer src="/js/user_charts.js"></script>
+    <link href="/css/user_charts.css" type="text/css" rel="stylesheet" />
+    <title>User Charts</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>API charts</h2>
+
+      <div class="chartContainer">
+        <canvas id="chartMostUsedItems" width="300" height="300"></canvas>
+        <canvas id="chartAvgSessionStats" width="300" height="300"></canvas>
+        <canvas id="chartTotalSessions" width="300" height="300"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="UserCharts.js"></script>
+    <!-- Internal API scripts -->
+    <script src="./js/API.js"></script>
+  </body>
+</html>

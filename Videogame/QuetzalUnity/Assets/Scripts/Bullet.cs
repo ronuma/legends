@@ -43,6 +43,15 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject); 
         }
 
+        if (other.gameObject.tag == "Boss")
+        {
+            Debug.Log("HOLA");
+            damage = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().playerDamage;
+            other.gameObject.GetComponent<BOSSHealth>().enemyHealth -= damage;
+            Destroy(gameObject); 
+            
+        }
+
         // If the bullet collides with a wall, destroy the bullet.
         if (other.gameObject.tag == "Wall")
         {
