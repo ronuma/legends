@@ -1,47 +1,52 @@
 -- Insert data into Items table
-INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-"Armadura",
--5,
-100,
--20,
--1,
-0
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen, defense_change) VALUES (
+	"Armadura",
+	-5,
+	100,
+	-20,
+	-1,
+	0,
+    50
 );
 
-INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-"Escudo",
-0,
-50,
-0,
--0.5,
-0
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen, defense_change) VALUES (
+	"Escudo",
+	0,
+	50,
+	0,
+	-0.5,
+	0,
+    50
 );
 
-INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-"Posion Roja",
-20,
--75,
-30,
-0,
-0
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen, defense_change) VALUES (
+	"Posion Roja",
+	20,
+	-75,
+	30,
+	0,
+	0,
+    0
 );
 
-INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-"Posion Verde",
--25,
-0,
-50,
-0.5,
-0
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen, defense_change) VALUES (
+	"Posion Verde",
+	-25,
+	0,
+	50,
+	0.5,
+	0,
+    -20
 );
 
-INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen) VALUES (
-"Sword",
-40,
-0,
--30,
-0,
-0
+INSERT INTO quetzal.Items (name, damage_change, health_change, mana_change, speed_change, times_chosen, defense_change) VALUES (
+	"Sword",
+	40,
+	0,
+	-30,
+	0,
+	1,
+    0
 );
 
 -- Insert data into Dialogs table
@@ -66,17 +71,31 @@ INSERT INTO quetzal.NPCs (dialog_id, name) VALUES (
 
 -- Insert data into Enemies table
 INSERT INTO quetzal.Enemies (health, damage, speed, name) VALUES (
-500,
-50,
+80,
+30,
 3,
-"Goblin"
+"Musketeer"
 );
 
 INSERT INTO quetzal.Enemies (health, damage, speed, name) VALUES (
-1000,
+125,
+40,
+5,
+"Captain"
+);
+
+INSERT INTO quetzal.Enemies (health, damage, speed, name) VALUES (
+200,
+45,
+2,
+"Dog"
+);
+
+INSERT INTO quetzal.Enemies (health, damage, speed, name) VALUES (
+2000,
 100,
-4,
-"Troll"
+7,
+"Boss"
 );
 
 -- Insert data into Heroes table
@@ -154,4 +173,3 @@ FALSE
 -- Update Players table to reference the newly created sessions
 UPDATE quetzal.Players SET slot_1 = 1 WHERE email = "user1@example.com";
 UPDATE quetzal.Players SET slot_1 = 2 WHERE email = "user2@example.com";
-
