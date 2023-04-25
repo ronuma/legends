@@ -523,6 +523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 0
+  healthBar: {fileID: 0}
+  deadCanvas: {fileID: 0}
 --- !u!114 &3942161592609209731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,8 +539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 100
   playerMana: 150
-  playerDamage: 7.5
-  playerSpeed: 2.5
+  playerDamage: 60
+  playerSpeed: 7
   playerDefense: 0
 --- !u!114 &5679573565166741387
 MonoBehaviour:

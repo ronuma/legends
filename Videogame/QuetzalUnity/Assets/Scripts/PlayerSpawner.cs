@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    public GameObject playerPrefabSword;
     public GameObject playerPrefabBow;
+    public GameObject playerPrefabSword;
     public GameObject playerPrefabSpear;
 
     public GameObject[] playerPrefabs;
@@ -15,7 +15,9 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerPrefabs = new GameObject[] { playerPrefabSword, playerPrefabBow, playerPrefabSpear };        
+        playerChosen = PlayerPrefs.GetInt("playerChosen", 0);
+        playerPrefabs = new GameObject[] { playerPrefabBow, playerPrefabSword, playerPrefabSpear };  
+        Debug.Log(playerChosen);       
         Instantiate(playerPrefabs[playerChosen], transform.position, Quaternion.identity);
     }
 

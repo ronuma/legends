@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerExplosion : MonoBehaviour
 {
     private Image chargeBar; //image of the charge bar
-    private bool canExplode = true; //flag for indicating if the player can explode
+    private bool canExplode = false; //flag for indicating if the player can explode
     private float chargeTimer; //timer for the charge bar
     private float chargeTime = 10f; //time for the charge bar
 

@@ -65,7 +65,6 @@ public class Dialogue : MonoBehaviour
         {
             while (characterIndex <= dialogueList[dialogueIndex].Length)
             {
-                Debug.Log(dialogueList[dialogueIndex].Substring(0, characterIndex));
                 textDialague.text = dialogueList[dialogueIndex].Substring(0, characterIndex);
                 characterIndex++;
                 yield return new WaitForSeconds(0.05f);

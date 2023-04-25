@@ -7,7 +7,7 @@ public class PlayerFinalForm : MonoBehaviour
     public Animator animator; // A reference to the animator component
     private Camera mainCam; // A reference to the main camera
 
-    private bool canTranform = true; // A flag for indicating if the player can transform
+    private bool canTranform = false; // A flag for indicating if the player can transform
     private float chargeTimer; // A timer for the charge bar
     private float chargeTime = 10f; // The time for the charge bar
 
