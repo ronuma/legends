@@ -154,4 +154,3 @@ FALSE
 -- Update Players table to reference the newly created sessions
 UPDATE quetzal.Players SET slot_1 = 1 WHERE email = "user1@example.com";
 UPDATE quetzal.Players SET slot_1 = 2 WHERE email = "user2@example.com";
-
