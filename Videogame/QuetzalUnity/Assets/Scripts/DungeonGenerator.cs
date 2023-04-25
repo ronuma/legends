@@ -49,9 +49,9 @@ public class DungeonGenerator : MonoBehaviour
             else
             {
                 player.transform.position = new Vector3(-20, 0, 0);
-                chest.transform.position = new Vector3(144, 0, 0);
             }
-            
+
+            chest.transform.position = new Vector3(144, 0, 0);
             DungeonMap[] dungeonMaps = FindObjectsOfType<DungeonMap>();
             foreach (DungeonMap map in dungeonMaps)
             {

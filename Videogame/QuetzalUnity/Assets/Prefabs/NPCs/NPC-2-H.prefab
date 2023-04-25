@@ -230,6 +230,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3180165851086616146}
     m_Modifications:
+    - target: {fileID: -791697062620032508, guid: ecf8e0a112e8d45b7a882e3b46007d3c, type: 3}
+      propertyPath: dialogueList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -791697062620032508, guid: ecf8e0a112e8d45b7a882e3b46007d3c, type: 3}
+      propertyPath: dialogueList.Array.data[0]
+      value: "Los espa\xF1oles nos quitaron todo"
+      objectReference: {fileID: 0}
+    - target: {fileID: -791697062620032508, guid: ecf8e0a112e8d45b7a882e3b46007d3c, type: 3}
+      propertyPath: dialogueList.Array.data[1]
+      value: "El padre espa\xF1ol esta en la iglesia"
+      objectReference: {fileID: 0}
     - target: {fileID: 748183248783922500, guid: ecf8e0a112e8d45b7a882e3b46007d3c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09

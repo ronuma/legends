@@ -8,6 +8,11 @@ public class ScenesSwitcher : MonoBehaviour
     public int sceneIndex; 
     public int bossBattleOpen;
     
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
         bossBattleOpen = PlayerPrefs.GetInt("BOSSOpen", 0);
