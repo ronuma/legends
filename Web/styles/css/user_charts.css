@@ -11608,28 +11608,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-  scrollbar-width: auto;
-  scrollbar-color: rgba(39, 50, 77, 0.7568627451) rgba(22, 28, 43, 0.431372549);
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #0e1118;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(39, 50, 77, 0.7568627451);
-  border-radius: 10px;
-  border: 3px solid rgba(39, 50, 77, 0.7568627451);
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -11641,85 +11619,37 @@ body {
   --bs-offcanvas-width: 200px;
 }
 
-span {
-  display: inline-block;
+.container, canvas {
+  padding: 1%;
+  border: 1px solid white;
 }
 
-.rainbow_text_animated {
-  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 3s ease-in-out infinite;
-  background-size: 400% 100%;
+canvas {
+  margin: 1%;
 }
 
-@keyframes rainbow_animation {
-  0%, 100% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-}
-.header {
-  height: 100vh;
+#creatingChart {
+  margin: 0;
 }
 
-.img1 {
-  overflow: hidden;
-  padding-top: 75px;
+.container, .container h2, .container .h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.backI {
-  z-index: -1;
+.chartContainer {
+  border: 0;
+  justify-content: center;
+  display: flex;
+  width: 100%;
 }
 
-.logomain {
-  z-index: 1;
+.chartContainer canvas {
+  flex-grow: 1;
+  max-width: 30%;
+  max-height: 600px;
 }
 
-.heroB {
-  height: 200vh;
-  background-image: url(../../images/intento1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.heroMB {
-  height: 28rem;
-}
-
-.heroMT {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 12rem;
-  color: #ffffff;
-  font-weight: 400;
-  text-shadow: 0 0 10px #9a9a9a;
-}
-
-.letter {
-  display: inline-block;
-}
-
-.herobtnT {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 5s ease-in-out infinite;
-  background-size: 400% 100%;
-  font-weight: 600;
-}
-
-.img1-parallax {
-  width: 80%;
-  height: 40rem;
-}
-
-/* 
-*/
-
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=user_charts.css.map */
