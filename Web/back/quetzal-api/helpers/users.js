@@ -33,8 +33,8 @@ export async function createSession(data) {
    // get hero data from heroes table and insert into sessions table
    const {health, mana, defense, speed, damage} = heroData[0];
    await db.execute(
-      "INSERT INTO quetzal.sessions (email, health, mana, defense, speed, damage, session_id, play_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-      [email, health, mana, defense, speed, damage, 1454474, 0]
+      "INSERT INTO quetzal.sessions (email, health, mana, defense, speed, damage, play_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+      [email, health, mana, defense, speed, damage, 0]
    );
    const [sessionData] = await db.execute(
       `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id DESC LIMIT 1`
