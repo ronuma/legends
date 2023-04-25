@@ -102,3 +102,21 @@ CONSTRAINT chk_speed_enemy_range CHECK (speed >= 1 AND speed <= 7)
 
 CREATE INDEX idx_enemies_name ON Enemies(name);
 
+CREATE VIEW sorted_items_view AS
+SELECT item_id, name, times_chosen
+FROM Items
+ORDER BY times_chosen DESC
+LIMIT 3;
+
+CREATE VIEW stats_view AS
+SELECT 
+    COUNT(*) AS total_game_runs,
+    SUM(play_time) AS total_play_time,
+    AVG(play_time) AS average_play_time,
+    AVG(damage) AS average_damage,
+    AVG(health) AS average_health,
+    AVG(mana) AS average_mana,
+    AVG(defense) AS average_defense,
+    AVG(speed) AS average_speed,
+    SUM(CASE WHEN finished = TRUE THEN 1 ELSE 0 END) AS total_sessions_finished
+FROM Sessions;
