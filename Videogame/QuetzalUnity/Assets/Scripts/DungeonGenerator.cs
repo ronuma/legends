@@ -16,7 +16,7 @@ using UnityEngine.UI;
 public class DungeonGenerator : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI levelText;
-    public float dungeonLevel = 1f;
+    public float dungeonLevel;
     private GameObject player;
     public GameObject chest;
 

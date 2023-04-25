@@ -21,6 +21,7 @@ public class DeadCanvas : MonoBehaviour
         if (isDead && Input.GetKeyDown(KeyCode.G))
         {
             Time.timeScale = 1;
+        
             SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
     }
