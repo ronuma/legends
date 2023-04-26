@@ -7,21 +7,16 @@ import {
    statsRoute,
 } from "./routes/routesIndex.js";
 import mysql from "mysql2/promise";
+import {ENV, PORT} from "./constants.js";
 
 const app = express();
-const PORT = 8000;
 
 app.use(express.json());
 app.use(cors());
 
 // Helper function to connect to the database
 async function connectToDB() {
-   return await mysql.createConnection({
-      host: "localhost",
-      user: "userdb",
-      password: "userdb",
-      database: "quetzal",
-   });
+   return await mysql.createConnection(ENV);
 }
 app.get("/", (req, res) => {
    res.send("Hello World!");

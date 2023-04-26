@@ -190,20 +190,20 @@ anime({
 
 // Hero Section
 
-let scene1 = new ScrollMagic.Scene({
-  triggerElement: "#two",
-  triggerHook: 0.06,
-  duration: "110%"
-})
-.setPin("#two")
-// Add debug indicators fixed on right side
-.addIndicators({
-  colorTrigger: "white",
-  colorStart: "blue",
-  colorEnd: "red",
-  indent: 10
-})
-.addTo(controller);
+// let scene1 = new ScrollMagic.Scene({
+//   triggerElement: "#two",
+//   triggerHook: 0.06,
+//   duration: "110%"
+// })
+// .setPin("#two")
+// // Add debug indicators fixed on right side
+// .addIndicators({
+//   colorTrigger: "white",
+//   colorStart: "blue",
+//   colorEnd: "red",
+//   indent: 10
+// })
+// .addTo(controller);
 
 // --------------------- //
 // -- Simple Parallax -- //

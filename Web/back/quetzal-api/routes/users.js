@@ -4,7 +4,7 @@ import {
    getStats,
    getData,
    addData,
-   updateStats,
+   selectItem,
    getCurrentSession,
    createSession,
    getUser,
@@ -140,9 +140,9 @@ router.post("/createSession", async (req, res) => {
 });
 
 // updates user stats (when saving a session)
-router.patch("/updateStats", async (req, res) => {
+router.patch("/selectItem", async (req, res) => {
    try {
-      const data = await updateStats(req.body);
+      const data = await selectItem(req.body);
       if (!data) {
          res.status(404).json({
             msg: "User data not added",

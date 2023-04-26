@@ -1,0 +1,49 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+$primary: #0e1118;
+body {
+    margin: 0;
+    padding: 0;
+    background: $primary;
+    text-align: center;
+}   
+.offcanvas {
+    --bs-offcanvas-width: 200px;
+}
+
+.container, canvas{
+    padding: 1%;
+    border: 1px solid white;
+}
+canvas{
+    margin: 1%;
+}
+#creatingChart{
+    margin: 0;
+}
+
+.container, .container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chartContainer{
+    border: 0;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.chartContainer canvas{
+    flex-grow: 1;
+    max-width: 30%; 
+    max-height: 600px;
+}
