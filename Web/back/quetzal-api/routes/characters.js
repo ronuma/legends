@@ -1,6 +1,11 @@
 import {Router} from "express";
 
-import {getNPCs, getEnemies, getDialogs, getHeroes} from "../helpers/characters.js";
+import {
+   getNPCs,
+   getEnemies,
+   getDialogs,
+   getHeroes,
+} from "../helpers/characters.js";
 
 const router = Router();
 
@@ -25,7 +30,6 @@ router.get("/NPCs", async (req, res) => {
 });
 
 router.get("/enemies", async (req, res) => {
-   // done: gets all enemies
    try {
       const data = await getEnemies();
       if (!data) {
@@ -65,7 +69,6 @@ router.get("/dialogs", async (req, res) => {
 });
 
 router.get("/heroes", async (req, res) => {
-   // done: gets all heroes
    try {
       const data = await getHeroes();
       if (!data) {

@@ -22,8 +22,8 @@ app.get("/", (req, res) => {
    res.send("Hello World!");
 });
 
-app.use("/items", itemsRoute); // has 1 route (GET /items) DONE
-app.use("/characters", charactersRoute); // has 2 routes (GET /characters/NPCs, GET /characters/enemies DONE)
+app.use("/items", itemsRoute);
+app.use("/characters", charactersRoute);
 app.use("/users", usersRoute);
 app.use("/stats", statsRoute);
 
