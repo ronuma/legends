@@ -22,6 +22,44 @@ Entrega stats generales del juego.
 
 <br>
 
+## Items
+
+### GET
+
+`/items`
+
+Entrega items del juego.
+
+`/items/:id`
+
+Entrega datos de un item específico.
+
+<br>
+
+## Characters
+
+### GET
+
+`/characters/NPCs`
+
+Entrega NPCs del juego.
+
+`/characters/enemies`
+
+Entrega los enemigos del juego, incluyendo al BOSS.
+
+`/characters/dialogs`
+
+Entrega los diálogos del juego. INCOMPLETO, LO IDEAL SERÍA QUE EL ENDPOINT DE
+NPCS COMBINE EL HECHO DE ENTREGAR DIÁLOGOS JUNTO CON LOS NPCS A LOS QUE
+CORRESPONDE.
+
+`/characters/heroes`
+
+Entrega los héroes del juego. Los personajes principales, vaya.
+
+<br>
+
 ## Users
 
 ### GET
@@ -63,10 +101,15 @@ de memoria que eligió, tal cual 1, 2 o 3.
 
 ### PATCH
 
-`/users/updateStats`
+`/users/selectItem`
 
-`body: { health, mana, defense, speed, damage, session_id }`
+`body: { health, mana, defense, speed, damage, session_id, item_id }`
 
 Se actualizan los stats PARA LA SESIÓN DE JUEGO, por lo que es importante pasar
 el id de dicha sesión y los nuevos stats (porque agarró un item o le dio
-guardar, por ejemplo)
+guardar, por ejemplo). Asimismo se agrega +1 al items chosen de ese item,
+entonces es importante tener su item id también.
+
+<br>
+
+##
