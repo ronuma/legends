@@ -34,6 +34,7 @@ public class StartingPage : MonoBehaviour
             startingPage.enabled = false;
             menu.enabled = true;
         }
+
     }
 
 }
