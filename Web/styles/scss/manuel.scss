@@ -83,7 +83,12 @@ hr {
 h4 {
     margin-bottom: 20px;
 }
-
+.logo1 { 
+    transition: all .2s ease-in-out; 
+}
+.logo1:hover { 
+    transform: scale(1.1); 
+}
 
 // section {
 //  height: 100vh;
