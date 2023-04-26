@@ -1,3 +1,4 @@
+import {response} from "express";
 import connectToDB from "../index.js";
 
 export async function getNPCs() {
@@ -24,5 +25,11 @@ export async function getHeroes() {
 export async function getDialogs() {
    const db = await connectToDB();
    const [results, fields] = await db.execute("SELECT * FROM quetzal.Dialogs");
-   return results;
+   let filtered_results = results.map(item => {
+      return {
+         dialog_id: item.dialog_id,
+         text: item.text.split("/{*"),
+      };
+   });
+   return filtered_results;
 }
