@@ -12,6 +12,26 @@ import {
 
 const router = Router();
 
+// gets all users data
+router.get("/", async (req, res) => {
+   try {
+      const data = await getData();
+      if (!data) {
+         res.status(404).json({
+            msg: "No users data found",
+         });
+         return;
+      }
+      res.status(200).json(data);
+   } catch (error) {
+      console.log("GET users data error: ", error);
+      res.status(500).json({
+         msg: "GET users data error",
+         error,
+      });
+   }
+});
+
 router.get("/:email", async (req, res) => {
    try {
       const {email} = req.params;
@@ -53,7 +73,7 @@ router.get("/getSessionData/:id", async (req, res) => {
 });
 
 // gets all sessions
-router.get("/stats", async (req, res) => {
+router.get("/stats/sessions", async (req, res) => {
    try {
       const data = await getStats();
       if (!data) {
@@ -67,26 +87,6 @@ router.get("/stats", async (req, res) => {
       console.log("GET user stats error: ", error);
       res.status(500).json({
          msg: "GET user stats error",
-         error,
-      });
-   }
-});
-
-// gets all users data
-router.get("/data", async (req, res) => {
-   try {
-      const data = await getData();
-      if (!data) {
-         res.status(404).json({
-            msg: "No user data found",
-         });
-         return;
-      }
-      res.status(200).json(data);
-   } catch (error) {
-      console.log("GET user data error: ", error);
-      res.status(500).json({
-         msg: "GET user data error",
          error,
       });
    }

@@ -64,18 +64,18 @@ Entrega los héroes del juego. Los personajes principales, vaya.
 
 ### GET
 
+`/users`
+
+Entrega todos los jugadores que hay.
+
 `/users/:email`
 
 Entrega los datos del usuario que ingresó, para poder mostrarle qué sesiones
 tiene.
 
-`/users/stats`
+`/users/stats/sessions`
 
 Entrega todas las sesiones que hay.
-
-`/users/data`
-
-Entrega todos los jugadores que hay.
 
 `/users/getSessionData/:id`
 
