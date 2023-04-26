@@ -12,5 +12,6 @@ export const PROD = {
    database: "quetzal",
 };
 
+// Please switch according to the environment you are using
 export const ENV = PROD;
 export const PORT = 8000;
