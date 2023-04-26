@@ -25,50 +25,39 @@ public class User // Same object as in the API (JSON) response
     public string email;
     public string user_name;
     public int runs;
-    public int slot1;
-    public int slot2;
-    public int slot3;
+    public int slot_1;
+    public int slot_2;
+    public int slot_3;
 }
 
 // Allow the class to be extracted from Unity
 [System.Serializable]
 public class UserList
 {
-    public List<User> User; // The API returns an array of users
+    public List<User> users; // The API returns an array of users
 }
 
 public class getUser : MonoBehaviour
 {
-    [SerializeField] string url; // The URL of the API
-    [SerializeField] string getUsersEP; // The endpoint to get the users
+    string url = "https://quetzal-api.glitch.me"; // The URL of the API
+    string getUsersEP = "/users/user1@example.com"; // The endpoint to get the users
     [SerializeField] Text errorText;
 
     // This is where the information from the api will be extracted
-    public UserList allUser;
+    public User uniqueUser;
 
     // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            QueryUsers(); // To get the data from the API on spacebar press
-        }
-        if (Input.GetKeyDown(KeyCode.N)) {
-            InsertNewUser();
-        }
-        */
-    }
 
     // These are the functions that must be called to interact with the API
 
     void Start()
     {
-        QueryItems();
+        QueryUser();
     }
 
-    public void QueryItems()
+    public void QueryUser()
     {
-        StartCoroutine(GetItems()); // async call to the API
+        StartCoroutine(GetUser()); // async call to the API
     }
 
 
@@ -79,7 +68,7 @@ public class getUser : MonoBehaviour
     // These functions make the connection to the API //
     ////////////////////////////////////////////////////
 
-    IEnumerator GetItems() // Async function to get the users from the API
+    IEnumerator GetUser() // Async function to get the users from the API
     {
         using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP)) // UNITY class request for API (UnityWebRequest)
         {
@@ -90,8 +79,8 @@ public class getUser : MonoBehaviour
                 // Debug.Log("Response: " + www.downloadHandler.text); // The response is in the downloadHandler
                 // Compose the response to look like the object we want to extract
                 // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
-                string jsonString = "{\"User\":" + www.downloadHandler.text + "}"; // add {} to make it an object
-                allUser = JsonUtility.FromJson<UserList>(jsonString);
+                string jsonString = www.downloadHandler.text; // add {} to make it an object
+                uniqueUser = JsonUtility.FromJson<User>(jsonString);
                 DisplayUser();
                 if (errorText != null) errorText.text = "";
             }
@@ -133,9 +122,8 @@ public class getUser : MonoBehaviour
     void DisplayUser()
     {
         //TMPro_Test texter = GetComponent<TMPro_Test>();
-        //texter.LoadNames(allItems);
-        Debug.Log(allUser.User.Count);
-        // Debug.Log(allItems.items[0].health_change);
+        //texter.LoadNames(allItems)
+        Debug.Log(uniqueUser);
         // Debug.Log(allItems.items[4].name);
         Debug.Log("User loaded");
     }
