@@ -8,7 +8,12 @@ body {
     background: $primary;
     text-align: center;
 }
-
+.offcanvas {
+    --bs-offcanvas-width: 200px;
+}
+span {
+    color: white;
+}
 p {
     color: #adb5bd;
 }
