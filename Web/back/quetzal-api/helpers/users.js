@@ -71,20 +71,28 @@ export async function selectItem(data) {
    return newResults;
 }
 
-export async function getUser(data) {
+export async function getUser(email) {
    const db = await connectToDB();
-   const {email, username} = data
-   if (!email || !username){
-      return null;
-   }
-   const [results] = await db.execute(
+      const [results] = await db.execute(
       `SELECT * FROM quetzal.Players WHERE email = \'${email}\'`
    );
+  if (!results[0]) {
+    return null;
+  }
+   const userData = results[0];
+   const {slot_1, slot_2, slot_3} = userData;
+   const slots = [slot_1, slot_2, slot_3];
+   for (let i = 0; i < slots.length; i++) {
+      if (slots[i] !== null) {
+         const [session] = await db.execute(
+            `SELECT * FROM quetzal.Sessions WHERE session_id = ${slots[i]}`
+         );
+         const sessionData = session[0];
+         delete sessionData.email;
+         const slot = `slot_${i + 1}`;
+         userData[slot] = sessionData;
+      }
+   }
    db.end();
-   if (results.length > 0){
-      return results[0]
-   }
-   else {
-      return addData(email, username)
-   }
+   return userData;
 }
