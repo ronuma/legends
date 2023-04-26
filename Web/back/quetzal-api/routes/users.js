@@ -31,11 +31,10 @@ router.get("/", async (req, res) => {
       });
    }
 });
-
-router.get("/:email", async (req, res) => {
+// usa /:email
+router.get("/user", async (req, res) => {
    try {
-      const {email} = req.params;
-      const data = await getUser(email);
+      const data = await getUser(req.body);
       if (!data) {
          res.status(404).json({
             msg: "No user data found",

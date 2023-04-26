@@ -71,11 +71,20 @@ export async function selectItem(data) {
    return newResults;
 }
 
-export async function getUser(email) {
+export async function getUser(data) {
    const db = await connectToDB();
+   const {email, username} = data
+   if (!email || !username){
+      return null;
+   }
    const [results] = await db.execute(
       `SELECT * FROM quetzal.Players WHERE email = \'${email}\'`
    );
    db.end();
-   return results[0];
+   if (results.length > 0){
+      return results[0]
+   }
+   else {
+      return addData(email, username)
+   }
 }
