@@ -1,0 +1,10 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$primary: #0e1118;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $primary;
+    text-align: center;
+}
