@@ -7,8 +7,8 @@ export const DEV = {
 
 export const PROD = {
    host: "quet.cby19a4j2vf8.us-east-1.rds.amazonaws.com",
-   user: "admin-quetzalcoatl",
-   password: "X9#sT@4fW^qL",
+   user: "test-quetzal",
+   password: "quetzal123",
    database: "quetzal",
 };
 
