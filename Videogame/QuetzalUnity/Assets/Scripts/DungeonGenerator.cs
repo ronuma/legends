@@ -16,7 +16,7 @@ using UnityEngine.UI;
 public class DungeonGenerator : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI levelText;
-    public float dungeonLevel = 1f;
+    public float dungeonLevel;
     private GameObject player;
     public GameObject chest;
 
@@ -33,21 +33,31 @@ public class DungeonGenerator : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             player = GameObject.FindGameObjectWithTag("Player");
-            if (dungeonLevel == 5)
+            if (dungeonLevel == 1f)
             {
-                player.transform.position = new Vector3(320, 0, 0);
+                Debug.Log("Level 1");
+                player.transform.position = new Vector3(321, 69, 0);
+            }
+            else if (dungeonLevel == 3f)
+            {
+                player.transform.position = new Vector3(321, 0, 0);
+            }
+            else if (dungeonLevel == 5f)
+            {
+                player.transform.position = new Vector3(321, -65, 0);
             }
             else
             {
+                player.transform.position = new Vector3(-20, 0, 0);
+            }
+
+            chest.transform.position = new Vector3(144, 0, 0);
             DungeonMap[] dungeonMaps = FindObjectsOfType<DungeonMap>();
             foreach (DungeonMap map in dungeonMaps)
             {
                 Destroy(map.gameObject);
             }
-
-            player.transform.position = new Vector3(-20, 0, 0);
-            chest.transform.position = new Vector3(144, 0, 0);
-            }
+            dungeonLevel++;
         }
     }
 
@@ -56,6 +66,7 @@ public class DungeonGenerator : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            levelText.text = "Level: " + dungeonLevel;
             // Generate a new map by calling the createMap() method on all MapGenerator objects
             MapGenerator[] mapGenerators = FindObjectsOfType<MapGenerator>();
             foreach (MapGenerator map in mapGenerators)

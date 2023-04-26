@@ -363,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 0
   healthBar: {fileID: 0}
+  deadCanvas: {fileID: 0}
 --- !u!114 &1137521677758966098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507e3639e91e240ba906fc8bfe2e386c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 100
+  playerHealth: 30
   playerMana: 150
   playerDamage: 60
   playerSpeed: 30
@@ -395,7 +396,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8
-  animator: {fileID: 7588844698262313746, guid: d028b3db0521e42d6b8ade606508793d, type: 3}
+  animator: {fileID: 3198380804494957061}
 --- !u!95 &3198380804494957061
 Animator:
   serializedVersion: 5

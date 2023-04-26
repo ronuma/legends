@@ -14,7 +14,7 @@ public class ManagerItem : MonoBehaviour
 
     private IEnumerator StartItem()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(200f);
          for (int i = 0; i < items.Length; i++)
         {
             items[i].GetComponent<ItemsBuff>().itemHealth = GetComponent<getItems>().allItems.items[items[i].GetComponent<ItemsBuff>().itemID-1].health_change;

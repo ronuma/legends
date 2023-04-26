@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterManager : MonoBehaviour
 {
     public CharacterData characterData;
-    public SpriteRenderer characterSprite;
+    public Image characterSprite;
     public TMPro.TextMeshProUGUI characterName;
     public TMPro.TextMeshProUGUI characterDescription;
+
+    public GameObject characterPrefab;
 
     private int currentCharacterIndex = 0;
 
@@ -38,10 +41,18 @@ public class CharacterManager : MonoBehaviour
         UpdateCharacter(currentCharacterIndex);
     }
 
+    public void ChooseCharacter()
+    {
+        PlayerPrefs.SetInt("playerChosen", currentCharacterIndex);
+        PlayerPrefs.Save();
+        Debug.Log("Player Chosen: " + currentCharacterIndex);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+    }
+
     private void UpdateCharacter(int index)
     {
         Characters character = characterData.GetCharacter(index);
-        characterSprite.sprite = character.characterSprite; 
+        characterSprite.sprite = character.characterSprite;
         characterName.text = character.characterName;
         characterDescription.text = character.characterDescription;
     }

@@ -17,10 +17,13 @@ public class PlayerHealth : MonoBehaviour
     public float playerHealth;
     private float maxHealth;
     public Image healthBar;
+
+    public Canvas deadCanvas;
     // Start is called before the first frame update
     void Start()
     {
         healthBar = GameObject.Find("Health").GetComponent<Image>();
+        deadCanvas = GameObject.Find("DeadScreen").GetComponent<Canvas>();
         ResetHealth();
     }
 
@@ -31,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
         if (playerHealth <= 0)
         {
             healthBar.fillAmount = 0; //set the health bar fill amount to zero if the player's health drops to zero
+            deadCanvas.GetComponent<DeadCanvas>().EnableDeadCanvas();
         }
     }
 

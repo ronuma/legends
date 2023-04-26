@@ -66,9 +66,8 @@ public class MeleeAttack : MonoBehaviour
                 if (enemy.gameObject.tag == "Boss")
                 {
                     enemy.GetComponent<BOSSHealth>().enemyHealth -= damage;
-                    Debug.Log(enemy.GetComponent<BOSSHealth>().enemyHealth);
                 }
-                if (enemy.gameObject.tag == "Enemy")
+                if (enemy.gameObject.tag == "Enemies")
                 {
                     enemy.GetComponent<EnemyHealth>().enemyHealth -= damage;
                 }
