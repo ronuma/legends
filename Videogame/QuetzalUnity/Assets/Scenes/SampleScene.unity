@@ -453,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cee50461b674f309a663763be21cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://127.0.0.1:8000
+  url: http://quetzal-api.glitch.me
   getUsersEP: /users/updateStats
   errorText: {fileID: 0}
   allUsers:
