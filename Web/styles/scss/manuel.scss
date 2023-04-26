@@ -29,7 +29,7 @@ p {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #adb5bd;
+    color: #d2dde7;
 }
 
 .scrollspy-example-2 {
@@ -55,7 +55,34 @@ p {
     border-radius: 10px;
     border: 3px solid #27324dc1;
 }
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
 
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
 
 
 // section {
