@@ -654,6 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857381775}
   - component: {fileID: 1857381774}
+  - component: {fileID: 1857381776}
   m_Layer: 0
   m_Name: MainPageManager
   m_TagString: Untagged
@@ -673,10 +674,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceaf730d77db14888a0dd0b717acea5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: 
   errorText: {fileID: 0}
-  allUser:
-    User: []
+  uniqueUser:
+    email: 
+    user_name: 
+    runs: 0
+    slot_1: 0
+    slot_2: 0
+    slot_3: 0
 --- !u!4 &1857381775
 Transform:
   m_ObjectHideFlags: 0
@@ -692,6 +697,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857381776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857381773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f9dcd01f80e4cc28293d73c8d81435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  errorText: {fileID: 0}
+  uniqueSessionData:
+    session_id: 0
+    email: 
+    hero_id: 0
+    damage: 0
+    health: 0
+    mana: 0
+    speed: 0
+    defense: 0
+    play_time: 
+    finished: 0
 --- !u!1 &1949504413
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +904,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasSession
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7620189757207693382, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+    - {fileID: 1922437556863564749, guid: e9ac5d62e05d94225aded424db389464, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e9ac5d62e05d94225aded424db389464, type: 3}
 --- !u!224 &3372913151706122683 stripped
 RectTransform:
