@@ -5,7 +5,7 @@ function random_color(alpha = 1.0) {
 
 async function fetchStats() {
   try {
-    const stats_response = await fetch("http://127.0.0.1:8000/stats", {
+    const stats_response = await fetch("https://quetzal-api.glitch.me/stats", {
       method: "GET",
     });
 
@@ -37,13 +37,6 @@ async function fetchStats() {
           },
         ],
       },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      },
     });
 
     // Average Session Stats
@@ -70,13 +63,6 @@ async function fetchStats() {
           },
         ],
       },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      },
     });
 
     // Total Game Runs and Finished Sessions
@@ -96,13 +82,6 @@ async function fetchStats() {
             borderWidth: 1,
           },
         ],
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
       },
     });
   } catch (error) {
