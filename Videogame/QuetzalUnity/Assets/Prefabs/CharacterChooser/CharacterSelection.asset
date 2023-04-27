@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: CharacterSelection
   m_EditorClassIdentifier: 
   character:
+  - characterName: Cazador
+    characterSprite: {fileID: 506354487, guid: c3c0e08eb9ee74a71a9b33910652848e, type: 3}
+    characterDescription: "Un explorador astuto y fuerte, capaz de soportar mucho
+      da\xF1o antes de caer. "
   - characterName: Arquero
     characterSprite: {fileID: 431224468, guid: 6163e9b94eef64a4593ec43321494496, type: 3}
     characterDescription: "Un arquero es r\xE1pido y \xE1gil, con una punter\xEDa
@@ -21,7 +25,3 @@ MonoBehaviour:
     characterSprite: {fileID: 487515743, guid: af665415ef6e149b984cbc4a6310379d, type: 3}
     characterDescription: "Un luchador resistente y poderoso, capaz de causar un
       gran da\xF1o con cada ataque, pero es un poco torpe"
-  - characterName: Cazador
-    characterSprite: {fileID: 506354487, guid: c3c0e08eb9ee74a71a9b33910652848e, type: 3}
-    characterDescription: "Un explorador astuto y fuerte, capaz de soportar mucho
-      da\xF1o antes de caer. "

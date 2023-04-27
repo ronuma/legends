@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 349463915}
   - component: {fileID: 349463914}
   - component: {fileID: 349463913}
+  - component: {fileID: 349463916}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -440,6 +441,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349463916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349463912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4235005f7e7904040b5473762d19cbb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health_API: 0
+  mana_API: 0
+  defense_API: 0
+  damage_API: 0
+  speed_API: 0
+  session_id_API: 0
+  item_id_API: 0
 --- !u!1001 &458211680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1969,6 +1989,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5432619223482792024, guid: fbb2eb056177743bc86f57b8a843d795, type: 3}
+      propertyPath: updatePlayerAPI
+      value: 
+      objectReference: {fileID: 349463912}
     - target: {fileID: 5432619224702819563, guid: fbb2eb056177743bc86f57b8a843d795, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2057,6 +2081,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5432619225100693890, guid: fbb2eb056177743bc86f57b8a843d795, type: 3}
+      propertyPath: updatePlayerAPI
+      value: 
+      objectReference: {fileID: 349463912}
+    - target: {fileID: 5432619225238557312, guid: fbb2eb056177743bc86f57b8a843d795, type: 3}
+      propertyPath: updatePlayerAPI
+      value: 
+      objectReference: {fileID: 349463912}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbb2eb056177743bc86f57b8a843d795, type: 3}
 --- !u!1001 &6063530106722048409

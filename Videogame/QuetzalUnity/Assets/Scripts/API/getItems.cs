@@ -48,19 +48,6 @@ public class getItems : MonoBehaviour
     // This is where the information from the api will be extracted
     public ItemList allItems;
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            QueryUsers(); // To get the data from the API on spacebar press
-        }
-        if (Input.GetKeyDown(KeyCode.N)) {
-            InsertNewUser();
-        }
-        */
-    }
-
     // These are the functions that must be called to interact with the API
 
     void Start()
