@@ -8,6 +8,7 @@ import {
    getCurrentSession,
    createSession,
    getUser,
+   endSession,
 } from "../helpers/users.js";
 
 const router = Router();
@@ -158,6 +159,37 @@ router.patch("/selectItem", async (req, res) => {
       console.log("UPDATE user stats error: ", error);
       res.status(500).json({
          msg: "UPDATE user stats error",
+         error,
+      });
+   }
+});
+
+// ends a session (when killing the boss)
+router.patch("/endSession", async (req, res) => {
+   try {
+      const {session_id} = req.body;
+      if (!session_id) {
+         res.status(400).json({
+            msg: "Missing session_id in request body",
+         });
+         return;
+      }
+
+      const data = await endSession(session_id);
+      if (!data) {
+         res.status(404).json({
+            msg: "Session not ended",
+         });
+         return;
+      }
+      res.status(200).json({
+         msg: "Session ended",
+         data,
+      });
+   } catch (error) {
+      console.log("UPDATE session error: ", error);
+      res.status(500).json({
+         msg: "end (UPDATE) session error",
          error,
       });
    }
