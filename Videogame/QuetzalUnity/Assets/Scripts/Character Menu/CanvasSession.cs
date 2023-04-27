@@ -10,6 +10,7 @@ public class CanvasSession : MonoBehaviour
     public Canvas session;
 
     public GameObject getUser;
+    public GameObject createNewPlayer;
 
     public CharacterData characterData;
     public int[] slots;
@@ -65,6 +66,7 @@ public class CanvasSession : MonoBehaviour
     public void middleClick()
     {
         ChooseCharacter(slots[1]);
+        createNewPlayer.GetComponent<CreateNewPlayer>().CreateSession();
     }
 
     private void ChooseCharacter(int index)
