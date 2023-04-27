@@ -18,9 +18,15 @@ Entrega mensaje de confirmación de que el servidor está corriendo.
 
 `/stats`
 
-Entrega stats generales del juego.
+Entrega stats generales del juego, normalizadas.
 
 <br>
+
+`/stats/top10`
+
+<br>
+
+`/stats/runs`
 
 ## Items
 
