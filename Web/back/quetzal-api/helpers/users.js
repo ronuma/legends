@@ -14,10 +14,10 @@ export async function getStats() {
    return results;
 }
 
-export async function getCurrentSession(sessionId) {
+export async function getCurrentSession(session_id) {
    const db = await connectToDB();
    const [results] = await db.execute(
-      `SELECT * FROM quetzal.Sessions WHERE session_id = ${sessionId}`
+      `SELECT * FROM quetzal.Sessions WHERE session_id = ${session_id}`
    );
    db.end();
    return results[0];
@@ -33,8 +33,8 @@ export async function createSession(data) {
    // get hero data from heroes table and insert into sessions table
    const {health, mana, defense, speed, damage} = heroData[0];
    await db.execute(
-      "INSERT INTO quetzal.sessions (email, health, mana, defense, speed, damage, play_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-      [email, health, mana, defense, speed, damage, 0]
+      "INSERT INTO quetzal.Sessions (email, health, mana, defense, speed, damage, play_time, hero_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+      [email, health, mana, defense, speed, damage, 0, hero_id]
    );
    const [sessionData] = await db.execute(
       `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id DESC LIMIT 1`
@@ -73,12 +73,12 @@ export async function selectItem(data) {
 
 export async function getUser(email) {
    const db = await connectToDB();
-      const [results] = await db.execute(
+   const [results] = await db.execute(
       `SELECT * FROM quetzal.Players WHERE email = \'${email}\'`
    );
-  if (!results[0]) {
-    return null;
-  }
+   if (!results[0]) {
+      return null;
+   }
    const userData = results[0];
    const {slot_1, slot_2, slot_3} = userData;
    const slots = [slot_1, slot_2, slot_3];
@@ -95,4 +95,57 @@ export async function getUser(email) {
    }
    db.end();
    return userData;
+}
+
+// takes session id and sets finished flag from 0 to 1
+// retrieves user email
+// user table gets updated with runs + 1
+export async function endSession(session_id) {
+   const db = await connectToDB();
+   const [results] = await db.execute(
+      `UPDATE quetzal.Sessions SET finished = 1 WHERE session_id = \'${session_id}\'`
+   );
+   const email = await db.execute(
+      `SELECT email FROM quetzal.Sessions WHERE session_id = \'${session_id}\'`
+   );
+
+   await db.execute(
+      `UPDATE quetzal.Players SET runs = runs + 1 WHERE email = \'${email}\'`
+   );
+   db.end();
+   return results;
+}
+
+// takes session id and nullifies the slot in the user table that corresponds to the session id
+export async function clearSlot(session_id) {
+   const db = await connectToDB();
+   const [rows] = await db.execute(
+      `SELECT slot_1, slot_2, slot_3 FROM quetzal.Players WHERE slot_1 = ${session_id} OR slot_2 = ${session_id} OR slot_3 = ${session_id}`
+   );
+
+   if (rows.length === 0) {
+      throw new Error(`No rows found for session ID ${session_id}`);
+   }
+
+   const row = rows[0];
+
+   const columnToUpdate =
+      row.slot_1 === session_id
+         ? "slot_1"
+         : row.slot_2 === session_id
+         ? "slot_2"
+         : row.slot_3 === session_id
+         ? "slot_3"
+         : null;
+
+   if (!columnToUpdate) {
+      throw new Error(`Session ID ${session_id} not found in any slot columns`);
+   }
+
+   const [results] = await db.execute(
+      `UPDATE quetzal.Players SET ${columnToUpdate} = NULL WHERE ${columnToUpdate} = ${session_id}`
+   );
+
+   db.end();
+   return results;
 }
