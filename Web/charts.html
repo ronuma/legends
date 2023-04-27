@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js" integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"
+      integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" defer src="/js/user_charts.js"></script>
-    <link href="./styles/css/user_charts.css" type="text/css" rel="stylesheet" />
+    <link
+      href="./styles/css/user_charts.css"
+      type="text/css"
+      rel="stylesheet"
+    />
     <title>User Charts</title>
   </head>
 
@@ -14,11 +24,7 @@
     <nav class="navbar navbar-dark bg-transparent text-start">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-          <img
-            src="./images/Quetzal2.png"
-            alt="Quetzal Logo"
-            width="125"
-          />
+          <img src="./images/Quetzal2.png" alt="Quetzal Logo" width="125" />
         </a>
         <button
           class="navbar-toggler"
@@ -37,12 +43,13 @@
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <a class="offcanvas-title" id="offcanvasDarkNavbarLabel"
+            <a class="offcanvas-title" id="offcanvasDarkNavbarLabel" href="./index.html"
               ><img
                 src="./images/logo1.png"
                 alt="Quetzal Logo"
                 width="50"
                 height="50"
+                class="logo1"
             /></a>
             <button
               type="button"
@@ -54,19 +61,21 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Manual</a>
+                <a class="nav-link" href="./manuel.html">Manual</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./charts.html">Stats - DB</a>
+                <a class="nav-link active" href="#">Estadísticas</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Credits</a>
+                <a class="nav-link" href="#">Créditos</a>
               </li>
               <li class="nav-item rainbow rainbow_text_animated">
-                <a class="nav-link" href="#">Play Game</a>
+                <a class="nav-link" href="#">Jugar</a>
               </li>
             </ul>
           </div>
@@ -82,25 +91,38 @@
           <canvas id="chartMostUsedItems" width="300" height="300"></canvas>
         </div>
         <div class="carousel-item">
-          <canvas id="chartMostUsedItems" width="300" height="300"></canvas>
+          <canvas id="chartAvgSessionStats" width="300" height="300"></canvas>
         </div>
         <div class="carousel-item">
           <canvas id="chartTotalSessions" width="300" height="300"></canvas>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="UserCharts.js"></script>
     <!-- Internal API scripts -->
     <script src="./js/API.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

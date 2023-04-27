@@ -59,6 +59,12 @@ span {
         background-position: 100% 0;
     }
 }
+.logo1 { 
+    transition: all .2s ease-in-out; 
+}
+.logo1:hover { 
+    transform: scale(1.1); 
+}
 .header {
     height: 100vh;
 }

@@ -38,6 +38,7 @@ router.get("/:email", async (req, res) => {
       const data = await getUser(email);
       if (!data) {
          res.status(404).json({
+            status: 404,
             msg: "No user data found",
          });
          return;

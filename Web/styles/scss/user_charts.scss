@@ -16,7 +16,24 @@ body {
 .offcanvas {
     --bs-offcanvas-width: 200px;
 }
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
 
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
 .container, canvas{
     padding: 1%;
     border: 1px solid white;
@@ -46,4 +63,10 @@ canvas{
     flex-grow: 1;
     max-width: 30%; 
     max-height: 600px;
+}
+.logo1 { 
+    transition: all .2s ease-in-out; 
+}
+.logo1:hover { 
+    transform: scale(1.1); 
 }

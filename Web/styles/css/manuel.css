@@ -11608,8 +11608,44 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0e1118;
+  text-align: center;
+}
+
+.offcanvas {
+  --bs-offcanvas-width: 200px;
+}
+
+span {
+  color: white;
+}
+
+p {
+  color: #adb5bd;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgb(234, 106, 44);
+  color: white;
+}
+
+.nav-link {
+  color: #adb5bd;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #d2dde7;
+}
+
+.scrollspy-example-2 {
+  height: 80vh;
+  overflow: auto;
+}
+
 * {
   scrollbar-width: auto;
   scrollbar-color: rgba(39, 50, 77, 0.7568627451) rgba(22, 28, 43, 0.431372549);
@@ -11630,21 +11666,6 @@ textarea.form-control-lg {
   border: 3px solid rgba(39, 50, 77, 0.7568627451);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #0e1118;
-  text-align: center;
-}
-
-.offcanvas {
-  --bs-offcanvas-width: 200px;
-}
-
-span {
-  display: inline-block;
-}
-
 .rainbow_text_animated {
   background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
@@ -11662,6 +11683,17 @@ span {
     background-position: 100% 0;
   }
 }
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h4, .h4 {
+  margin-bottom: 20px;
+}
+
 .logo1 {
   transition: all 0.2s ease-in-out;
 }
@@ -11670,64 +11702,4 @@ span {
   transform: scale(1.1);
 }
 
-.header {
-  height: 100vh;
-}
-
-.img1 {
-  overflow: hidden;
-  padding-top: 75px;
-}
-
-.backI {
-  z-index: -1;
-}
-
-.logomain {
-  z-index: 1;
-}
-
-.heroB {
-  height: 150vh;
-  background-image: url(../../images/back1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.heroMB {
-  height: 28rem;
-}
-
-.heroMT {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 10rem;
-  color: #ffffff;
-  font-weight: 400;
-  text-shadow: 0 0 10px #9a9a9a;
-}
-
-.letter {
-  display: inline-block;
-}
-
-.herobtnT {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 5s ease-in-out infinite;
-  background-size: 400% 100%;
-  font-weight: 600;
-}
-
-.img1-parallax {
-  width: 80%;
-  height: 40rem;
-}
-
-/* 
-*/
-
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=manuel.css.map */

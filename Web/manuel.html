@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual de Juego</title>
+    <link rel="stylesheet" href="./styles/css/manuel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Rubik+Iso&family=Tilt+Prism&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-transparent text-start">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/Quetzal2.png" alt="Quetzal Logo" width="125" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="offcanvas-title" id="offcanvasDarkNavbarLabel" href="./index.html"
+              ><img
+                src="./images/logo1.png"
+                alt="Quetzal Logo"
+                width="50"
+                height="50"
+                class="logo1"
+            /></a>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Manual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./charts.html">Estadísticas</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Créditos</a>
+              </li>
+              <li class="nav-item rainbow rainbow_text_animated">
+                <a class="nav-link" href="#">Jugar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container px-4 py-4">
+      <div class="row">
+        <div class="col-3">
+          <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end"
+          >
+            <nav class="nav nav-pills flex-column px-5">
+              <a class="nav-link" href="#item-1">Introducción</a>
+              <a class="nav-link" href="#item-2">Controles</a>
+              <a class="nav-link" href="#item-3">Personajes</a>
+              <a class="nav-link" href="#item-4">Enemigos</a>
+              <a class="nav-link" href="#item-5">Objetos</a>
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-7">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2 text-start"
+            tabindex="0"
+            data-bs-theme="dark"
+          >
+          <div id="item-1"></div>
+          <h4>Introducción</h4>
+          <p>
+            En este juego, los jugadores explorarán un mundo abierto con
+            elementos de PvE en mazmorras generadas aleatoriamente. La misión
+            principal es derrotar al jefe final, pero los jugadores también
+            encontrarán misiones secundarias y objetos útiles mientras
+            exploran la mazmorra. El juego incorpora elementos de la historia
+            y la cultura de la civilización maya.
+          </p>
+          <hr class="border border-light-subtle border-3 rounded">
+          <div id="item-2">
+            <h4>Controles</h4>
+            <p><span>WASD y flechas del teclado:</span> Movimiento</p>
+            <p><span>SHIFT:</span> Activar dash</p>
+            <p><span>ESPACIO:</span> Habilidad especial 1</p>
+            <p><span>Q</span>- Habilidad especial 2</p>
+            <p><span>G</span> - Respawn</p>
+            <p><span>P</span> - Cambiar de Diálogo</p>
+          </div>
+          <hr class="border border-light-subtle border-3 rounded">
+          <div id="item-3">
+            <h4>Personajes</h4>
+            <h6>Arquero</h6>
+            <p>
+              Un arquero es rápido y ágil, con una puntería excepcional, pero
+              su cuerpo es frágil.
+            </p>
+            <h6>Luchador</h6>
+            <p>
+              Un luchador resistente y poderoso, capaz de causar un gran daño
+              con cada ataque, pero es un poco torpe.
+            </p>
+            <h6>Explorador</h6>
+            <p>
+              Un explorador astuto y fuerte, capaz de soportar mucho daño
+              antes de caer.
+            </p>
+          </div>
+          <hr class="border border-light-subtle border-3 rounded">
+          <div id="item-4">
+            <h4>Enemigos</h4>
+            <h6>Musquetero</h6>
+            <p>
+              Un musquetero tiene un mosquete que dispara tres balas a la vez.
+              Las balas viajarán en línea recta hasta que golpeen al jugador.
+            </p>
+            <h6>Capitán</h6>
+            <p>
+              Un capitán tiene una pistola que dispara una bala a la vez. La
+              bala viajará en línea recta hasta que golpee al jugador.
+            </p>
+            <h6>Perro</h6>
+            <p>
+              El perro perseguirá al jugador hasta que lo alcance, y lo
+              atacará si se acerca lo suficiente.
+            </p>
+            <h6>Boss</h6>
+            <p>
+              El jefe final es un enemigo muy poderoso que tiene una gran
+              cantidad de salud y puede causar mucho daño. Tiene los ataques
+              combinados de los enemigos anteriores.
+            </p>
+          </div>
+          <hr class="border border-light-subtle border-3 rounded">
+          <div id="item-5">
+            <h4>Objetos</h4>
+            <p>
+              Todos los items tienen un beneficio importante. Pero ¡cuidado!
+              nada es tan bueno como parece.
+            </p>
+            <h6>Armadura</h6>
+            <p>La armadura te protege del daño de tus enemigos.</p>
+            <h6>Escudo</h6>
+            <p>El escudo te protege de los ataques enemigos.</p>
+            <h6>Poción Roja</h6>
+            <p>La poción roja te ayuda a hacerle más daño a los enemigos</p>
+            <h6>Poción Verde</h6>
+            <p>
+              La poción verde te ayuda aumentando tu velocidad y agilidad en
+              el juego.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <header class="header vh-100 w-100"><a><img src="./images/logo1.png" alt="Quetzal Logo" width="250" height="250"></a></header>
+    <hero class="d-flex flex-row vh-100 w-100"></hero>
+    <main1 class="d-flex flex-row vh-100 w-100"></main1> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/main_2.js"></script>
+  </body>
+</html>
