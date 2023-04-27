@@ -14,10 +14,10 @@ export async function getStats() {
    return results;
 }
 
-export async function getCurrentSession(sessionId) {
+export async function getCurrentSession(session_id) {
    const db = await connectToDB();
    const [results] = await db.execute(
-      `SELECT * FROM quetzal.Sessions WHERE session_id = ${sessionId}`
+      `SELECT * FROM quetzal.Sessions WHERE session_id = ${session_id}`
    );
    db.end();
    return results[0];
@@ -95,4 +95,23 @@ export async function getUser(email) {
    }
    db.end();
    return userData;
+}
+
+// takes session id and sets finished flag from 0 to 1
+// retrieves user email
+// user table gets updated with runs + 1
+export async function endSession(session_id) {
+   const db = await connectToDB();
+   const [results] = await db.execute(
+      `UPDATE quetzal.Sessions SET finished = 1 WHERE session_id = \'${session_id}\'`
+   );
+   const email = await db.execute(
+      `SELECT email FROM quetzal.Sessions WHERE session_id = \'${session_id}\'`
+   );
+
+   await db.execute(
+      `UPDATE quetzal.Players SET runs = runs + 1 WHERE email = \'${email}\'`
+   );
+   db.end();
+   return results;
 }
