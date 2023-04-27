@@ -68,3 +68,13 @@ export async function getTop10() {
    db.end();
    return top10;
 }
+
+// get /run/:email selects the row from the Sessions table where the email matches the email in the request
+export async function getUserRun(email) {
+   const db = await connectToDB();
+   const [results] = await db.execute(
+      `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id DESC LIMIT 1`
+   );
+   db.end();
+   return results[0];
+}

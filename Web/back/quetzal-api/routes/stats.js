@@ -1,6 +1,6 @@
 import {Router} from "express";
 
-import {getStats, getTop10} from "../helpers/stats.js";
+import {getStats, getTop10, getUserRun} from "../helpers/stats.js";
 
 const router = Router();
 
@@ -38,6 +38,26 @@ router.get("/top10", async (req, res) => {
       console.log("GET top10 error: ", error);
       res.status(500).json({
          msg: "GET top10 error",
+         error,
+      });
+   }
+});
+
+router.get("/runs/:email", async (req, res) => {
+   try {
+      const {email} = req.params;
+      const data = await getUserRun(email);
+      if (!data) {
+         res.status(404).json({
+            msg: "No stats found",
+         });
+         return;
+      }
+      res.status(200).json(data);
+   } catch (error) {
+      console.log("GET runs error: ", error);
+      res.status(500).json({
+         msg: "GET runs error",
          error,
       });
    }
