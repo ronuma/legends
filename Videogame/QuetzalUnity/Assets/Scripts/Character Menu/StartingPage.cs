@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StartingPage : MonoBehaviour
 {
     public Canvas startingPage;
+    public Canvas session;
     public Canvas menu;
     public TMPro.TextMeshProUGUI startingPageText;
     public string text;
@@ -15,6 +16,7 @@ public class StartingPage : MonoBehaviour
     void Start()
     {
         startingPage.enabled = true;
+        session.enabled = false;
         menu.enabled = false;
     }
 
@@ -32,7 +34,7 @@ public class StartingPage : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && newGame)
         {
             startingPage.enabled = false;
-            menu.enabled = true;
+            session.enabled = true;
         }
 
     }

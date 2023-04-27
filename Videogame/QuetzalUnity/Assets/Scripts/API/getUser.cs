@@ -20,14 +20,29 @@ using UnityEngine.Networking;
 // Allow the class to be extracted from Unity
 // https://stackoverflow.com/questions/40633388/show-members-of-a-class-in-unity3d-inspector
 [System.Serializable]
-public class User // Same object as in the API (JSON) response
+public class Slot
+{
+    public int session_id;
+    public int hero_id;
+    public int damage;
+    public int health;
+    public int mana;
+    public float speed;
+    public int defense;
+    public string play_time;
+    public int finished;
+}
+
+// Modify the User class to reflect the new structure of the data
+[System.Serializable]
+public class User
 {
     public string email;
     public string user_name;
     public int runs;
-    public int slot_1;
-    public int slot_2;
-    public int slot_3;
+    public Slot slot_1;
+    public Slot slot_2; // Slot 2 and 3 are now objects instead of ints
+    public Slot slot_3;
 }
 
 // Allow the class to be extracted from Unity
@@ -124,6 +139,8 @@ public class getUser : MonoBehaviour
         //TMPro_Test texter = GetComponent<TMPro_Test>();
         //texter.LoadNames(allItems)
         Debug.Log(uniqueUser);
+        // Debug.Log(uniqueUser.slot_1.health);
+        // Debug.Log(uniqueUser.slot_2.hero_id);
         // Debug.Log(allItems.items[4].name);
         Debug.Log("User loaded");
     }

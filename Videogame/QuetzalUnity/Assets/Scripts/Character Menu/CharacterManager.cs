@@ -22,7 +22,6 @@ public class CharacterManager : MonoBehaviour
 
     public void NextCharacter()
     {
-        Debug.Log("Next Character");
         currentCharacterIndex++;
         if (currentCharacterIndex >= characterData.characterCount)
         {
