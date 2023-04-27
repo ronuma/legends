@@ -85,10 +85,6 @@ public class CanvasSession : MonoBehaviour
 
         ModifyPlayerStats(playerId, index);
 
-        Debug.Log("SWORD    " + playerPrefabSword.GetComponent<PlayerStats>().playerDamage);
-        Debug.Log("BOW    " + playerPrefabBow.GetComponent<PlayerStats>().playerDamage);
-        Debug.Log("SPEAR    " + playerPrefabSpear.GetComponent<PlayerStats>().playerDamage);
-
         if (playerId >= 0)
         {
         PlayerPrefs.SetInt("playerChosen", playerId);
