@@ -1275,9 +1275,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 100602784}
   session: {fileID: 3372913151706122686}
+  playerPrefabBow: {fileID: 6937680040743552094, guid: b1359c4b186cf4dd3b1115eb68cd315f, type: 3}
+  playerPrefabSword: {fileID: 9114628218089492093, guid: d028b3db0521e42d6b8ade606508793d, type: 3}
+  playerPrefabSpear: {fileID: 5526421035581363963, guid: 23715a20c46c84bfc8e6c7425abad653, type: 3}
+  playerPrefabs: []
   getUser: {fileID: 1857381773}
+  createNewPlayer: {fileID: 829026340}
   characterData: {fileID: 11400000, guid: 290824a10fe0a436cb013b0f1bea940e, type: 2}
-  slots: 
+  slots: []
   characterSprite1: {fileID: 468040841}
   characterName1: {fileID: 435314311}
   characterSprite2: {fileID: 755758659}
