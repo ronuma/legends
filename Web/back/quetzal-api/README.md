@@ -116,4 +116,11 @@ Termina una sesión, o sea, es cuando un jugador acaba el juego (mata al boss?).
 Se pasa el id de sesión para marcar que esa sesión ya está terminada, y se le
 agrega +1 a los runs del jugador, para el tema de las stats.
 
+`/users/clearSlot`
+
+`body: { session_id }`
+
+Nulifica el slot del usuario en cuestión que tiene el id de sesión
+correspondiente.
+
 <br>
