@@ -1,10 +1,17 @@
-var colors = ['#0d6efd', '#6610f2', '#6f42c1', '#d63384', '#dc3545', '#fd7e14', '#ffc107', '#198754', '#20c997','#0dcaf0'];
-random_color = () => colors[Math.floor(Math.random() * colors.length)];
+var colors = ['#0d6efd', '#6610f2', '#6f42c1', '#d63384', '#dc3545', '#fd7e14', '#ffc107', '#198754', '#20c997', '#0dcaf0'];
+var usedColors = [];
 
-// function random_color(alpha = 1.0) {
-//   const r_c = () => Math.round(Math.random() * 255);
-//   return `rgba(${r_c()}, ${r_c()}, ${r_c()}, ${alpha}`;
-// }
+random_color = () => {
+  if (usedColors.length === colors.length) {
+    usedColors = [];
+  }
+  let color;
+  do {
+    color = colors[Math.floor(Math.random() * colors.length)];
+  } while (usedColors.includes(color));
+  usedColors.push(color);
+  return color;
+};
 
 async function fetchStats() {
   try {
@@ -51,7 +58,7 @@ async function fetchStats() {
       .getElementById("chartAvgSessionStats")
       .getContext("2d");
     const avgSessionStatsChart = new Chart(ctxSessionStats, {
-      type: "doughnut",
+      type: "pie",
       data: {
         labels: sessionStatsLabels,
         datasets: [
@@ -60,7 +67,7 @@ async function fetchStats() {
             data: sessionStatsValues,
             backgroundColor: sessionStatsColors,
             borderColor: sessionStatsColors.map((color) =>
-              color.replace("0.8", "1")
+              color.replace("1", ".8")
             ),
             borderWidth: 1,
           },
