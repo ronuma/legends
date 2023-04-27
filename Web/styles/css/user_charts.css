@@ -11636,11 +11636,8 @@ body {
     background-position: 100% 0;
   }
 }
-.carousel-inner, canvas {
+.carousel-inner canvas {
   padding: 1%;
-}
-
-canvas {
   margin: 1%;
 }
 

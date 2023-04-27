@@ -63,7 +63,7 @@ async function fetchStats() {
         labels: sessionStatsLabels,
         datasets: [
           {
-            label: "Average Value",
+            label: "Valor Promedio",
             data: sessionStatsValues,
             backgroundColor: sessionStatsColors,
             borderColor: sessionStatsColors.map((color) =>
@@ -73,6 +73,7 @@ async function fetchStats() {
           },
         ],
       },
+
     });
 
     // Total Game Runs and Finished Sessions
@@ -98,5 +99,4 @@ async function fetchStats() {
     console.log(error);
   }
 }
-
 fetchStats();
