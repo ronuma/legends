@@ -8,6 +8,8 @@ public class LeftButton : MonoBehaviour
     private GameObject player;
     private GameObject menu;
     private GameObject item;
+
+    public GameObject updatePlayerAPI;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,14 @@ public class LeftButton : MonoBehaviour
         player.GetComponent<PlayerStats>().playerDefense = result5;
 
         player.GetComponent<PlayerHealth>().ResetHealth();
+
+        updatePlayerAPI.GetComponent<UpdatePlayerStats>().createStats(player.GetComponent<PlayerStats>().playerHealth, 
+                                                                      player.GetComponent<PlayerStats>().playerMana, 
+                                                                      player.GetComponent<PlayerStats>().playerDamage, 
+                                                                      player.GetComponent<PlayerStats>().playerSpeed, 
+                                                                      player.GetComponent<PlayerStats>().playerDefense,
+                                                                      player.GetComponent<PlayerStats>().playerSession_id,
+                                                                      item.GetComponent<ItemsBuff>().itemID);
     }
 }
 

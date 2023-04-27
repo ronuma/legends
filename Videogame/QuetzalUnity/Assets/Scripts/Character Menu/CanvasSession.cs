@@ -8,6 +8,7 @@ public class CanvasSession : MonoBehaviour
 {
     //Canvases that are involved in the character selection
     public Canvas menu;
+    public GameObject characterManager;
     public Canvas session;
 
     //Prefabs of the characters
@@ -66,20 +67,20 @@ public class CanvasSession : MonoBehaviour
 
     public void leftClick()
     {
-        ChooseCharacter(slots[0]);
+        ChooseCharacter(slots[0], 1);
     }
 
     public void rightClick()
     {
-        ChooseCharacter(slots[2]);
+        ChooseCharacter(slots[2], 3);
     }
 
     public void middleClick()
     {
-        ChooseCharacter(slots[1]);
+        ChooseCharacter(slots[1], 2);
     }
 
-    private void ChooseCharacter(Slot index)
+    public void ChooseCharacter(Slot index, int slot)
     {
         int playerId = index.hero_id > 0 ? index.hero_id-1 : -1;
 
@@ -94,6 +95,7 @@ public class CanvasSession : MonoBehaviour
         {
             session.enabled = false;
             menu.enabled = true;
+            characterManager.GetComponent<CharacterManager>().slotID = slot;
         }
     }
 
@@ -104,6 +106,7 @@ public class CanvasSession : MonoBehaviour
         playerPrefabs[playerId].GetComponent<PlayerStats>().playerMana = index.mana;
         playerPrefabs[playerId].GetComponent<PlayerStats>().playerSpeed = index.speed;
         playerPrefabs[playerId].GetComponent<PlayerStats>().playerDefense = index.defense;
+        playerPrefabs[playerId].GetComponent<PlayerStats>().playerSession_id = index.session_id;
     }
 
 }

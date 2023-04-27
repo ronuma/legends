@@ -13,11 +13,11 @@ public class NewUser
 
 public class CreateNewPlayer : MonoBehaviour
 {
-    private string createUserEP = "/users/createSessions";
+    private string createUserEP = "/users/createSession";
     private string url = "https://quetzal-api.glitch.me";
     public string email = "user1@example.com";
-    public int hero_id = 1;
-    public int memory_slot = 2;
+    public int hero_id;
+    public int memory_slot;
 
     public void CreateSession()
     {
@@ -34,11 +34,10 @@ public class CreateNewPlayer : MonoBehaviour
 
         // Serialize the User object to a JSON string
         string jsonString = JsonUtility.ToJson(newuser);
-        Debug.Log(jsonString);
 
-        using (UnityWebRequest www = UnityWebRequest.Post(url + createUserEP, jsonString))
-        {
-            //
+        using (UnityWebRequest www = UnityWebRequest.Put(url + createUserEP, jsonString))
+        { 
+            www.method = "POST";
             www.SetRequestHeader("Content-Type", "application/json");
             www.SetRequestHeader("Accept", "application/json");
 
