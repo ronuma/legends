@@ -83,14 +83,12 @@ public class CanvasSession : MonoBehaviour
     {
         int playerId = index.hero_id > 0 ? index.hero_id-1 : -1;
 
-        ModifyPlayerStats(playerId, index);
-
         if (playerId >= 0)
         {
+        ModifyPlayerStats(playerId, index);
         PlayerPrefs.SetInt("playerChosen", playerId);
         PlayerPrefs.Save();
         SceneManager.LoadScene(1, LoadSceneMode.Single);
-
         }
         else
         {
