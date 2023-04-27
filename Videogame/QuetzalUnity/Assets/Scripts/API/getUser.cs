@@ -55,7 +55,8 @@ public class UserList
 public class getUser : MonoBehaviour
 {
     string url = "https://quetzal-api.glitch.me"; // The URL of the API
-    string getUsersEP = "/users/user1@example.com"; // The endpoint to get the users
+    string userEmail = "user2@example.com";
+    string getUsersEP;
     [SerializeField] Text errorText;
 
     // This is where the information from the api will be extracted
@@ -67,6 +68,7 @@ public class getUser : MonoBehaviour
 
     void Start()
     {
+        getUsersEP = $"/users/{userEmail}";
         QueryUser();
     }
 
