@@ -33,8 +33,8 @@ export async function createSession(data) {
    // get hero data from heroes table and insert into sessions table
    const {health, mana, defense, speed, damage} = heroData[0];
    await db.execute(
-      "INSERT INTO quetzal.sessions (email, health, mana, defense, speed, damage, play_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-      [email, health, mana, defense, speed, damage, 0]
+      "INSERT INTO quetzal.Sessions (email, health, mana, defense, speed, damage, play_time, hero_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+      [email, health, mana, defense, speed, damage, 0, hero_id]
    );
    const [sessionData] = await db.execute(
       `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id DESC LIMIT 1`
@@ -73,12 +73,12 @@ export async function selectItem(data) {
 
 export async function getUser(email) {
    const db = await connectToDB();
-      const [results] = await db.execute(
+   const [results] = await db.execute(
       `SELECT * FROM quetzal.Players WHERE email = \'${email}\'`
    );
-  if (!results[0]) {
-    return null;
-  }
+   if (!results[0]) {
+      return null;
+   }
    const userData = results[0];
    const {slot_1, slot_2, slot_3} = userData;
    const slots = [slot_1, slot_2, slot_3];
