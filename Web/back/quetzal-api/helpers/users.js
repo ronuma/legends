@@ -115,3 +115,37 @@ export async function endSession(session_id) {
    db.end();
    return results;
 }
+
+// takes session id and nullifies the slot in the user table that corresponds to the session id
+export async function clearSlot(session_id) {
+   const db = await connectToDB();
+   const [rows] = await db.execute(
+      `SELECT slot_1, slot_2, slot_3 FROM quetzal.Players WHERE slot_1 = ${session_id} OR slot_2 = ${session_id} OR slot_3 = ${session_id}`
+   );
+
+   if (rows.length === 0) {
+      throw new Error(`No rows found for session ID ${session_id}`);
+   }
+
+   const row = rows[0];
+
+   const columnToUpdate =
+      row.slot_1 === session_id
+         ? "slot_1"
+         : row.slot_2 === session_id
+         ? "slot_2"
+         : row.slot_3 === session_id
+         ? "slot_3"
+         : null;
+
+   if (!columnToUpdate) {
+      throw new Error(`Session ID ${session_id} not found in any slot columns`);
+   }
+
+   const [results] = await db.execute(
+      `UPDATE quetzal.Players SET ${columnToUpdate} = NULL WHERE ${columnToUpdate} = ${session_id}`
+   );
+
+   db.end();
+   return results;
+}

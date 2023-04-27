@@ -9,6 +9,7 @@ import {
    createSession,
    getUser,
    endSession,
+   clearSlot,
 } from "../helpers/users.js";
 
 const router = Router();
@@ -190,6 +191,37 @@ router.patch("/endSession", async (req, res) => {
       console.log("UPDATE session error: ", error);
       res.status(500).json({
          msg: "end (UPDATE) session error",
+         error,
+      });
+   }
+});
+
+// clears a slot for a player (when deleting a character)
+router.patch("/clearSlot", async (req, res) => {
+   try {
+      const {session_id} = req.body;
+      if (!session_id) {
+         res.status(400).json({
+            msg: "Missing session_id in request body",
+         });
+         return;
+      }
+
+      const data = await clearSlot(session_id);
+      if (!data) {
+         res.status(404).json({
+            msg: "Slot not cleared",
+         });
+         return;
+      }
+      res.status(200).json({
+         msg: "Slot cleared",
+         data,
+      });
+   } catch (error) {
+      console.log("UPDATE session error: ", error);
+      res.status(500).json({
+         msg: "clear (UPDATE) session error",
          error,
       });
    }
