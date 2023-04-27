@@ -11636,9 +11636,8 @@ body {
     background-position: 100% 0;
   }
 }
-.container, canvas {
+.carousel-inner, canvas {
   padding: 1%;
-  border: 1px solid white;
 }
 
 canvas {

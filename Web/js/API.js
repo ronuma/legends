@@ -1,7 +1,10 @@
-function random_color(alpha = 1.0) {
-  const r_c = () => Math.round(Math.random() * 255);
-  return `rgba(${r_c()}, ${r_c()}, ${r_c()}, ${alpha}`;
-}
+var colors = ['#0d6efd', '#6610f2', '#6f42c1', '#d63384', '#dc3545', '#fd7e14', '#ffc107', '#198754', '#20c997','#0dcaf0'];
+random_color = () => colors[Math.floor(Math.random() * colors.length)];
+
+// function random_color(alpha = 1.0) {
+//   const r_c = () => Math.round(Math.random() * 255);
+//   return `rgba(${r_c()}, ${r_c()}, ${r_c()}, ${alpha}`;
+// }
 
 async function fetchStats() {
   try {
@@ -48,7 +51,7 @@ async function fetchStats() {
       .getElementById("chartAvgSessionStats")
       .getContext("2d");
     const avgSessionStatsChart = new Chart(ctxSessionStats, {
-      type: "bar",
+      type: "doughnut",
       data: {
         labels: sessionStatsLabels,
         datasets: [
@@ -72,7 +75,7 @@ async function fetchStats() {
     const totalSessionsChart = new Chart(ctxTotalSessions, {
       type: "bar",
       data: {
-        labels: ["Total Game Runs", "Total Sessions Finished"],
+        labels: ["Partidas Jugadas", "Partidas Terminadas"],
         datasets: [
           {
             label: "Count",
