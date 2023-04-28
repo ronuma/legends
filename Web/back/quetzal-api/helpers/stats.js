@@ -73,8 +73,8 @@ export async function getTop10() {
 export async function getUserRun(email) {
    const db = await connectToDB();
    const [results] = await db.execute(
-      `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id DESC LIMIT 1`
+      `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id`
    );
    db.end();
-   return results[0];
+   return results;
 }
