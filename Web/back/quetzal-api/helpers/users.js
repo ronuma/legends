@@ -45,7 +45,7 @@ export async function createSession(data) {
       `UPDATE quetzal.Players SET ${slotString} = ${session_id} WHERE email = \'${email}\'`
    );
    db.end();
-   return sessionData[0];
+   return sessionData[0].session_id;
 }
 
 export async function addData(email, user_name) {
