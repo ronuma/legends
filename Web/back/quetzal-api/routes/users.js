@@ -131,7 +131,7 @@ router.post("/createSession", async (req, res) => {
       }
       res.status(200).json({
          msg: "Session created",
-         data,
+         session_id: data,
       });
    } catch (error) {
       console.log("POST session error: ", error);
