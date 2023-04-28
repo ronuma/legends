@@ -29,8 +29,6 @@ public class Hero // Same object as in the API (JSON) response
     public float damage;
     public float defense;
     public float speed;
-    
-    
 }
 
 // Allow the class to be extracted from Unity

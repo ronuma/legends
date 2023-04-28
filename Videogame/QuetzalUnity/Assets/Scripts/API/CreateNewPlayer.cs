@@ -15,9 +15,11 @@ public class CreateNewPlayer : MonoBehaviour
 {
     private string createUserEP = "/users/createSession";
     private string url = "https://quetzal-api.glitch.me";
-    public string email = "user1@example.com";
+    public string email = "user13@example.com";
     public int hero_id;
     public int memory_slot;
+
+    public int sesion_id;
 
     public void CreateSession()
     {

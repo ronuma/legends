@@ -12,6 +12,7 @@ public class CharacterManager : MonoBehaviour
     public TMPro.TextMeshProUGUI characterDescription;
 
     public GameObject createNewPlayer;
+    public GameObject mainPageManager;
     public int slotID;
 
     public GameObject characterPrefab;
@@ -51,8 +52,11 @@ public class CharacterManager : MonoBehaviour
         createNewPlayer.GetComponent<CreateNewPlayer>().memory_slot = slotID;
         createNewPlayer.GetComponent<CreateNewPlayer>().hero_id = currentCharacterIndex + 1;
         createNewPlayer.GetComponent<CreateNewPlayer>().CreateSession();
+       // int sesID = createNewPlayer.GetComponent<CreateNewPlayer>().sesion_id;
 
-        Debug.Log("Player Chosen: " + currentCharacterIndex);
+        //mainPageManager.GetComponent<HeroManager>().CreatePlayer(sesID);
+
+      //  Debug.Log("Player Chosen: " + currentCharacterIndex);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
