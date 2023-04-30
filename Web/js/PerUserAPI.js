@@ -31,6 +31,7 @@ const userStatsChartCanvas = document.getElementById("userStatsChart");
 const userTotalSessions = document.getElementById("userTotalSessions");
 const userHeroStats = document.getElementById("userHeroStats");
 const heroStatsChartCanvas = document.getElementById("heroStatsChart");
+const containers = document.querySelectorAll(".container");
 
 userStatsBtn.addEventListener("click", async () => {
   const email = userEmailInput.value;
@@ -48,7 +49,11 @@ userStatsBtn.addEventListener("click", async () => {
       }
 
       const data = await response.json();
-      console.log("Data received:", data);
+
+      // Remove the "hidden" class from the containers and canvases
+      containers.forEach((container) => container.classList.remove("hidden"));
+      userStatsChartCanvas.classList.remove("hidden");
+      heroStatsChartCanvas.classList.remove("hidden");
 
       const averageStatsLabels = [
         "Daño",
