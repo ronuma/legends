@@ -38,9 +38,7 @@ userStatsBtn.addEventListener("click", async () => {
 
   if (email) {
     try {
-      console.log(`Fetching user stats for email: ${email}`);
       const response = await fetch(`http://127.0.0.1:8000/stats/runs/${email}`);
-      console.log(`Response status: ${response.status}`);
 
       if (!response.ok) {
         throw new Error(
@@ -68,7 +66,7 @@ userStatsBtn.addEventListener("click", async () => {
       );
 
       // Display total runs and finished runs
-      userTotalSessions.textContent = `Total Runs: ${data.runs}, Finished Runs: ${data.finished_runs}`;
+      userTotalSessions.textContent = `Total de Partidas: ${data.runs}, Finalizadas: ${data.finished_runs}`;
 
       // Process hero stats data
       const heroStatsLabels = Object.keys(data.heroStats);

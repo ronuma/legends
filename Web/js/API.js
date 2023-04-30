@@ -1,4 +1,15 @@
-var colors = ['#0d6efd', '#6610f2', '#6f42c1', '#d63384', '#dc3545', '#fd7e14', '#ffc107', '#198754', '#20c997', '#0dcaf0'];
+var colors = [
+  "#0d6efd",
+  "#6610f2",
+  "#6f42c1",
+  "#d63384",
+  "#dc3545",
+  "#fd7e14",
+  "#ffc107",
+  "#198754",
+  "#20c997",
+  "#0dcaf0",
+];
 var usedColors = [];
 
 random_color = () => {
@@ -20,8 +31,6 @@ async function fetchStats() {
     });
 
     const stats = await stats_response.json();
-    console.log("Stats: ");
-    console.log(stats);
 
     // Most Used Items
     const itemNames = stats.mostUsedItems.map((item) => item.name);
@@ -39,7 +48,7 @@ async function fetchStats() {
         labels: itemNames,
         datasets: [
           {
-            label: "Times Chosen",
+            label: "Veces Elegido",
             data: itemTimesChosen,
             backgroundColor: itemColors,
             borderColor: itemColors.map((color) => color.replace("0.8", "1")),
@@ -50,7 +59,13 @@ async function fetchStats() {
     });
 
     // Average Session Stats
-    const sessionStatsLabels = Object.keys(stats.averageSessionStats);
+    const sessionStatsLabels = [
+      "Daño",
+      "Salud",
+      "Maná",
+      "Defensa",
+      "Velocidad",
+    ];
     const sessionStatsValues = Object.values(stats.averageSessionStats);
     const sessionStatsColors = sessionStatsLabels.map(() => random_color(0.8));
 
@@ -73,7 +88,6 @@ async function fetchStats() {
           },
         ],
       },
-
     });
 
     // Total Game Runs and Finished Sessions
@@ -86,7 +100,7 @@ async function fetchStats() {
         labels: ["Partidas Jugadas", "Partidas Terminadas"],
         datasets: [
           {
-            label: "Count",
+            label: "Cuenta",
             data: [stats.totalGameRuns, parseInt(stats.totalSessionsFinished)],
             backgroundColor: [random_color(0.8), random_color(0.8)],
             borderColor: [random_color(1.0), random_color(1.0)],

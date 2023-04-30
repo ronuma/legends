@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <title>User Charts</title>
-    +
+
     <style>
       .hidden {
         display: none;
@@ -147,18 +147,19 @@
       <!-- Cantidad de Partidas del usuario -->
       <div class="container hidden" data-bs-theme="dark">
         <h4>Cantidad de Partidas</h4>
-        <div id="userTotalSessions"></div>
+        <h6 id="userTotalSessions"></h6>
       </div>
 
       <!-- Heroes  -->
       <div class="container hidden" data-bs-theme="dark">
-        <h4>Hero Stats</h4>
-        <div id="userHeroStats"></div>
+        <h6>Tus mejores héroes</h6>
+        <canvas id="heroStatsChart" class="hidden"></canvas>
       </div>
 
-      <!-- Gráficas de estadísticas del usuario -->
-      <canvas id="userStatsChart" class="hidden"></canvas>
-      <canvas id="heroStatsChart" class="hidden"></canvas>
+      <div class="container hidden" data-bs-theme="dark">
+        <h6>Promedio de Stats de tus héroes</h6>
+        <canvas id="userStatsChart" class="hidden"></canvas>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Internal API scripts -->
