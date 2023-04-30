@@ -39,7 +39,9 @@ userStatsBtn.addEventListener("click", async () => {
 
   if (email) {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/stats/runs/${email}`);
+      const response = await fetch(
+        `https://quetzal-api.glitch.me/stats/runs/${email}`
+      );
 
       if (!response.ok) {
         throw new Error(
