@@ -1,5 +1,17 @@
 import connectToDB from "../index.js";
 
+// Límites de estadísticas
+const statLimits = {
+   health: {min: 1, max: 1000},
+   mana: {min: 0, max: 300},
+   defense: {min: 0, max: 250},
+   damage: {min: 0, max: 125},
+   speed: {min: 1, max: 8},
+};
+
+// Normalizar las estadísticas utilizando la fórmula min-max
+const normalizeStat = (statValue, min, max) => (statValue - min) / (max - min);
+
 export async function getStats() {
    const db = await connectToDB();
 
@@ -16,19 +28,6 @@ export async function getStats() {
       average_speed: speed,
       total_sessions_finished: totalSessionsFinished,
    } = stats[0];
-
-   // Límites de estadísticas
-   const statLimits = {
-      health: {min: 1, max: 1000},
-      mana: {min: 0, max: 300},
-      defense: {min: 0, max: 250},
-      damage: {min: 0, max: 125},
-      speed: {min: 1, max: 8},
-   };
-
-   // Normalizar las estadísticas utilizando la fórmula min-max
-   const normalizeStat = (statValue, min, max) =>
-      (statValue - min) / (max - min);
 
    const normalizedStats = {
       damage: normalizeStat(
@@ -102,9 +101,37 @@ export async function getUserRun(email) {
    averageStats.damage /= results.length;
    averageStats.speed /= results.length;
 
+   const normalizedStats = {
+      damage: normalizeStat(
+         averageStats.damage,
+         statLimits.damage.min,
+         statLimits.damage.max
+      ),
+      health: normalizeStat(
+         averageStats.health,
+         statLimits.health.min,
+         statLimits.health.max
+      ),
+      mana: normalizeStat(
+         averageStats.mana,
+         statLimits.mana.min,
+         statLimits.mana.max
+      ),
+      defense: normalizeStat(
+         averageStats.defense,
+         statLimits.defense.min,
+         statLimits.defense.max
+      ),
+      speed: normalizeStat(
+         averageStats.speed,
+         statLimits.speed.min,
+         statLimits.speed.max
+      ),
+   };
+
    db.end();
    return {
       runs: results.length,
-      averageStats,
+      averageStats: normalizedStats,
    };
 }

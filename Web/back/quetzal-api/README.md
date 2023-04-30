@@ -32,8 +32,8 @@ de partidas.
 
 `/stats/runs:email`
 
-Entrega el promedio de estadísticas de todas las partidas de un usuario
-específico, identificado por su correo electrónico.
+Entrega el promedio de estadísticas (normalizadas) de todas las partidas de un
+usuario específico, identificado por su correo electrónico.
 
 ## Items
 
