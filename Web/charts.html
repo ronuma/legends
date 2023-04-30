@@ -151,14 +151,35 @@
       </div>
 
       <!-- Heroes  -->
-      <div class="container hidden" data-bs-theme="dark">
-        <h6>Tus mejores héroes</h6>
-        <canvas id="heroStatsChart" class="hidden"></canvas>
-      </div>
-
-      <div class="container hidden" data-bs-theme="dark">
-        <h6>Promedio de Stats de tus héroes</h6>
-        <canvas id="userStatsChart" class="hidden"></canvas>
+      <div id="userCarousel" class="carousel slide hidden" data-bs-theme="dark">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h6>Mejores Héroes</h6>
+            <canvas id="heroStatsChart" class="mx-auto w-75"></canvas>
+          </div>
+          <div class="carousel-item">
+            <h6>Estadísticas Promedio de Héroes</h6>
+            <canvas id="userStatsChart" class="mx-auto w-50"></canvas>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#userCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#userCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
