@@ -17,13 +17,64 @@ export async function getStats() {
       total_sessions_finished: totalSessionsFinished,
    } = stats[0];
 
-   const averageSessionStats = {damage, health, mana, defense, speed};
+   // Límites de estadísticas
+   const statLimits = {
+      health: {min: 1, max: 1000},
+      mana: {min: 0, max: 300},
+      defense: {min: 0, max: 250},
+      damage: {min: 0, max: 125},
+      speed: {min: 1, max: 8},
+   };
+
+   // Normalizar las estadísticas utilizando la fórmula min-max
+   const normalizeStat = (statValue, min, max) =>
+      (statValue - min) / (max - min);
+
+   const normalizedStats = {
+      damage: normalizeStat(
+         damage,
+         statLimits.damage.min,
+         statLimits.damage.max
+      ),
+      health: normalizeStat(
+         health,
+         statLimits.health.min,
+         statLimits.health.max
+      ),
+      mana: normalizeStat(mana, statLimits.mana.min, statLimits.mana.max),
+      defense: normalizeStat(
+         defense,
+         statLimits.defense.min,
+         statLimits.defense.max
+      ),
+      speed: normalizeStat(speed, statLimits.speed.min, statLimits.speed.max),
+   };
+
    db.end();
    return {
       mostUsedItems: items,
       totalGameRuns,
       averagePlayTime,
-      averageSessionStats,
+      averageSessionStats: normalizedStats,
       totalSessionsFinished,
    };
+}
+
+// Top 10 players by number of finished runs
+export async function getTop10() {
+   const db = await connectToDB();
+
+   const [top10] = await db.query("SELECT * FROM top10_view");
+   db.end();
+   return top10;
+}
+
+// get /run/:email selects the row from the Sessions table where the email matches the email in the request
+export async function getUserRun(email) {
+   const db = await connectToDB();
+   const [results] = await db.execute(
+      `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id`
+   );
+   db.end();
+   return results;
 }

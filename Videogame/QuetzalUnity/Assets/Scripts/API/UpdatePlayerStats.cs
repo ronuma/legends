@@ -1,29 +1,86 @@
-using UnityEngine.Networking;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+
+[System.Serializable]
+public class UpdateUser
+{
+    public float health;
+    public float mana;
+    public float defense;
+    public float damage;
+    public float speed;
+    public int session_id;
+    public int item_id;
+}
 
 public class UpdatePlayerStats : MonoBehaviour
 {
-    public string apiUrl = "http://localhost:8000/users/updateStats";
-    // public string reqBody = "{\"session_id\": \"27\",\"health\": \"50\",\"mana\": \"5\",\"defense\": \"42\",\"speed\": \"2\",\"damage\": \"10\"}"; // The JSON payload you want to send
+    private string createUserEP = "/users/selectItem";
+    private string url = "https://quetzal-api.glitch.me";
 
-    IEnumerator Start()
+    public float health_API;
+    public float mana_API;
+    public float defense_API;
+    public float damage_API;
+    public float speed_API;
+    public int session_id_API;
+    public int item_id_API;
+
+
+    public void createStats(float health, float mana, float defense, 
+                            float damage, float speed, int session_id, 
+                            int item_id)
     {
-        // si no se la pongo aquí directo el body no me jala, no se por qué
-        var request = UnityWebRequest.Put(apiUrl, "{\"session_id\": 12,\"health\": 50,\"mana\": 5,\"defense\": 42,\"speed\": 2,\"damage\": 5}");
-        request.method = "PATCH";
-        request.SetRequestHeader("Content-Type", "application/json");
-        yield return request.SendWebRequest();
+        health_API = health;
+        mana_API = mana;
+        defense_API = defense;
+        damage_API = damage;
+        speed_API = speed;
+        session_id_API = session_id;
+        item_id_API = item_id;
 
-        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-        {
-            Debug.LogError(request.error);
-        }
-        else
-        {
-            string responseText = request.downloadHandler.text;
-            Debug.Log("Server response: " + responseText);
+        CreateSession();
+    }
+
+    private void CreateSession()
+    {
+        StartCoroutine(PostRequest());
+    }
+
+    IEnumerator PostRequest()
+    {
+        // Create a User object with the provided email, hero_id and memory_slot
+        UpdateUser newuser = new UpdateUser();
+        newuser.health = health_API;
+        newuser.mana = mana_API;
+        newuser.defense = defense_API;
+        newuser.damage = damage_API;
+        newuser.speed = speed_API;
+        newuser.session_id = session_id_API;
+        newuser.item_id = item_id_API;
+
+        // Serialize the User object to a JSON string
+        string jsonString = JsonUtility.ToJson(newuser);
+
+        using (UnityWebRequest www = UnityWebRequest.Put(url + createUserEP, jsonString))
+        { 
+            www.method = "PATCH";
+            www.SetRequestHeader("Content-Type", "application/json");
+            www.SetRequestHeader("Accept", "application/json");
+
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.LogError("Error: " + www.error);
+                yield break;
+            }
+
+            // Deserialize the JSON response into a User object
+            UpdateUser newUser2 = JsonUtility.FromJson<UpdateUser>(www.downloadHandler.text);
         }
     }
 }
+

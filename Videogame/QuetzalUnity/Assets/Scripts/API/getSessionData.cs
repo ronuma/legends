@@ -41,7 +41,7 @@ public class SessionData // Same object as in the API (JSON) response
 public class getSessionData : MonoBehaviour
 {
     string url = "https://quetzal-api.glitch.me"; // The URL of the API
-    string getSessionDataEP = "/users/getSessionData/1"; // The endpoint to get the users
+    string getSessionDataEP = "/users/getSessionData/2"; // The endpoint to get the users
     [SerializeField] Text errorText;
 
     // This is where the information from the api will be extracted

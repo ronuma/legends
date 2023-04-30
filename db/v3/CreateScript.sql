@@ -120,3 +120,14 @@ SELECT
     AVG(speed) AS average_speed,
     SUM(CASE WHEN finished = TRUE THEN 1 ELSE 0 END) AS total_sessions_finished
 FROM Sessions;
+
+CREATE VIEW top10_view AS
+SELECT
+    Players.user_name,
+    COUNT(Sessions.session_id) AS finished_runs
+FROM Players
+JOIN Sessions ON Players.email = Sessions.email
+WHERE Sessions.finished = TRUE
+GROUP BY Players.user_name
+ORDER BY finished_runs DESC
+LIMIT 10;

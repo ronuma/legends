@@ -16,7 +16,7 @@ public class PlayerSpawner : MonoBehaviour
     void Start()
     {
         playerChosen = PlayerPrefs.GetInt("playerChosen", 0);
-        playerPrefabs = new GameObject[] { playerPrefabBow, playerPrefabSword, playerPrefabSpear };  
+        playerPrefabs = new GameObject[] {playerPrefabSpear, playerPrefabBow, playerPrefabSword};  
         Debug.Log(playerChosen);       
         Instantiate(playerPrefabs[playerChosen], transform.position, Quaternion.identity);
     }

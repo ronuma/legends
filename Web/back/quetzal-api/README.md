@@ -18,9 +18,15 @@ Entrega mensaje de confirmación de que el servidor está corriendo.
 
 `/stats`
 
-Entrega stats generales del juego.
+Entrega stats generales del juego, normalizadas.
 
 <br>
+
+`/stats/top10`
+
+<br>
+
+`/stats/runs`
 
 ## Items
 
@@ -40,23 +46,21 @@ Entrega datos de un item específico.
 
 ### GET
 
-`/characters/NPCs`
+`/characters/heroes`
 
-Entrega NPCs del juego.
+Entrega los héroes del juego. Los personajes principales, vaya.
 
 `/characters/enemies`
 
 Entrega los enemigos del juego, incluyendo al BOSS.
 
-`/characters/dialogs`
+`DEPRECATED - /characters/NPCs`
 
-Entrega los diálogos del juego. INCOMPLETO, LO IDEAL SERÍA QUE EL ENDPOINT DE
-NPCS COMBINE EL HECHO DE ENTREGAR DIÁLOGOS JUNTO CON LOS NPCS A LOS QUE
-CORRESPONDE.
+Entrega NPCs del juego.
 
-`/characters/heroes`
+`DEPRECATED - /characters/dialogs`
 
-Entrega los héroes del juego. Los personajes principales, vaya.
+Entrega los diálogos del juego.
 
 <br>
 
@@ -110,6 +114,19 @@ el id de dicha sesión y los nuevos stats (porque agarró un item o le dio
 guardar, por ejemplo). Asimismo se agrega +1 al items chosen de ese item,
 entonces es importante tener su item id también.
 
-<br>
+`/users/endSession`
 
-##
+`body: { session_id }`
+
+Termina una sesión, o sea, es cuando un jugador acaba el juego (mata al boss?).
+Se pasa el id de sesión para marcar que esa sesión ya está terminada, y se le
+agrega +1 a los runs del jugador, para el tema de las stats.
+
+`/users/clearSlot`
+
+`body: { session_id }`
+
+Nulifica el slot del usuario en cuestión que tiene el id de sesión
+correspondiente.
+
+<br>
