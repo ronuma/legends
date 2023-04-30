@@ -104,7 +104,7 @@ export async function getUserRun(email) {
 
    db.end();
    return {
-      runs: results,
+      runs: results.length,
       averageStats,
    };
 }
