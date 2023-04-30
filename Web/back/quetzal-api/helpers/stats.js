@@ -72,7 +72,7 @@ export async function getTop10() {
 export async function getUserRun(email) {
    const db = await connectToDB();
    const [results] = await db.execute(
-      `SELECT * FROM quetzal.Sessions WHERE email = '${email}' ORDER BY session_id`
+      `SELECT * FROM quetzal.hero_sessions WHERE email = '${email}' ORDER BY session_id`
    );
    if (results.length === 0) {
       db.end();
@@ -87,12 +87,24 @@ export async function getUserRun(email) {
       speed: 0,
    };
 
+   let heroStats = {};
+
    for (const result of results) {
       averageStats.health += result.health;
       averageStats.mana += result.mana;
       averageStats.defense += result.defense;
       averageStats.damage += result.damage;
       averageStats.speed += result.speed;
+
+      // Add hero stats
+      const heroName = result.hero_name;
+      if (!heroStats[heroName]) {
+         heroStats[heroName] = {runs: 0, finished_runs: 0};
+      }
+      heroStats[heroName].runs++;
+      if (result.finished) {
+         heroStats[heroName].finished_runs++;
+      }
    }
 
    averageStats.health /= results.length;
@@ -132,6 +144,8 @@ export async function getUserRun(email) {
    db.end();
    return {
       runs: results.length,
+      finished_runs: results.filter(result => result.finished).length,
       averageStats: normalizedStats,
+      heroStats,
    };
 }
