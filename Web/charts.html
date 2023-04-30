@@ -94,6 +94,20 @@
     <div class="container" data-bs-theme="dark">
       <h2>Estadísticas Globales</h2>
     </div>
+    <!-- leaderboard -->
+    <section>
+      <h2>Leaderboard</h2>
+      <table id="leaderboardTable" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Finished Runs</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
     <div id="carouselExample" class="carousel slide" data-bs-theme="dark">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -184,8 +198,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Internal API scripts -->
-    <script src="./js/API.js"></script>
-    <script src="./js/PerUserAPI.js"></script>
+    <script src="./js/GlobalCharts.js"></script>
+    <script src="./js/PerUserCharts.js"></script>
+    <script src="./js/Leaderboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
