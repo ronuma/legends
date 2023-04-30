@@ -24,9 +24,16 @@ Entrega stats generales del juego, normalizadas.
 
 `/stats/top10`
 
+Entrega una lista con los 10 mejores jugadores del juego, ordenados según la
+cantidad de partidas finalizadas con éxito. Se entrega el username y la cantidad
+de partidas.
+
 <br>
 
-`/stats/runs`
+`/stats/runs:email`
+
+Entrega el promedio de estadísticas de todas las partidas de un usuario
+específico, identificado por su correo electrónico.
 
 ## Items
 
