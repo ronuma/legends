@@ -23,6 +23,10 @@
       .hidden {
         display: none;
       }
+      .form-control-dark {
+        background-color: #343a40;
+        color: #fff;
+      }
     </style>
   </head>
 
@@ -152,14 +156,14 @@
         <h2>Estadísticas Personales</h2>
       </div>
       <!-- Input para el email del usuario -->
-      <div class="input-group mb-3">
+      <div class="input-group my-3 w-50 d-flex justify-content-center">
         <input
           type="email"
-          class="form-control"
+          class="form-control form-control-dark text-white"
           id="userEmail"
           placeholder="Ingresa tu correo electrónico"
         />
-        <button class="btn btn-primary" id="userStatsBtn" type="button">
+        <button class="btn btn-dark" id="userStatsBtn" type="button">
           Ingresar
         </button>
       </div>
