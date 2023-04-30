@@ -43,7 +43,10 @@
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <a class="offcanvas-title" id="offcanvasDarkNavbarLabel" href="./index.html"
+            <a
+              class="offcanvas-title"
+              id="offcanvasDarkNavbarLabel"
+              href="./index.html"
               ><img
                 src="./images/logo1.png"
                 alt="Quetzal Logo"
@@ -69,7 +72,7 @@
                 <a class="nav-link" href="./manuel.html">Manual</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Estadísticas</a> 
+                <a class="nav-link active" href="#">Estadísticas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Créditos</a>
@@ -88,7 +91,7 @@
     <div id="carouselExample" class="carousel slide" data-bs-theme="dark">
       <div class="carousel-inner">
         <div class="carousel-item active">
-        <h6>Items más usados</h6>
+          <h6>Items más usados</h6>
           <canvas class="mx-auto w-75" id="chartMostUsedItems"></canvas>
         </div>
         <div class="carousel-item">
@@ -118,6 +121,23 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+    <div>
+      <h2>Estadísticas Personales</h2>
+      <!-- Input para el email del usuario -->
+      <div class="input-group mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="userEmail"
+          placeholder="Ingresa tu correo electrónico"
+        />
+        <button class="btn btn-primary" id="userStatsBtn" type="button">
+          Enter
+        </button>
+      </div>
+      <!-- Gráfica de estadísticas del usuario -->
+      <canvas id="userStatsChart"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Internal API scripts -->
