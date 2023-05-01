@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6365179835041021461}
   - component: {fileID: 8195917400663005004}
   m_Layer: 0
-  m_Name: MainCH-BOW_146
+  m_Name: Arquero
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,11 +381,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507e3639e91e240ba906fc8bfe2e386c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 1
-  playerMana: 1
-  playerDamage: 1
+  playerSession_id: 41
+  playerHealth: 500
+  playerMana: 87
+  playerDamage: 5
   playerSpeed: 1
-  playerDefense: 1
+  playerDefense: 73
 --- !u!95 &4687891140964880407
 Animator:
   serializedVersion: 5

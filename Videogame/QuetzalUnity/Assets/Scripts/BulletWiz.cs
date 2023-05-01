@@ -28,7 +28,6 @@ public class BulletWiz : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, force * Time.deltaTime);
 
         animator.SetFloat("Mov-x", direction.x);
-        Debug.Log(direction.x);
         animator.SetFloat("speed", Mathf.Abs(direction.x));
     }
 

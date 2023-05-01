@@ -63,11 +63,6 @@ public class getHeros : MonoBehaviour
 
     // These are the functions that must be called to interact with the API
 
-    void Start()
-    {
-        QueryHeros();
-    }
-
     public void QueryHeros()
     {
         StartCoroutine(GetHeros()); // async call to the API
@@ -94,7 +89,6 @@ public class getHeros : MonoBehaviour
                 // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
                 string jsonString = "{\"heros\":" + www.downloadHandler.text + "}"; // add {} to make it an object
                 allHeros = JsonUtility.FromJson<HeroList>(jsonString);
-                DisplayHeros();
                 if (errorText != null) errorText.text = "";
             }
             else
@@ -131,12 +125,5 @@ public class getHeros : MonoBehaviour
     }
 
     // Show the results of the Query in the Unity UI elements,
-    // via another script that fills a scrollview
-    void DisplayHeros()
-    {
-
-        Debug.Log(allHeros.heros.Count);
-        Debug.Log("Heros loaded");
-    }
-
+    // via another script that fills a scrollvie
 }

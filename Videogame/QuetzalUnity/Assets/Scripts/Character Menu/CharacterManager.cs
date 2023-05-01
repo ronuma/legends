@@ -15,6 +15,8 @@ public class CharacterManager : MonoBehaviour
     public GameObject mainPageManager;
     public int slotID;
 
+    private int sesID;
+
     public GameObject characterPrefab;
 
     private int currentCharacterIndex = 0;
@@ -52,11 +54,16 @@ public class CharacterManager : MonoBehaviour
         createNewPlayer.GetComponent<CreateNewPlayer>().memory_slot = slotID;
         createNewPlayer.GetComponent<CreateNewPlayer>().hero_id = currentCharacterIndex + 1;
         createNewPlayer.GetComponent<CreateNewPlayer>().CreateSession();
-       // int sesID = createNewPlayer.GetComponent<CreateNewPlayer>().sesion_id;
+        StartCoroutine(heroBuilder());
+        
+    }
 
-        //mainPageManager.GetComponent<HeroManager>().CreatePlayer(sesID);
-
-      //  Debug.Log("Player Chosen: " + currentCharacterIndex);
+    IEnumerator heroBuilder()
+    {
+        yield return new WaitForSeconds(0.5f);
+        sesID = createNewPlayer.GetComponent<CreateNewPlayer>().sesion_id;
+        mainPageManager.GetComponent<HeroManager>().CreatePlayer(sesID, currentCharacterIndex);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
