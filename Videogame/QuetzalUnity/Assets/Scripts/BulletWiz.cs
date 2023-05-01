@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletWiz : MonoBehaviour
 {
-    
+    public Animator animator; // Reference to the Animator component
     private float force = 4f; // Bullet speed
     public GameObject player; // Reference to the player GameObject
     public float damage; // Amount of damage this bullet deals to the player
@@ -26,6 +26,9 @@ public class BulletWiz : MonoBehaviour
 
         // Move the bullet towards the player with a constant speed
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, force * Time.deltaTime);
+
+        animator.SetFloat("Mov-x", direction.x);
+        animator.SetFloat("speed", Mathf.Abs(direction.x));
     }
 
     private void OnTriggerEnter2D(Collider2D other)

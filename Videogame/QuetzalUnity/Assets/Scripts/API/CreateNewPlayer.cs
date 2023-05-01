@@ -11,16 +11,30 @@ public class NewUser
     public int memory_slot;
 }
 
+[System.Serializable]
+public class SessionResponse
+{
+    public string msg;
+    public int session_id;
+}
+
 public class CreateNewPlayer : MonoBehaviour
 {
     private string createUserEP = "/users/createSession";
     private string url = "https://quetzal-api.glitch.me";
-    public string email = "user1@example.com";
+    public string email;
     public int hero_id;
     public int memory_slot;
 
+    public int sesion_id;
+
     public void CreateSession()
     {
+        email = "gabitest2@example.com";
+        Debug.Log("Creating session...");
+        Debug.Log("Hero ID: " + hero_id);
+        Debug.Log("Memory Slot: " + memory_slot);
+        Debug.Log("Email: " + email);
         StartCoroutine(PostRequest());
     }
 
@@ -49,9 +63,12 @@ public class CreateNewPlayer : MonoBehaviour
                 yield break;
             }
 
-            // Deserialize the JSON response into a User object
-            NewUser newUser2 = JsonUtility.FromJson<NewUser>(www.downloadHandler.text);
-            Debug.Log("User created with email: " + newUser2.email);
+            SessionResponse response = JsonUtility.FromJson<SessionResponse>(www.downloadHandler.text);
+            sesion_id = response.session_id;
+            Debug.Log("Session created with ID: " + sesion_id);
+
         }
     }
+
 }
+

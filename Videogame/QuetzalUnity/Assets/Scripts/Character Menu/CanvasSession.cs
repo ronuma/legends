@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class CanvasSession : MonoBehaviour
 {
@@ -12,10 +13,6 @@ public class CanvasSession : MonoBehaviour
     public Canvas session;
 
     //Prefabs of the characters
-    public GameObject playerPrefabBow;
-    public GameObject playerPrefabSword;
-    public GameObject playerPrefabSpear;
-
     public GameObject[] playerPrefabs;
 
     //APIs that are involved in the character selection
@@ -38,7 +35,6 @@ public class CanvasSession : MonoBehaviour
 
     void Start()
     {
-        playerPrefabs = new GameObject[] {playerPrefabSpear, playerPrefabBow, playerPrefabSword};
         StartCoroutine(processUserData());
     }
 
@@ -83,13 +79,12 @@ public class CanvasSession : MonoBehaviour
     public void ChooseCharacter(Slot index, int slot)
     {
         int playerId = index.hero_id > 0 ? index.hero_id-1 : -1;
+        Debug.Log("=====>" + playerId);
 
         if (playerId >= 0)
         {
-        ModifyPlayerStats(playerId, index);
-        PlayerPrefs.SetInt("playerChosen", playerId);
-        PlayerPrefs.Save();
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+            Debug.Log("INSIDEEEEE");
+            StartCoroutine(ModifyPlayerStats(playerId, index));
         }
         else
         {
@@ -99,14 +94,33 @@ public class CanvasSession : MonoBehaviour
         }
     }
 
-    void ModifyPlayerStats(int playerId, Slot index)
+    IEnumerator ModifyPlayerStats(int playerId, Slot index)
     {
-        playerPrefabs[playerId].GetComponent<PlayerStats>().playerDamage = index.damage;
-        playerPrefabs[playerId].GetComponent<PlayerStats>().playerHealth = index.health;
-        playerPrefabs[playerId].GetComponent<PlayerStats>().playerMana = index.mana;
-        playerPrefabs[playerId].GetComponent<PlayerStats>().playerSpeed = index.speed;
-        playerPrefabs[playerId].GetComponent<PlayerStats>().playerDefense = index.defense;
-        playerPrefabs[playerId].GetComponent<PlayerStats>().playerSession_id = index.session_id;
+        yield return new WaitForSeconds(1f);
+        Characters character = characterData.GetCharacter(playerId);
+
+        GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Characters/" + character.characterName + ".prefab");
+        GameObject playerOG = Instantiate(playerPrefabs[playerId]);
+
+        Debug.Log("index.damage " + index.damage);
+        Debug.Log("index.health " + index.health);
+        Debug.Log("index.mana " + index.mana);
+        Debug.Log("index.speed " + index.speed);
+        Debug.Log("index.defense " + index.defense);
+
+        playerOG.GetComponent<PlayerStats>().playerDamage = index.damage;
+        playerOG.GetComponent<PlayerStats>().playerHealth = index.health;
+        playerOG.GetComponent<PlayerStats>().playerMana = index.mana;
+        playerOG.GetComponent<PlayerStats>().playerSpeed = index.speed;
+        playerOG.GetComponent<PlayerStats>().playerDefense = index.defense;
+        playerOG.GetComponent<PlayerStats>().playerSession_id = index.session_id;
+
+        //Now i wnt to save playerOG as the original prefab
+        PrefabUtility.SaveAsPrefabAssetAndConnect(playerOG, "Assets/Prefabs/Characters/" + character.characterName + ".prefab", InteractionMode.UserAction);
+
+        PlayerPrefs.SetInt("playerChosen", playerId);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
 }

@@ -34,7 +34,7 @@ public class PlayerExplosion : MonoBehaviour
                 chargeBar.fillAmount = 1; //reset the charge bar
             }
         }
-         
+        
         if (Input.GetKeyDown(KeyCode.Space) && GetComponent<Movement>().move == Vector2.zero && canExplode)
         //if the player presses the space key, is not moving and can explode
         {

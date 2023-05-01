@@ -18283,7 +18283,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1401140235}
   - component: {fileID: 1401140234}
-  - component: {fileID: 1401140236}
+  - component: {fileID: 1401140238}
+  - component: {fileID: 1401140237}
   m_Layer: 0
   m_Name: OverworldManager
   m_TagString: Untagged
@@ -18321,7 +18322,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1401140236
+--- !u!114 &1401140237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18330,12 +18331,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1401140233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532e9548324854b679817a922f4255a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 52492b059a91a4eb9be8787dccffb594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 3004981242279495260, guid: 3d4cfddfe961d4f3fbb617f63b74a5cd, type: 3}
+  - {fileID: 2067339733853691634, guid: 7c7330de01a474f32aba72717a62d5cf, type: 3}
+  - {fileID: 3251574444580812583, guid: 97640c065f3f14231a71ac87b28ecc74, type: 3}
+  - {fileID: 6053868098619391645, guid: 2cd4b08542e8247db8c98070667a4941, type: 3}
+--- !u!114 &1401140238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401140233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df9e2f83d7a6483e85ff3f2a6318049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   errorText: {fileID: 0}
-  allHeros:
-    heros: []
+  allEnemyStatsApis:
+    enemystatsapis: []
 --- !u!1 &1576469075
 GameObject:
   m_ObjectHideFlags: 0
