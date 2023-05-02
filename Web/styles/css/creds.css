@@ -11644,4 +11644,25 @@ body {
   transform: scale(1.1);
 }
 
+main {
+  height: 100vh;
+}
+
+.accordion {
+  --bs-accordion-bg: #282c34;
+  --bs-accordion-active-bg: #3b3f4c;
+  --bs-accordion-border-color: #282c34;
+  --bs-accordion-icon-color: #5c5f6d;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(92, 118, 146, 0.5);
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 3s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
 /*# sourceMappingURL=creds.css.map */

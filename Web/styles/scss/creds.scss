@@ -1,11 +1,16 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-$primary: #0e1118;
+$primarybg: #0e1118;
+$secondarybg: #282c34;
+$tertiarybg: #3b3f4c;
+$quaternarybg: #5c5f6d;
+$rainbow: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+$accordion-icon-color: $quaternarybg;
 
 body {
     margin: 0;
     padding: 0;
-    background: $primary;
+    background: $primarybg;
     text-align: center;
 }
 
@@ -40,3 +45,24 @@ body {
 }
 
 // Main //
+
+main {
+    height: 100vh;
+}
+
+    // Accordion //
+.accordion {
+    --bs-accordion-bg: #{$secondarybg};
+    --bs-accordion-active-bg: #{$tertiarybg};
+    --bs-accordion-border-color: #{$secondarybg};
+    --bs-accordion-icon-color: #{$quaternarybg};
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(92, 118, 146, 0.5);
+}
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
