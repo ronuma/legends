@@ -29,7 +29,7 @@ public class CreateNewPlayer : MonoBehaviour
 
     public void CreateSession()
     {
-        email = "gabitest2@example.com";
+        email = "gabitest1@example.com";
         Debug.Log("Creating session...");
         Debug.Log("Hero ID: " + hero_id);
         Debug.Log("Memory Slot: " + memory_slot);
@@ -49,7 +49,7 @@ public class CreateNewPlayer : MonoBehaviour
         string jsonString = JsonUtility.ToJson(newuser);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url + createUserEP, jsonString))
-        { 
+        {
             www.method = "POST";
             www.SetRequestHeader("Content-Type", "application/json");
             www.SetRequestHeader("Accept", "application/json");
