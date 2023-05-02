@@ -131,3 +131,11 @@ WHERE Sessions.finished = TRUE
 GROUP BY Players.user_name
 ORDER BY finished_runs DESC
 LIMIT 10;
+
+CREATE VIEW hero_sessions AS
+SELECT
+    Sessions.*,
+    Heroes.hero_name
+FROM
+    quetzal.Sessions
+INNER JOIN quetzal.Heroes ON Sessions.hero_id = Heroes.id;

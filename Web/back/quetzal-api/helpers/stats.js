@@ -1,4 +1,8 @@
 import connectToDB from "../index.js";
+import {statLimits} from "../constants.js";
+
+// Normalizar las estadísticas utilizando la fórmula min-max
+const normalizeStat = (statValue, min, max) => (statValue - min) / (max - min);
 
 export async function getStats() {
    const db = await connectToDB();
@@ -16,19 +20,6 @@ export async function getStats() {
       average_speed: speed,
       total_sessions_finished: totalSessionsFinished,
    } = stats[0];
-
-   // Límites de estadísticas
-   const statLimits = {
-      health: {min: 1, max: 1000},
-      mana: {min: 0, max: 300},
-      defense: {min: 0, max: 250},
-      damage: {min: 0, max: 125},
-      speed: {min: 1, max: 8},
-   };
-
-   // Normalizar las estadísticas utilizando la fórmula min-max
-   const normalizeStat = (statValue, min, max) =>
-      (statValue - min) / (max - min);
 
    const normalizedStats = {
       damage: normalizeStat(
@@ -73,8 +64,80 @@ export async function getTop10() {
 export async function getUserRun(email) {
    const db = await connectToDB();
    const [results] = await db.execute(
-      `SELECT * FROM quetzal.Sessions WHERE email = \'${email}\' ORDER BY session_id`
+      `SELECT * FROM quetzal.hero_sessions WHERE email = '${email}' ORDER BY session_id`
    );
+   if (results.length === 0) {
+      db.end();
+      return {};
+   }
+
+   let averageStats = {
+      health: 0,
+      mana: 0,
+      defense: 0,
+      damage: 0,
+      speed: 0,
+   };
+
+   let heroStats = {};
+
+   for (const result of results) {
+      averageStats.health += result.health;
+      averageStats.mana += result.mana;
+      averageStats.defense += result.defense;
+      averageStats.damage += result.damage;
+      averageStats.speed += result.speed;
+
+      // Add hero stats
+      const heroName = result.hero_name;
+      if (!heroStats[heroName]) {
+         heroStats[heroName] = {runs: 0, finished_runs: 0};
+      }
+      heroStats[heroName].runs++;
+      if (result.finished) {
+         heroStats[heroName].finished_runs++;
+      }
+   }
+
+   averageStats.health /= results.length;
+   averageStats.mana /= results.length;
+   averageStats.defense /= results.length;
+   averageStats.damage /= results.length;
+   averageStats.speed /= results.length;
+
+   const normalizedStats = {
+      damage: normalizeStat(
+         averageStats.damage,
+         statLimits.damage.min,
+         statLimits.damage.max
+      ),
+      health: normalizeStat(
+         averageStats.health,
+         statLimits.health.min,
+         statLimits.health.max
+      ),
+      mana: normalizeStat(
+         averageStats.mana,
+         statLimits.mana.min,
+         statLimits.mana.max
+      ),
+      defense: normalizeStat(
+         averageStats.defense,
+         statLimits.defense.min,
+         statLimits.defense.max
+      ),
+      speed: normalizeStat(
+         averageStats.speed,
+         statLimits.speed.min,
+         statLimits.speed.max
+      ),
+   };
+
    db.end();
-   return results;
+   return {
+      runs: results.length,
+      finished_runs: results.filter(result => result.finished).length,
+      averageStats: normalizedStats,
+      heroStats,
+   };
 }

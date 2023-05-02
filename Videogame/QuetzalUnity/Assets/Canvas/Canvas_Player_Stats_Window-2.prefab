@@ -1746,11 +1746,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuBar: {fileID: 9205015290687765373}
-  healthBar: {fileID: 9205015289701360874}
-  damageBar: {fileID: 9205015289687160289}
-  manaBar: {fileID: 9205015288672619085}
-  speedBar: {fileID: 9205015290079178471}
-  defenseBar: {fileID: 9205015289289808852}
+  healthBar: {fileID: 9205015289702486663}
+  damageBar: {fileID: 9205015290034412263}
+  manaBar: {fileID: 9205015290573363249}
+  speedBar: {fileID: 9205015289661478708}
+  defenseBar: {fileID: 9205015288652160299}
   players:
   - {fileID: 5526421035581363963, guid: 23715a20c46c84bfc8e6c7425abad653, type: 3}
   - {fileID: 6937680040743552094, guid: b1359c4b186cf4dd3b1115eb68cd315f, type: 3}
