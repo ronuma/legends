@@ -102,12 +102,6 @@ public class CanvasSession : MonoBehaviour
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Characters/" + character.characterName + ".prefab");
         GameObject playerOG = Instantiate(playerPrefabs[playerId]);
 
-        Debug.Log("index.damage " + index.damage);
-        Debug.Log("index.health " + index.health);
-        Debug.Log("index.mana " + index.mana);
-        Debug.Log("index.speed " + index.speed);
-        Debug.Log("index.defense " + index.defense);
-
         playerOG.GetComponent<PlayerStats>().playerDamage = index.damage;
         playerOG.GetComponent<PlayerStats>().playerHealth = index.health;
         playerOG.GetComponent<PlayerStats>().playerMana = index.mana;

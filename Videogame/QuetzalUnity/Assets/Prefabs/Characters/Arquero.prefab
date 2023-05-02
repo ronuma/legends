@@ -381,12 +381,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507e3639e91e240ba906fc8bfe2e386c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSession_id: 41
-  playerHealth: 500
-  playerMana: 87
-  playerDamage: 5
-  playerSpeed: 1
-  playerDefense: 73
+  playerSession_id: 46
+  playerHealth: 100
+  playerMana: 1
+  playerDamage: 40
+  playerSpeed: 6
+  playerDefense: 1
 --- !u!95 &4687891140964880407
 Animator:
   serializedVersion: 5
