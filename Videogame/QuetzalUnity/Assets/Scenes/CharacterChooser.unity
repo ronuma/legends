@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 713338294}
   - component: {fileID: 713338293}
   m_Layer: 5
-  m_Name: X
+  m_Name: XRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 713338294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3372913151706122687}
+        m_TargetAssemblyTypeName: CanvasSession, Assembly-CSharp
+        m_MethodName: killRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &713338294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +922,7 @@ GameObject:
   - component: {fileID: 835302603}
   - component: {fileID: 835302602}
   m_Layer: 5
-  m_Name: X
+  m_Name: XCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -980,7 +992,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 835302603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3372913151706122687}
+        m_TargetAssemblyTypeName: CanvasSession, Assembly-CSharp
+        m_MethodName: killMiddle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &835302603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1223,6 +1247,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183160987}
   m_CullTransparentMesh: 1
+--- !u!114 &1198340171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+  m_PrefabInstance: {fileID: 3372913151706122682}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1252906216 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8277844341457526939, guid: e9ac5d62e05d94225aded424db389464, type: 3}
@@ -1527,6 +1562,7 @@ GameObject:
   - component: {fileID: 1857381774}
   - component: {fileID: 1857381776}
   - component: {fileID: 1857381777}
+  - component: {fileID: 1857381778}
   m_Layer: 0
   m_Name: MainPageManager
   m_TagString: Untagged
@@ -1630,6 +1666,19 @@ MonoBehaviour:
   characterData: {fileID: 11400000, guid: 290824a10fe0a436cb013b0f1bea940e, type: 2}
   sessionId: 0
   currentIndex: 0
+--- !u!114 &1857381778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857381773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e04926a25f2d453fb4aa39803ddfede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  session_id_API: 0
 --- !u!1 &1949504413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +2035,46 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1517223444376617355, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_Name
+      value: XLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3372913151706122687}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: killLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CanvasSession, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551536086662943936, guid: e9ac5d62e05d94225aded424db389464, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4167877171853572257, guid: e9ac5d62e05d94225aded424db389464, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2200,6 +2289,9 @@ MonoBehaviour:
   menu: {fileID: 100602784}
   characterManager: {fileID: 620410283}
   session: {fileID: 3372913151706122686}
+  leftBtn: {fileID: 1198340171}
+  rightBtn: {fileID: 713338293}
+  middleBtn: {fileID: 835302602}
   playerPrefabs:
   - {fileID: 5526421035581363963, guid: 23715a20c46c84bfc8e6c7425abad653, type: 3}
   - {fileID: 6937680040743552094, guid: b1359c4b186cf4dd3b1115eb68cd315f, type: 3}

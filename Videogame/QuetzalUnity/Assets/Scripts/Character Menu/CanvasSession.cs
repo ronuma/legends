@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class CanvasSession : MonoBehaviour
 {
@@ -78,6 +78,8 @@ public class CanvasSession : MonoBehaviour
             btn.GetComponent<Image>().enabled = true;
             btn.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "X";
 
+
+
         }
     }
 
@@ -96,6 +98,21 @@ public class CanvasSession : MonoBehaviour
         ChooseCharacter(slots[1], 2);
     }
 
+    public void killLeft()
+    {
+        Debug.Log("=====>" + slots[0].session_id);
+        StartCoroutine(DoAPI(slots[0].session_id));
+    }
+
+    public void killMiddle()
+    {
+        StartCoroutine(DoAPI(slots[1].session_id));
+    }
+
+    public void killRight()
+    {
+        StartCoroutine(DoAPI(slots[2].session_id));
+    }
     public void ChooseCharacter(Slot index, int slot)
     {
         int playerId = index.hero_id > 0 ? index.hero_id - 1 : -1;
@@ -136,5 +153,16 @@ public class CanvasSession : MonoBehaviour
         PlayerPrefs.Save();
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
+
+    IEnumerator DoAPI(int index)
+    {
+        Debug.Log("=====>" + index);
+        yield return new WaitForSeconds(1f);
+        getUser.GetComponent<ClearSlot>().clearSlot(index);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
+
+
 
 }
