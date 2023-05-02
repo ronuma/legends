@@ -3,15 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatchRequest : MonoBehaviour
+public class EndGame : MonoBehaviour
 {
-    public string apiUrl = "https://quetzal-api.glitch.me/users/endGame";
-    public string jsonPayload = "{\"session_id\": INSERTARVALORGABIPORFAVOR}"; // The JSON payload you want to send
+    private string apiUrl = "https://quetzal-api.glitch.me/users/endSession";
+    public int sessionId;
+    public bool bossIsDead = false;
+    public GameObject player;
     // TODO: pasar el session_id de la sesion actual
     // TODO: lograr que este script sea ejecutado al desaparecer el boss
-    IEnumerator Start()
+
+    void Start()
     {
-        var request = UnityWebRequest.Put(apiUrl, jsonPayload);
+        player = GameObject.FindGameObjectWithTag("Player");
+        sessionId = player.GetComponent<PlayerStats>().playerSession_id;
+    }
+
+    IEnumerator FinishGame()
+    {
+        var request = UnityWebRequest.Put(apiUrl, "{\"session_id\": " + sessionId +"}");
         request.method = "PATCH"; 
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
@@ -23,6 +32,14 @@ public class PatchRequest : MonoBehaviour
         else
         {
             Debug.Log("Finished session");
+        }
+    }
+
+    void Update()
+    {
+        if (bossIsDead)
+        {
+            StartCoroutine(FinishGame());
         }
     }
 }

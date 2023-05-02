@@ -7,6 +7,7 @@ public class BOSSHealth : MonoBehaviour
     public bool isTransformed = false;
     public float enemyHealth;
     public float maxHealth;
+    public GameObject gameManager;
     public Animator animator; // A reference to the animator component // A flag for indicating if the player can transform
     private float durationTimer; // A timer for the duration of the transformation
 
@@ -15,7 +16,7 @@ public class BOSSHealth : MonoBehaviour
     {   
         maxHealth = GetComponent<BossStats>().enemyHealth;
         enemyHealth = maxHealth;
-       
+        gameManager = GameObject.Find("EndgameManager");
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class BOSSHealth : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
+            gameManager.GetComponent<EndGame>().bossIsDead = true;
             Destroy(gameObject);
         }        
     }
