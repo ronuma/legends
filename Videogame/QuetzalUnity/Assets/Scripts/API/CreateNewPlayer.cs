@@ -22,14 +22,14 @@ public class CreateNewPlayer : MonoBehaviour
 {
     private string createUserEP = "/users/createSession";
     private string url = "https://quetzal-api.glitch.me";
-    public string email = "gabitest2@example.com";
+    public string email;
     public int hero_id;
     public int memory_slot;
     public int sesion_id;
 
     public void CreateSession()
     {
-        email = "gabitest2@example.com";
+        email = PlayerPrefs.GetString("emailUser");
         Debug.Log("Creating session...");
         Debug.Log("Hero ID: " + hero_id);
         Debug.Log("Memory Slot: " + memory_slot);

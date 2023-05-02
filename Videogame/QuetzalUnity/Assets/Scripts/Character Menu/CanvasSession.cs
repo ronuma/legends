@@ -76,6 +76,8 @@ public class CanvasSession : MonoBehaviour
         ChooseCharacter(slots[1], 2);
     }
 
+
+
     public void ChooseCharacter(Slot index, int slot)
     {
         int playerId = index.hero_id > 0 ? index.hero_id-1 : -1;
