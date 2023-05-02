@@ -210,9 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad95bd73138764bbf89e9b0c406c4516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 60
-  enemyDamage: 80
-  enemySpeed: 15
+  enemyHealth: 1
+  enemyDamage: 1
+  enemySpeed: 1
 --- !u!114 &5777672435814740021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be4cdebcb404480e8c291dd9e3163ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTransformed: 0
   enemyHealth: 0
   maxHealth: 0
   animator: {fileID: 4660257639777954330}

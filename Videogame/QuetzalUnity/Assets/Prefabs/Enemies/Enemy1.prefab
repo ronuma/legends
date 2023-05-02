@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de8f17c8737c43439f364711af638f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 50
-  enemyDamage: 10
-  enemySpeed: 4
-  enemyRange: 7
+  enemyHealth: 200
+  enemyDamage: 45
+  enemySpeed: 2
+  enemyRange: 15
 --- !u!114 &4488917112654330450
 MonoBehaviour:
   m_ObjectHideFlags: 0
