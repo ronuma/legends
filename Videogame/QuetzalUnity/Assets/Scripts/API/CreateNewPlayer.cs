@@ -49,7 +49,7 @@ public class CreateNewPlayer : MonoBehaviour
         string jsonString = JsonUtility.ToJson(newuser);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url + createUserEP, jsonString))
-        { 
+        {
             www.method = "POST";
             www.SetRequestHeader("Content-Type", "application/json");
             www.SetRequestHeader("Accept", "application/json");
