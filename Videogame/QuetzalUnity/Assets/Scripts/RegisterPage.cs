@@ -8,6 +8,12 @@ public class RegisterPage : MonoBehaviour
     public Canvas login;
     public Canvas register;
 
+    void Start()
+    {
+        login.gameObject.SetActive(true);
+        register.gameObject.SetActive(false);
+    }
+
     public void Register()
     {
         login.gameObject.SetActive(false);
