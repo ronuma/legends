@@ -1,13 +1,5 @@
 import connectToDB from "../index.js";
-
-// Límites de estadísticas
-const statLimits = {
-   health: {min: 1, max: 1000},
-   mana: {min: 0, max: 300},
-   defense: {min: 0, max: 250},
-   damage: {min: 0, max: 125},
-   speed: {min: 1, max: 8},
-};
+import {statLimits} from "../constants.js";
 
 // Normalizar las estadísticas utilizando la fórmula min-max
 const normalizeStat = (statValue, min, max) => (statValue - min) / (max - min);
