@@ -1,7 +1,28 @@
-function random_color(alpha = 1.0) {
-  const r_c = () => Math.round(Math.random() * 255);
-  return `rgba(${r_c()}, ${r_c()}, ${r_c()}, ${alpha}`;
-}
+var colors = [
+  "#0d6efd",
+  "#6610f2",
+  "#6f42c1",
+  "#d63384",
+  "#dc3545",
+  "#fd7e14",
+  "#ffc107",
+  "#198754",
+  "#20c997",
+  "#0dcaf0",
+];
+var usedColors = [];
+
+random_color = () => {
+  if (usedColors.length === colors.length) {
+    usedColors = [];
+  }
+  let color;
+  do {
+    color = colors[Math.floor(Math.random() * colors.length)];
+  } while (usedColors.includes(color));
+  usedColors.push(color);
+  return color;
+};
 
 async function fetchStats() {
   try {
@@ -10,8 +31,6 @@ async function fetchStats() {
     });
 
     const stats = await stats_response.json();
-    console.log("Stats: ");
-    console.log(stats);
 
     // Most Used Items
     const itemNames = stats.mostUsedItems.map((item) => item.name);
@@ -29,7 +48,7 @@ async function fetchStats() {
         labels: itemNames,
         datasets: [
           {
-            label: "Times Chosen",
+            label: "Veces Elegido",
             data: itemTimesChosen,
             backgroundColor: itemColors,
             borderColor: itemColors.map((color) => color.replace("0.8", "1")),
@@ -40,7 +59,13 @@ async function fetchStats() {
     });
 
     // Average Session Stats
-    const sessionStatsLabels = Object.keys(stats.averageSessionStats);
+    const sessionStatsLabels = [
+      "Daño",
+      "Salud",
+      "Maná",
+      "Defensa",
+      "Velocidad",
+    ];
     const sessionStatsValues = Object.values(stats.averageSessionStats);
     const sessionStatsColors = sessionStatsLabels.map(() => random_color(0.8));
 
@@ -48,16 +73,16 @@ async function fetchStats() {
       .getElementById("chartAvgSessionStats")
       .getContext("2d");
     const avgSessionStatsChart = new Chart(ctxSessionStats, {
-      type: "bar",
+      type: "pie",
       data: {
         labels: sessionStatsLabels,
         datasets: [
           {
-            label: "Average Value",
+            label: "Valor Promedio",
             data: sessionStatsValues,
             backgroundColor: sessionStatsColors,
             borderColor: sessionStatsColors.map((color) =>
-              color.replace("0.8", "1")
+              color.replace("1", ".8")
             ),
             borderWidth: 1,
           },
@@ -72,10 +97,10 @@ async function fetchStats() {
     const totalSessionsChart = new Chart(ctxTotalSessions, {
       type: "bar",
       data: {
-        labels: ["Total Game Runs", "Total Sessions Finished"],
+        labels: ["Partidas Jugadas", "Partidas Terminadas"],
         datasets: [
           {
-            label: "Count",
+            label: "Cuenta",
             data: [stats.totalGameRuns, parseInt(stats.totalSessionsFinished)],
             backgroundColor: [random_color(0.8), random_color(0.8)],
             borderColor: [random_color(1.0), random_color(1.0)],
@@ -88,5 +113,4 @@ async function fetchStats() {
     console.log(error);
   }
 }
-
 fetchStats();

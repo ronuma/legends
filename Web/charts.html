@@ -18,6 +18,16 @@
       rel="stylesheet"
     />
     <title>User Charts</title>
+
+    <style>
+      .hidden {
+        display: none;
+      }
+      /* .form-control-dark {
+        background-color: #343a40;
+        color: #fff;
+      } */
+    </style>
   </head>
 
   <body>
@@ -43,7 +53,10 @@
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <a class="offcanvas-title" id="offcanvasDarkNavbarLabel" href="./index.html"
+            <a
+              class="offcanvas-title"
+              id="offcanvasDarkNavbarLabel"
+              href="./index.html"
               ><img
                 src="./images/logo1.png"
                 alt="Quetzal Logo"
@@ -69,7 +82,7 @@
                 <a class="nav-link" href="./manuel.html">Manual</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Estadísticas</a> 
+                <a class="nav-link active" href="#">Estadísticas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Créditos</a>
@@ -83,18 +96,40 @@
       </div>
     </nav>
     <div class="container" data-bs-theme="dark">
-      <h2>API charts</h2>
+      <h2>Estadísticas Globales</h2>
     </div>
+    <!-- leaderboard -->
+    <section>
+      <h4 class="text-center" data-bs-theme="dark">Leaderboard</h4>
+      <div class="table-responsive w-50 mx-auto">
+        <table
+          id="leaderboardTable"
+          class="table table-striped table-dark table-hover text-center"
+        >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">User Name</th>
+              <th scope="col">Finished Runs</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
     <div id="carouselExample" class="carousel slide" data-bs-theme="dark">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <canvas id="chartMostUsedItems" width="300" height="300"></canvas>
+          <h6>Items más usados</h6>
+          <canvas class="mx-auto w-75" id="chartMostUsedItems"></canvas>
         </div>
         <div class="carousel-item">
-          <canvas id="chartAvgSessionStats" width="300" height="300"></canvas>
+          <h6>Promedio de Estadísticas Globales</h6>
+          <canvas class="mx-auto w-50" id="chartAvgSessionStats"></canvas>
         </div>
         <div class="carousel-item">
-          <canvas id="chartTotalSessions" width="300" height="300"></canvas>
+          <h6>Total de partidas</h6>
+          <canvas class="mx-auto w-75" id="chartTotalSessions"></canvas>
         </div>
       </div>
       <button
@@ -116,9 +151,65 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <div>
+      <div class="container" data-bs-theme="dark">
+        <h2>Estadísticas Personales</h2>
+      </div>
+      <!-- Input para el email del usuario -->
+      <div class="input-group my-3 w-25 mx-auto" data-bs-theme="dark">
+        <input
+          type="text"
+          class="form-control bg-transparent"
+          id="userEmail"
+          placeholder="Ingresa tu correo electrónico"
+        />
+        <button class="btn btn-outline-secondary" id="userStatsBtn" type="button">
+          Ingresar
+        </button>
+      </div>
+      <!-- Cantidad de Partidas del usuario -->
+      <div class="container hidden" data-bs-theme="dark">
+        <h4>Cantidad de Partidas</h4>
+        <h6 id="userTotalSessions"></h6>
+      </div>
+
+      <!-- Heroes  -->
+      <div id="userCarousel" class="carousel slide hidden" data-bs-theme="dark">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h6>Mejores Héroes</h6>
+            <canvas id="heroStatsChart" class="mx-auto w-75"></canvas>
+          </div>
+          <div class="carousel-item">
+            <h6>Estadísticas Promedio de Héroes</h6>
+            <canvas id="userStatsChart" class="mx-auto w-50"></canvas>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#userCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#userCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Internal API scripts -->
-    <script src="./js/API.js"></script>
+    <script src="./js/GlobalCharts.js"></script>
+    <script src="./js/PerUserCharts.js"></script>
+    <script src="./js/Leaderboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
