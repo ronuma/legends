@@ -51,7 +51,7 @@ export async function createSession(data) {
 export async function addData(email, user_name) {
    const db = await connectToDB();
    const [results] = await db.execute(
-      `INSERT INTO quetzal.Players(email, user_name) VALUES(\'${email}\', \'${user_name}\')`
+      `INSERT INTO quetzal.Players(email, user_name, runs) VALUES(\'${email}\', \'${user_name}\', 0)`
    );
    db.end();
    return results;
