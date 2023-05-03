@@ -7,6 +7,27 @@
 
 // Then add additional custom code here
 $primary: #0e1118;
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #27324dc1 #161c2b6e;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $primary;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #27324dc1;
+    border-radius: 10px;
+    border: 3px solid #27324dc1;
+}
 body {
     margin: 0;
     padding: 0;
