@@ -18419,8 +18419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3754057305dfd4036a6cbb9db8941507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 3
-  bossBattleOpen: 0
+  sceneIndex: 4
+  bossBattleOpen: 1
 --- !u!50 &1576469077
 Rigidbody2D:
   serializedVersion: 4
@@ -18659,7 +18659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3754057305dfd4036a6cbb9db8941507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 2
+  sceneIndex: 3
   bossBattleOpen: 0
 --- !u!50 &1794058288
 Rigidbody2D:

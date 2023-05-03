@@ -150,7 +150,7 @@ public class CanvasSession : MonoBehaviour
 
         PlayerPrefs.SetInt("playerChosen", playerId);
         PlayerPrefs.Save();
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     IEnumerator DoAPI(int index)
@@ -159,6 +159,6 @@ public class CanvasSession : MonoBehaviour
         yield return new WaitForSeconds(1f);
         getUser.GetComponent<ClearSlot>().clearSlot(index);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 }

@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ScenesSwitcher : MonoBehaviour
 {
-    public int sceneIndex; 
+    public int sceneIndex;
     public int bossBattleOpen = 0;
-    
+
     void Start()
     {
         Time.timeScale = 1;
@@ -27,7 +27,7 @@ public class ScenesSwitcher : MonoBehaviour
                 SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
             }
 
-            if (sceneIndex != 3)
+            if (sceneIndex != 4)
                 SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
         }
     }
