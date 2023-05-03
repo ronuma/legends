@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BOSSHealth : MonoBehaviour
 {
+    public Canvas credits;
     public bool isTransformed = false;
     public float enemyHealth;
     public float maxHealth;
@@ -14,6 +16,7 @@ public class BOSSHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
+        credits = GameObject.Find("CanvasCredits").GetComponent<Canvas>();
         maxHealth = GetComponent<BossStats>().enemyHealth;
         enemyHealth = maxHealth;
         gameManager = GameObject.Find("EndgameManager");
@@ -33,7 +36,15 @@ public class BOSSHealth : MonoBehaviour
         if (enemyHealth <= 0)
         {
             gameManager.GetComponent<EndGame>().bossIsDead = true;
-            Destroy(gameObject);
+            credits.enabled = true;
+            
         }        
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(20);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
+        Destroy(gameObject);
     }
 }   
