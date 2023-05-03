@@ -33,6 +33,8 @@ const userHeroStats = document.getElementById("userHeroStats");
 const heroStatsChartCanvas = document.getElementById("heroStatsChart");
 const containers = document.querySelectorAll(".container");
 const userCarousel = document.getElementById("userCarousel");
+const inputFieldAndButton = document.getElementById("inputFieldAndButton");
+const errorDisp = document.getElementById("errorDisp");
 
 userStatsBtn.addEventListener("click", async () => {
   const email = userEmailInput.value;
@@ -50,10 +52,6 @@ userStatsBtn.addEventListener("click", async () => {
       }
 
       const data = await response.json();
-
-      // Remove the "hidden" class from the containers and canvases
-      containers.forEach((container) => container.classList.remove("hidden"));
-      userCarousel.classList.remove("hidden");
 
       const averageStatsLabels = [
         "Daño",
@@ -142,11 +140,14 @@ userStatsBtn.addEventListener("click", async () => {
           },
         },
       });
+      containers.forEach((container) => container.classList.remove("hidden"));
+      userCarousel.classList.remove("hidden");
+      inputFieldAndButton.classList.add("hidden");
+      errorDisp.classList.add("hidden");
     } catch (error) {
       console.error(error);
-      alert(
-        "Error fetching user stats. Please check the email address and try again."
-      );
+      errorDisp.textContent = `Error: ${error.message}. Please reload the page and try again.`;
+      errorDisp.classList.remove("hidden");
     }
   } else {
     alert("Please enter an email address.");
