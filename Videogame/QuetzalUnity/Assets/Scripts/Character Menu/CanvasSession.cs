@@ -77,9 +77,6 @@ public class CanvasSession : MonoBehaviour
             // Create the button by readding the image and text
             btn.GetComponent<Image>().enabled = true;
             btn.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "X";
-
-
-
         }
     }
 
