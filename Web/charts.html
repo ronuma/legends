@@ -74,15 +74,15 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html"
-                  >Home</a
-                >
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./manuel.html">Manual</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Estadísticas</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Estadísticas</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./creds.html">Créditos</a>
@@ -109,8 +109,8 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">User Name</th>
-              <th scope="col">Finished Runs</th>
+              <th scope="col">Usuario</th>
+              <th scope="col">Runs Terminadas</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -156,17 +156,27 @@
         <h2>Estadísticas Personales</h2>
       </div>
       <!-- Input para el email del usuario -->
-      <div class="input-group my-3 w-25 mx-auto" data-bs-theme="dark">
+      <div
+        id="inputFieldAndButton"
+        class="input-group my-3 w-25 mx-auto"
+        data-bs-theme="dark"
+      >
         <input
           type="email"
           class="form-control bg-transparent"
           id="userEmail"
           placeholder="Ingresa tu correo electrónico"
         />
-        <button class="btn btn-outline-secondary" id="userStatsBtn" type="button">
+        <button
+          class="btn btn-outline-secondary"
+          id="userStatsBtn"
+          type="button"
+        >
           Ingresar
         </button>
       </div>
+
+      <h6 id="errorDisp" class="hidden" data-bs-theme="dark"></h6>
       <!-- Cantidad de Partidas del usuario -->
       <div class="container hidden" data-bs-theme="dark">
         <h4>Cantidad de Partidas</h4>

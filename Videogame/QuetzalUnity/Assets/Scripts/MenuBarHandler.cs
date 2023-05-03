@@ -23,6 +23,11 @@ public class MenuBarHandler : MonoBehaviour
     {
         menuBar.enabled = false;
         playerIndex = PlayerPrefs.GetInt("playerChosen", 0);
+        healthBar = healthBar.GetComponent<Image>();
+        damageBar = damageBar.GetComponent<Image>();
+        manaBar = manaBar.GetComponent<Image>();
+        speedBar = speedBar.GetComponent<Image>();
+        defenseBar = defenseBar.GetComponent<Image>();
     }
 
     void Update()
@@ -30,12 +35,18 @@ public class MenuBarHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T) && !menuBarEnabled)
         {   
             menuBar.enabled = true;
+            Debug.Log(Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerSpeed / 8f, 0, 1));
             healthBar.fillAmount =  Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerHealth / 700f, 0, 1);
             damageBar.fillAmount = Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerDamage / 200f, 0, 1);
             manaBar.fillAmount = Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerMana / 250f, 0, 1);
             speedBar.fillAmount = Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerSpeed / 8f, 0, 1);
             defenseBar.fillAmount = Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerDefense / 300f, 0, 1);
             menuBarEnabled = true;
+            Debug.Log("Health" + Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerHealth / 700f, 0, 1));
+            Debug.Log("Damage" + Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerDamage / 200f, 0, 1));
+            Debug.Log("Mana" + Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerMana / 250f, 0, 1));
+            Debug.Log("Speed" + Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerSpeed / 8f, 0, 1));
+            Debug.Log("Defense" + Mathf.Clamp(players[playerIndex].GetComponent<PlayerStats>().playerDefense / 300f, 0, 1));
 
         }
         else if (Input.GetKeyDown(KeyCode.T) && menuBarEnabled)

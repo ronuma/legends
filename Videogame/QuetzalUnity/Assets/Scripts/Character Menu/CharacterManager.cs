@@ -55,7 +55,7 @@ public class CharacterManager : MonoBehaviour
         createNewPlayer.GetComponent<CreateNewPlayer>().hero_id = currentCharacterIndex + 1;
         createNewPlayer.GetComponent<CreateNewPlayer>().CreateSession();
         StartCoroutine(heroBuilder());
-        
+
     }
 
     IEnumerator heroBuilder()
@@ -64,7 +64,7 @@ public class CharacterManager : MonoBehaviour
         sesID = createNewPlayer.GetComponent<CreateNewPlayer>().sesion_id;
         mainPageManager.GetComponent<HeroManager>().CreatePlayer(sesID, currentCharacterIndex);
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     private void UpdateCharacter(int index)

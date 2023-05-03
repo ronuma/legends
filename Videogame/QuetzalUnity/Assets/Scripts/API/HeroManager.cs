@@ -25,16 +25,15 @@ public class HeroManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Characters character = characterData.GetCharacter(currentIndex);
 
-        GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Characters/" + character.characterName + ".prefab");
-        GameObject playerOG = Instantiate(heros[currentIndex]);
+        GameObject prefab = Resources.Load<GameObject>("Characters/" + character.characterName);
 
-        playerOG.GetComponent<PlayerStats>().playerHealth = GetComponent<getHeros>().allHeros.heros[currentIndex].health;
-        playerOG.GetComponent<PlayerStats>().playerMana = GetComponent<getHeros>().allHeros.heros[currentIndex].mana;
-        playerOG.GetComponent<PlayerStats>().playerDamage = GetComponent<getHeros>().allHeros.heros[currentIndex].damage;
-        playerOG.GetComponent<PlayerStats>().playerDefense = GetComponent<getHeros>().allHeros.heros[currentIndex].defense;
-        playerOG.GetComponent<PlayerStats>().playerSpeed = GetComponent<getHeros>().allHeros.heros[currentIndex].speed;
-        playerOG.GetComponent<PlayerStats>().playerSession_id = sessionId;
+        prefab.GetComponent<PlayerStats>().playerHealth = GetComponent<getHeros>().allHeros.heros[currentIndex].health;
+        prefab.GetComponent<PlayerStats>().playerMana = GetComponent<getHeros>().allHeros.heros[currentIndex].mana;
+        prefab.GetComponent<PlayerStats>().playerDamage = GetComponent<getHeros>().allHeros.heros[currentIndex].damage;
+        prefab.GetComponent<PlayerStats>().playerDefense = GetComponent<getHeros>().allHeros.heros[currentIndex].defense;
+        prefab.GetComponent<PlayerStats>().playerSpeed = GetComponent<getHeros>().allHeros.heros[currentIndex].speed;
+        prefab.GetComponent<PlayerStats>().playerSession_id = sessionId;
 
-        PrefabUtility.SaveAsPrefabAssetAndConnect(playerOG, "Assets/Prefabs/Characters/" + character.characterName + ".prefab", InteractionMode.UserAction);
+        // PrefabUtility.SaveAsPrefabAssetAndConnect(playerOG, "Assets/Prefabs/Characters/" + character.characterName + ".prefab", InteractionMode.UserAction);
     }
 }
