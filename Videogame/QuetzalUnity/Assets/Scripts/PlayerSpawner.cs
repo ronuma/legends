@@ -13,7 +13,7 @@ public class PlayerSpawner : MonoBehaviour
     public int playerChosen;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         playerChosen = PlayerPrefs.GetInt("playerChosen", 0);
         playerPrefabs = new GameObject[] {playerPrefabSpear, playerPrefabBow, playerPrefabSword};  

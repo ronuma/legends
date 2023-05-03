@@ -8,13 +8,15 @@ public class EndGame : MonoBehaviour
     private string apiUrl = "https://quetzal-api.glitch.me/users/endSession";
     public int sessionId;
     public bool bossIsDead = false;
+    public bool bossDone = false;
     public GameObject player;
     // TODO: pasar el session_id de la sesion actual
     // TODO: lograr que este script sea ejecutado al desaparecer el boss
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GetComponent<bossManager>().player;
+        Debug.Log(player);
         sessionId = player.GetComponent<PlayerStats>().playerSession_id;
     }
 
@@ -37,9 +39,10 @@ public class EndGame : MonoBehaviour
 
     void Update()
     {
-        if (bossIsDead)
+        if (bossIsDead && !bossDone)
         {
             StartCoroutine(FinishGame());
+            bossDone = true;
         }
     }
 }

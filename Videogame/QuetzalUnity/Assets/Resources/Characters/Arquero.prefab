@@ -384,7 +384,7 @@ MonoBehaviour:
   playerSession_id: 51
   playerHealth: 100
   playerMana: 1
-  playerDamage: 40
+  playerDamage: 500
   playerSpeed: 6
   playerDefense: 1
 --- !u!95 &4687891140964880407

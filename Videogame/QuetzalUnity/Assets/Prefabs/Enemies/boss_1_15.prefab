@@ -225,9 +225,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be4cdebcb404480e8c291dd9e3163ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  credits: {fileID: 5982862611154345334, guid: 08ae5910450aa4678af75446569ef64b, type: 3}
   isTransformed: 0
   enemyHealth: 0
   maxHealth: 0
+  gameManager: {fileID: 3588446997143896800, guid: 08a132a3d8b5f41ceb8ea4c2f13b8aad, type: 3}
   animator: {fileID: 4660257639777954330}
 --- !u!114 &-3568626094866693635
 MonoBehaviour:
