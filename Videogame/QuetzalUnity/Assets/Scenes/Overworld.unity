@@ -19147,6 +19147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Player_Stats_Window-2
       objectReference: {fileID: 0}
+    - target: {fileID: 9205015290687765374, guid: 77a5586f8c0e1436a946f583b5dab418, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77a5586f8c0e1436a946f583b5dab418, type: 3}
 --- !u!1001 &8030213387190884090
