@@ -18419,8 +18419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3754057305dfd4036a6cbb9db8941507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 3
-  bossBattleOpen: 0
+  sceneIndex: 4
+  bossBattleOpen: 1
 --- !u!50 &1576469077
 Rigidbody2D:
   serializedVersion: 4
@@ -18659,7 +18659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3754057305dfd4036a6cbb9db8941507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 2
+  sceneIndex: 3
   bossBattleOpen: 0
 --- !u!50 &1794058288
 Rigidbody2D:
@@ -18814,6 +18814,18 @@ PrefabInstance:
       propertyPath: players.Array.data[2]
       value: 
       objectReference: {fileID: 9114628218089492093, guid: d028b3db0521e42d6b8ade606508793d, type: 3}
+    - target: {fileID: 9205015289289808855, guid: 77a5586f8c0e1436a946f583b5dab418, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -172.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205015289358991913, guid: 77a5586f8c0e1436a946f583b5dab418, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -91.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205015289358991913, guid: 77a5586f8c0e1436a946f583b5dab418, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.9
+      objectReference: {fileID: 0}
     - target: {fileID: 9205015290687765362, guid: 77a5586f8c0e1436a946f583b5dab418, type: 3}
       propertyPath: m_Pivot.x
       value: 0

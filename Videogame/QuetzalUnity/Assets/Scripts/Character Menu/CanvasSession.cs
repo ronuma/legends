@@ -136,22 +136,21 @@ public class CanvasSession : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Characters character = characterData.GetCharacter(playerId);
 
-        GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Characters/" + character.characterName + ".prefab");
-        GameObject playerOG = Instantiate(playerPrefabs[playerId]);
+        GameObject prefab = Resources.Load<GameObject>("Characters/" + character.characterName);
 
-        playerOG.GetComponent<PlayerStats>().playerDamage = index.damage;
-        playerOG.GetComponent<PlayerStats>().playerHealth = index.health;
-        playerOG.GetComponent<PlayerStats>().playerMana = index.mana;
-        playerOG.GetComponent<PlayerStats>().playerSpeed = index.speed;
-        playerOG.GetComponent<PlayerStats>().playerDefense = index.defense;
-        playerOG.GetComponent<PlayerStats>().playerSession_id = index.session_id;
+        prefab.GetComponent<PlayerStats>().playerDamage = index.damage;
+        prefab.GetComponent<PlayerStats>().playerHealth = index.health;
+        prefab.GetComponent<PlayerStats>().playerMana = index.mana;
+        prefab.GetComponent<PlayerStats>().playerSpeed = index.speed;
+        prefab.GetComponent<PlayerStats>().playerDefense = index.defense;
+        prefab.GetComponent<PlayerStats>().playerSession_id = index.session_id;
 
         //Now i wnt to save playerOG as the original prefab
-        PrefabUtility.SaveAsPrefabAssetAndConnect(playerOG, "Assets/Prefabs/Characters/" + character.characterName + ".prefab", InteractionMode.UserAction);
+        // PrefabUtility.SaveAsPrefabAssetAndConnect(playerOG, "Assets/Prefabs/Characters/" + character.characterName + ".prefab", InteractionMode.UserAction);
 
         PlayerPrefs.SetInt("playerChosen", playerId);
         PlayerPrefs.Save();
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     IEnumerator DoAPI(int index)
@@ -160,9 +159,6 @@ public class CanvasSession : MonoBehaviour
         yield return new WaitForSeconds(1f);
         getUser.GetComponent<ClearSlot>().clearSlot(index);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
-
-
-
 }

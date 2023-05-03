@@ -55,7 +55,7 @@ public class UserList
 public class getUser : MonoBehaviour
 {
     string url = "https://quetzal-api.glitch.me"; // The URL of the API
-    string userEmail = "gabitest1@example.com";
+    string userEmail;
     string getUsersEP;
     [SerializeField] Text errorText;
 
@@ -68,6 +68,7 @@ public class getUser : MonoBehaviour
 
     void Start()
     {
+        userEmail = PlayerPrefs.GetString("emailUser");
         getUsersEP = $"/users/{userEmail}";
         QueryUser();
     }
