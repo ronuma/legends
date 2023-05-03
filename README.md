@@ -28,7 +28,7 @@
     <br />
     <a href="https://legends-gilt.vercel.app/">View Deployed Game</a>
     <br />
-    <a href="https://youtube.com/">View Game Demo (insertar video)</a>
+    <a href="https://bit.ly/QuetzalVideoDemo123">View Game Demo (insertar video)</a>
     <br />
     <a href="https://trello.com/b/JOlK8rpX/sprint-1">View Trello Board</a>
   </p>
