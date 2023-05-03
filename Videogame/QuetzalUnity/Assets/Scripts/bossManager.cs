@@ -30,7 +30,7 @@ public class bossManager : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(14.5f);
         SceneManager.LoadScene(2, LoadSceneMode.Single); 
     }
 }
