@@ -1,0 +1,66 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$primarybg: #0e1118;
+$secondarybg: #282c34;
+$tertiarybg: #3b3f4c;
+$quaternarybg: #5c5f6d;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $primarybg;
+    text-align: center;
+}
+
+// Navbar //
+
+.offcanvas {
+    --bs-offcanvas-width: 200px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+.logo1 { 
+    transition: all .2s ease-in-out; 
+}
+.logo1:hover { 
+    transform: scale(1.1); 
+}
+
+// Main //
+
+main {
+    height: 100vh;
+}
+
+    // Accordion //
+.accordion {
+    --bs-accordion-bg: #{$secondarybg};
+    --bs-accordion-active-bg: #{$tertiarybg};
+    --bs-accordion-border-color: #{$secondarybg};
+    --bs-accordion-icon-color: #{$quaternarybg};
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(92, 118, 146, 0.5);
+}
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}

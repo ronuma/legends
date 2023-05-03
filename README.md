@@ -27,6 +27,10 @@
     <br />
     <br />
     <a href="https://legends-gilt.vercel.app/">View Deployed Game</a>
+    <br />
+    <a href="https://bit.ly/QuetzalVideoDemo123">View Game Demo</a>
+    <br />
+    <a href="https://trello.com/b/JOlK8rpX/sprint-1">View Trello Board</a>
   </p>
 </div>
 
@@ -94,18 +98,19 @@ If you are interested in running the project locally, you can clone the reposito
 
 <!-- Unity -->
 
-- Unity 2021.3.19f1 LTS or higher
-- [Unity Hub](https://unity3d.com/get-unity/download)
-- [Node.js](https://nodejs.org/en/download/).
-- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
-- [MySQL Server](https://dev.mysql.com/downloads/mysql/)
+-  Unity 2021.3.19f1 LTS or higher
+-  [Unity Hub](https://unity3d.com/get-unity/download)
+-  [Node.js](https://nodejs.org/en/download/).
+-  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+-  [MySQL Server](https://dev.mysql.com/downloads/mysql/)
 
 ### Installation
 
 Clone the repo
-   ```sh
-   git clone
-   ```
+
+```sh
+git clone
+```
 
 In order to run the game, you will need to have a MySQL server running. You will also need to recreate the database and tables. You can find the database creation script in the folder "DB".
 
@@ -116,6 +121,7 @@ To edit the landing page for the game, you will need to install the dependencies
 ```sh
 npm install
 ```
+
 You can then run the bootstrap project locally and edit the landing page to your liking.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -132,7 +138,7 @@ The game can be played at [https://legends-gilt.vercel.app/](https://legends-gil
 
 ## Roadmap
 
-The roadmap for this project can be found in the [Trello Board]([trello-url]). The board is private, so you will need to request access to view it. You can contact the team members to request access.
+The roadmap for this project can be found in the [Trello Board](https://trello.com/b/JOlK8rpX/sprint-1). The board is private, so you will need to request access to view it. You can contact the team members to request access.
 
 See the [open issues](https://github.com/ronuma/legends/issues) for a full list of proposed features (and known issues).
 
@@ -167,9 +173,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Resources
 
-- LDtk: [https://ldtk.io/](https://ldtk.io/) for level design
-- draw.io: [https://app.diagrams.net/](https://app.diagrams.net/) for UML diagrams
-- Trello: [https://trello.com/](https://trello.com/) for SCRUM project management
+-  LDtk: [https://ldtk.io/](https://ldtk.io/) for level design
+-  draw.io: [https://app.diagrams.net/](https://app.diagrams.net/) for UML diagrams
+-  Trello: [https://trello.com/](https://trello.com/b/JOlK8rpX/sprint-1) for SCRUM project management
 
 <!-- CONTACT -->
 
@@ -177,18 +183,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 #### **Colaborators: Team "LEGENDS"**
 
-- Gabriel Rodríguez De Los Reyes
-- Iker García Germán
-- Rodrigo Núñez Magallanes
-- Enrique Cabrera Aguilar
-- Alejandro Arouesty Galván
-- Pablo Banzo Prida
+-  Gabriel Rodríguez De Los Reyes
+-  Iker García Germán
+-  Rodrigo Núñez Magallanes
+-  Enrique Cabrera Aguilar
+-  Alejandro Arouesty Galván
+-  Pablo Banzo Prida
 
 #### **Instructors:**
 
-- Esteban Castillo Juarez
-- Gilberto Echeverría Furió
-- Octavio Navarro Hinojosa
+-  Esteban Castillo Juarez
+-  Gilberto Echeverría Furió
+-  Octavio Navarro Hinojosa
 
 Project Link: [https://github.com/ronuma/legends](https://github.com/ronuma/legends)
 

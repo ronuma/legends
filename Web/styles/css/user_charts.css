@@ -11608,6 +11608,28 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgba(39, 50, 77, 0.7568627451) rgba(22, 28, 43, 0.431372549);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0e1118;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(39, 50, 77, 0.7568627451);
+  border-radius: 10px;
+  border: 3px solid rgba(39, 50, 77, 0.7568627451);
+}
+
 body {
   margin: 0;
   padding: 0;
