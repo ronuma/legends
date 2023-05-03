@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Login_user : MonoBehaviour
 {
-
     public TMP_InputField emailInputField;
     public TMP_Text responseText;
 
@@ -20,9 +19,8 @@ public class Login_user : MonoBehaviour
     {
         string url = "https://quetzal-api.glitch.me/users/" + email;
 
-        if (email == "")
+        if (email == null || email == "")
         {
-            responseText.text = "Please fill out all fields.";
             yield break;
         }
 

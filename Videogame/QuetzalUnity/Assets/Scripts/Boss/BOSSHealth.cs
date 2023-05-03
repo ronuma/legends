@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BOSSHealth : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class BOSSHealth : MonoBehaviour
         if (enemyHealth <= 0)
         {
             gameManager.GetComponent<EndGame>().bossIsDead = true;
+            gameManager.GetComponent<bossManager>().bossIsDead = true;
             Destroy(gameObject);
         }        
     }
