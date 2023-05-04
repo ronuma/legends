@@ -1,3 +1,7 @@
+/* This script calls the API to get a user identified by the email and its related data
+in a JSON object
+*/
+
 /*
 Test for the connection to an API
 Able to use the Get method to read data and "Post" to send data
