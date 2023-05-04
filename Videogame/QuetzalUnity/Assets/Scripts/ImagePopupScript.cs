@@ -8,6 +8,10 @@ public class ImagePopupScript : MonoBehaviour
     public GameObject imagePopup; // Reference to the ImagePopup GameObject
     public bool isActive = false; // Flag to check if the popup is active
     
+    void Start()
+    {
+        imagePopup.SetActive(false); // Hide the popup on start
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
