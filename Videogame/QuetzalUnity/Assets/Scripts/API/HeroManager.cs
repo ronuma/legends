@@ -1,3 +1,9 @@
+/*
+Script responsible for creating the player character in the game. 
+It gets the data from the API and creates the player character (hero) 
+with the correct stats.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

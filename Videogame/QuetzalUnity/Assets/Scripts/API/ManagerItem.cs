@@ -1,3 +1,8 @@
+/*
+Creates a list of items and sets the item's stats to 
+the stats of the item in the database.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
