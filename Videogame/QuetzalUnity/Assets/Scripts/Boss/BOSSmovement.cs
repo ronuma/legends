@@ -24,7 +24,7 @@ public class BOSSmovement : MonoBehaviour
     void Update()
     {   
         timer += Time.deltaTime;
-        if (timer >= timebtwMove)
+        if (timer >= timebtwMove) // This line checks if the timer is greater than or equal to the time between moves.
         {
             rand = Random.Range(0, directionsList.Count);
             timer = 0;
@@ -41,7 +41,7 @@ public class BOSSmovement : MonoBehaviour
         animator.SetFloat("Horizontal", direction.x);
         animator.SetFloat("Vertical", direction.y);
         animator.SetFloat("Speed", direction.sqrMagnitude);
-        transform.position = Vector2.MoveTowards(transform.position, dir, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, dir, speed * Time.deltaTime); // This line moves the boss towards the player.
         transform.rotation = Quaternion.identity;
     }
 }
