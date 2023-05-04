@@ -1,3 +1,11 @@
+/* This script is used to activate an easter egg image in the game.
+When the player enters the designated trigger area, the image popup is displayed.
+When the player exits the trigger area, the image popup is hidden.
+
+Authored by: Alejandro A. and Gabriel R.
+Last edit: 02/05/2023
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

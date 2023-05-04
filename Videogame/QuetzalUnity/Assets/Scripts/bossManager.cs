@@ -1,3 +1,11 @@
+/* This script manages the behavior and events related to the boss in the game.
+When the boss is defeated, it displays the credits and plays the credits animation.
+After a specified delay, the scene transitions to a new scene. 
+
+Written by: Gabriel Rodriguez
+Last modified by Pablo Banzo: 02/05/2023 (changes for correct scene loading for webGL) 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

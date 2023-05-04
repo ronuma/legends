@@ -1,3 +1,15 @@
+/* This script logs in a user by sending a GET request to the API. The user
+inputs their email address in a TMP_InputField, and the script fetches user data
+from the server based on the provided email. If the server returns a valid
+response, the user's email is stored in PlayerPrefs and the scene with index 1
+(the overworld) is loaded.
+
+This script is attached to the Login/Register scene and is called by the Login
+button.
+
+Authored by: Enrique C. Last modified on: 01/05/2023 by Gabriel R. for final
+integration.
+*/
 using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
