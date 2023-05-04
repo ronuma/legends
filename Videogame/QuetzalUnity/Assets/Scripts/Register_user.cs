@@ -20,8 +20,8 @@ using System.Collections.Generic;
 [System.Serializable]
 public class UserName
 {
-    public string email;
-    public string user_name;
+    public string email; // User's email
+    public string user_name; // User's username
     public UserName(string email, string username) {
         this.email = email;
         this.user_name = username;
@@ -30,12 +30,12 @@ public class UserName
 
 public class Register_user : MonoBehaviour {
 
-    public TMP_InputField emailInputField;
-    public TMP_InputField usernameInputField;
-    public TMP_Text responseText;
+    public TMP_InputField emailInputField; // Reference to the email input field
+    public TMP_InputField usernameInputField; // Reference to the username input field
+    public TMP_Text responseText; // Reference to the response text
 
-    public Canvas login;
-    public Canvas register;
+    public Canvas login; // Reference to the login canvas
+    public Canvas register; // Reference to the register canvas
 
     public void Send_POSTRequest() {
         string email = emailInputField.text;
@@ -44,6 +44,7 @@ public class Register_user : MonoBehaviour {
     }
 
     IEnumerator PostRequest(string email, string username) {
+    // Start a coroutine to send a POST request to the API endpoint
         string url = "https://quetzal-api.glitch.me/users/add";
 
         if (email == "" || username == "") {
@@ -52,6 +53,7 @@ public class Register_user : MonoBehaviour {
         }
 
         string json = JsonUtility.ToJson(new UserName(email, username));
+        // Create a JSON object with the user's email and username
 
         using (UnityWebRequest webRequest = UnityWebRequest.Put(url, json)) {
             webRequest.method = "POST";
@@ -67,8 +69,8 @@ public class Register_user : MonoBehaviour {
             }
         }
 
-        login.gameObject.SetActive(true);
-        register.gameObject.SetActive(false);
+        login.gameObject.SetActive(true); // Switch to the login canvas
+        register.gameObject.SetActive(false); // Switch from the register canvas
     }
 
 

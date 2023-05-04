@@ -21,7 +21,7 @@ public class ImagePopupScript : MonoBehaviour
         imagePopup.SetActive(false); // Hide the popup on start
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) // when the player enters the trigger area shows the image popup
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -31,7 +31,7 @@ public class ImagePopupScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) // when the player exits the trigger area hides the image popup
     {
         if (other.gameObject.CompareTag("Player"))
         {

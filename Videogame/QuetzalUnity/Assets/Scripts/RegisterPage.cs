@@ -10,13 +10,13 @@ public class RegisterPage : MonoBehaviour
 
     void Start()
     {
-        login.gameObject.SetActive(true);
-        register.gameObject.SetActive(false);
+        login.gameObject.SetActive(true); // Switch to the login canvas
+        register.gameObject.SetActive(false); // Switch from the register canvas
     }
 
     public void Register()
     {
-        login.gameObject.SetActive(false);
+        login.gameObject.SetActive(false); 
         register.gameObject.SetActive(true);
     }
 }
