@@ -1,4 +1,7 @@
-/* This script is responsible for the shooting mechanics of a player in a game. It handles the player's ability to shoot bullets and sets the direction of the bullets based on the mouse position relative to the player.*/
+/* Gabriel Rodriguez (March 30th, 2023 2:16 PM)
+ * This script is responsible for the shooting mechanics of a player in a game. 
+ * It handles the player's ability to shoot bullets and sets the direction of the bullets based on the mouse position relative to the player.
+*/
 
 using System.Collections;
 using System.Collections.Generic;

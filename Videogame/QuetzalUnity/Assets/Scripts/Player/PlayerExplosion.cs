@@ -1,3 +1,6 @@
+/* Gabriel Rodriguez (April 13th, 2023 1:30 PM) 
+ * Unity Script for Player Explosion with Charge Bar and Damage RadiusS
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

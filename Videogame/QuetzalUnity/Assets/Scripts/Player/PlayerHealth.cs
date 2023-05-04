@@ -1,4 +1,5 @@
-/* This script is responsible for handling the player's health 
+/*  Gabriel Rodriguez (March 30th, 2023 2:16 PM) 
+This script is responsible for handling the player's health 
 and updating the health bar UI accordingly. The script starts 
 by getting the reference to the player's health bar image and setting the
 initial health value to be the maximum health value defined in the PlayerStats script.

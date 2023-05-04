@@ -1,5 +1,7 @@
-/* This script handles the player's melee attack animation. When called, the Attack() function sets the parameters for the animation
-based on the direction of the mouse cursor, and triggers the "Attack" animation.*/
+/*  Gabriel Rodriguez (April 13th, 2023 1:30 PM) 
+ * This script handles the player's melee attack animation. When called, the Attack() function sets the parameters for the animation
+ * based on the direction of the mouse cursor, and triggers the "Attack" animation.
+ */
 
 using System.Collections;
 using System.Collections.Generic;

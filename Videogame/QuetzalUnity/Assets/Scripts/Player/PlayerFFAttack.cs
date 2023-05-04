@@ -1,4 +1,5 @@
-/* This script controls the melee attack of the Player's Final Form.
+/*   Gabriel Rodriguez (March 30th, 2023 2:16 PM) 
+This script controls the melee attack of the Player's Final Form.
 It allows the player to attack enemies with a melee weapon, 
 which can cause damage to enemies within a certain range.
 It includes a camera to detect the position of the mouse, an attack timer, an attack range, and damage. */

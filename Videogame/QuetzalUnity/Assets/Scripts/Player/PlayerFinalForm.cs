@@ -1,3 +1,8 @@
+/*  Gabriel Rodriguez (March 30th, 2023 2:16 PM) 
+ * Player Final Form Transformation and Power-up Script
+ * This script controls the player's transformation into the Final Form.
+ * It allows the player to transform into the Final Form, which grants the player increased speed, damage, and health.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

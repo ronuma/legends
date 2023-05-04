@@ -1,3 +1,7 @@
+/* Gabriel Rodriguez (March 30th, 2023 2:16 PM)
+ * Power Unlocker Script for Dungeon
+ * This script controls the unlocking of the power in the dungeon.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
