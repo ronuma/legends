@@ -1,10 +1,6 @@
 /*
-Test for the connection to an API
-Able to use the Get method to read data and "Post" to send data
-NOTE: Using Put instead of Post. See the links around line 86
-
-Gilberto Echeverria
-2023-04-12
+Script that gets all the items from the API and 
+stores them in a list.
 */
 
 using System.Collections;

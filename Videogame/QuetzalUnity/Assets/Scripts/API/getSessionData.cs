@@ -1,10 +1,7 @@
 /*
-Test for the connection to an API
-Able to use the Get method to read data and "Post" to send data
-NOTE: Using Put instead of Post. See the links around line 86
-
-Gilberto Echeverria
-2023-04-12
+Script that gets a session's data from the API
+so that we can load the player's stats and items
+from the last time they played.
 */
 
 using System.Collections;

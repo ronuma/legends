@@ -1,3 +1,11 @@
+/*
+Script for creating a new session for a user.
+The session is created with the provided email, hero_id and memory_slot.
+The session_id is returned and stored in the PlayerPrefs.
+The hero_id must be passed so that we can know which hero the user has selected
+for the current session.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
