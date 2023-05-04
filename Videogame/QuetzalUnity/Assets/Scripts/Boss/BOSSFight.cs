@@ -1,3 +1,8 @@
+/* Gabriel Rodriguez (April 20th, 2023 3:04 PM) 
+ * This script is used to control the behavior of the boss's attacks.
+ * The script includes four attack patterns for the boss, which are determined randomly, and each attack pattern fires a different type of bullet at the player. 
+ * The code also includes a method to calculate the direction from the boss to the player, and a timer to control the time between boss attacks.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

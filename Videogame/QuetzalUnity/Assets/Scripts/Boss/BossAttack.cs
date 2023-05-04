@@ -1,3 +1,9 @@
+/* Alejandro Arouesty (April 20th, 2023 12:27 PM) 
+ * BossAttack Class for Unity Game Development - Controls Boss Attack Animations
+ * 
+ * This class controls the animations for the boss's attacks.
+ * t
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

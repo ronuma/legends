@@ -1,3 +1,8 @@
+/* Gabriel Rodriguez (April 19th, 2023 3:02 PM) 
+ * 
+ * Script to control the behavior of the boss's movement.
+ * The script includes a list of directions that the boss can move to, and a timer to control the time between boss movements.
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
