@@ -1,3 +1,9 @@
+/* This script defines the behavior of bullets in the game.
+
+The bullet moves towards the player at a constant speed and updates its
+animation. Upon collision with the player, the bullet deals damage and is
+destroyed. If the bullet collides with a wall, it is also destroyed. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +18,8 @@ public class BulletWiz : MonoBehaviour
 
     void Start()
     {
-        // Find the player GameObject in the scene and assign it to the player variable
+        // Find the player GameObject in the scene and assign it to the player
+        // variable
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -33,7 +40,8 @@ public class BulletWiz : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // If the bullet collides with the player, damage the player and destroy the bullet
+        // If the bullet collides with the player, damage the player and destroy
+        // the bullet
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<PlayerHealth>().playerHealth -= damage;

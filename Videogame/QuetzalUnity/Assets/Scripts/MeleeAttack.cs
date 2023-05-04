@@ -1,4 +1,8 @@
-/* This script allows the player to attack enemies with a melee weapon. The script first gets a reference to the camera to get the mouse position in world coordinates. The script checks for player input to attack with the weapon. The script then checks for enemies in range using a circle collision detection. If an enemy is detected, the enemy's health is reduced by the player's damage. */
+/* This script allows the player to attack enemies with a melee weapon. The
+script first gets a reference to the camera to get the mouse position in world
+coordinates. The script checks for player input to attack with the weapon. The
+script then checks for enemies in range using a circle collision detection. If
+an enemy is detected, the enemy's health is reduced by the player's damage. */
 
 using System.Collections;
 using System.Collections.Generic;

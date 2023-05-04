@@ -1,3 +1,16 @@
+/* This script handles user registration by sending a POST request with the
+user's email and username. It checks if the input fields are filled out, and if
+so, sends the data to a specified API endpoint. Upon successful registration,
+the script switches the active canvas from the registration screen to the login
+screen. 
+
+This script is attached to the Login/Register scene and is called by the
+Register button.
+
+Authored by: Enrique C. Last modified on: 01/05/2023 by Gabriel R. for final
+integration.
+
+*/
 using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;

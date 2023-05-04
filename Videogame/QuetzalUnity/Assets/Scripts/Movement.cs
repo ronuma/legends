@@ -1,3 +1,14 @@
+/* This script controls the player's movement, including walking and dashing. It
+takes input for horizontal and vertical movement and moves the player
+accordingly. The player can also dash by pressing the left shift key, which
+temporarily increases their speed. The dash ability has a cooldown, and the
+player leaves a trail while dashing. The script also updates the animator
+parameters for the character's animations.
+
+This script is attached to the player object, thus it is active in every scene
+aside from menus.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

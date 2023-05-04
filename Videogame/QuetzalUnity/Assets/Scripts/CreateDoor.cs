@@ -1,9 +1,16 @@
+/* This script manages the creation and destruction of the door object in the
+game, which is used to transition between dungeon levels. The door is created
+when the game is active and there are no enemies in the scene. If the game is
+active and no enemies are present, the door object is destroyed. A flag is used
+to ensure that a new door is only created once per dungeon. 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// This script handles the creation of the door object.
-// It checks if the game is active and if there are no enemies in the scene.
+// This script handles the creation of the door object. It checks if the game is
+// active and if there are no enemies in the scene.
 
 public class CreateDoor : MonoBehaviour
 {

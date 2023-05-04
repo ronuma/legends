@@ -1,3 +1,12 @@
+/* This script manages the functionality of the left button in the game's item menu.
+When the button is clicked, it applies the selected item's buffs to the player's stats,
+updates the player's health, and communicates the updated stats to the API.
+Additionally, it hides the item menu and moves it off-screen after applying the item. 
+
+Written by: Gabriel Rodriguez with assistance from Pablo Banzo (for api stat limits)
+Last modified: 02/05/2023
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
