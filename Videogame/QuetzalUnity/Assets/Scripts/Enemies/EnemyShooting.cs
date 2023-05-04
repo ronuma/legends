@@ -1,3 +1,7 @@
+/*
+This script controls an enemy's shooting behavior. It creates a bullet prefab at a designated firing point, and sets its damage value based on the enemy's damage value. The bullet is destroyed after a set amount of time. The time between shots is also set. The timer keeps track of the time passed between shots, and when the time between shots has passed, a new bullet is created. The EnemyStats script is used to get the enemy's damage value.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

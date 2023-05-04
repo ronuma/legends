@@ -1,3 +1,11 @@
+/*
+The time between shots and the time until bullets are destroyed have been adjusted, and the script is now referencing a different bullet prefab and component script, BulletWiz.
+
+Overall, the script creates a new bullet object at a specified fire point, sets its damage value to the enemy's damage value, and destroys the bullet after a set time. The timer variable is used to control the frequency of the shots.
+*/
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

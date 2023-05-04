@@ -1,3 +1,6 @@
+
+/* Class used to store information about the characters in the game  */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

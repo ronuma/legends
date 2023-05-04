@@ -1,3 +1,7 @@
+/*
+This script is responsible for handling the health of an enemy game object. It checks whether the enemy's health is less than or equal to zero and destroys the enemy game object if it is. The script also initializes the enemy's health to its maximum value and retrieves the enemy's health value from the EnemyStats script.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
