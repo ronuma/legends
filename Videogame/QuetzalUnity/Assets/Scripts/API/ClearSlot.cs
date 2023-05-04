@@ -1,3 +1,4 @@
+// This script calls the API to clear a memory slot identified by the session_id in the database
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,7 +32,6 @@ public class ClearSlot : MonoBehaviour
 
     IEnumerator PatchReq()
     {
-        // Create a User object with the provided email, hero_id and memory_slot
         ClearSlotObject slot = new ClearSlotObject();
         slot.session_id = session_id_API;
 

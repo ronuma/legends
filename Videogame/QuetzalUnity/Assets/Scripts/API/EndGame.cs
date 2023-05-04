@@ -1,3 +1,6 @@
+/* This script calls the API to end a session identified by the session_id and 
+add a run to the registered email
+*/
 using UnityEngine.Networking;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,8 +13,6 @@ public class EndGame : MonoBehaviour
     public bool bossIsDead = false;
     public bool bossDone = false;
     public GameObject player;
-    // TODO: pasar el session_id de la sesion actual
-    // TODO: lograr que este script sea ejecutado al desaparecer el boss
 
     void Start()
     {

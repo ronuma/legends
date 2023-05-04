@@ -1,3 +1,7 @@
+/* This script manages the enemy objects in game and sets its stats from the API
+call in the file getEnemyStatsApi.cs, then it sets the stats to the enemy objects
+with normal and boss stats
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

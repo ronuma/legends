@@ -1,3 +1,5 @@
+/* This script calls the API to get the NPCs from the database and create a JSON object,
+then it displays them in the log*/
 /*
 Test for the connection to an API
 Able to use the Get method to read data and "Post" to send data

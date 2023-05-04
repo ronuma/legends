@@ -1,3 +1,4 @@
+// This script calls the API to get the list of heros and fixes them into a JSON object
 /*
 Test for the connection to an API
 Able to use the Get method to read data and "Post" to send data
@@ -6,6 +7,7 @@ NOTE: Using Put instead of Post. See the links around line 86
 Gilberto Echeverria
 2023-04-12
 */
+// Based on the previous comment by Gilberto we improved all the scripts in use
 
 using System.Collections;
 using System.Collections.Generic;
