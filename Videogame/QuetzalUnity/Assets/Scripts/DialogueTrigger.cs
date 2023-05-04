@@ -13,7 +13,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogue;
 
-   private void OnTriggerEnter2D(Collider2D other)
+   private void OnTriggerEnter2D(Collider2D other) // when the player enters the trigger area shows the dialogue
     {
         if (other.gameObject.tag == "Player")
         {
@@ -21,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) // when the player exits the trigger area hides the dialogue
     {
         if (other.gameObject.tag == "Player")
         {

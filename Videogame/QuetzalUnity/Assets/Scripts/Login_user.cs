@@ -18,25 +18,26 @@ using UnityEngine.SceneManagement;
 
 public class Login_user : MonoBehaviour
 {
-    public TMP_InputField emailInputField;
-    public TMP_Text responseText;
+    public TMP_InputField emailInputField; // Reference to the email input field
+    public TMP_Text responseText; // Reference to the response text
 
     public void Send_GETRequest()
     {
-        string email = emailInputField.text;
+        string email = emailInputField.text; // Get the email from the input field
         StartCoroutine(GetRequest(email));
     }
 
-    IEnumerator GetRequest(string email)
+    IEnumerator GetRequest(string email) // Async function to get the users from the API
     {
         string url = "https://quetzal-api.glitch.me/users/" + email;
 
-        if (email == null || email == "")
+        if (email == null || email == "") // If the email is empty, return
         {
             yield break;
         }
 
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+        // UNITY class request for API (UnityWebRequest)
         {
             yield return webRequest.SendWebRequest();
 

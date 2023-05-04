@@ -33,27 +33,27 @@ public class DungeonGenerator : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             player = GameObject.FindGameObjectWithTag("Player");
-            if (dungeonLevel == 1f)
+            if (dungeonLevel == 1f) // If the player is on the first level, move them to the kukulkan room1
             {
                 Debug.Log("Level 1");
                 player.transform.position = new Vector3(321, 69, 0);
             }
-            else if (dungeonLevel == 3f)
+            else if (dungeonLevel == 3f) // If the player is on the first level, move them to the kukulkan room3
             {
                 player.transform.position = new Vector3(321, 0, 0);
             }
-            else if (dungeonLevel == 5f)
+            else if (dungeonLevel == 5f) // If the player is on the first level, move them to the kukulkan room5
             {
                 player.transform.position = new Vector3(321, -65, 0);
             }
-            else
+            else // If the player is on any other level, just move them to the next dungeon
             {
                 player.transform.position = new Vector3(-20, 0, 0);
             }
 
             chest.transform.position = new Vector3(144, 0, 0);
             DungeonMap[] dungeonMaps = FindObjectsOfType<DungeonMap>();
-            foreach (DungeonMap map in dungeonMaps)
+            foreach (DungeonMap map in dungeonMaps) // Destroy all dungeon maps
             {
                 Destroy(map.gameObject);
             }
@@ -69,9 +69,9 @@ public class DungeonGenerator : MonoBehaviour
             levelText.text = "Level: " + dungeonLevel;
             // Generate a new map by calling the createMap() method on all MapGenerator objects
             MapGenerator[] mapGenerators = FindObjectsOfType<MapGenerator>();
-            foreach (MapGenerator map in mapGenerators)
+            foreach (MapGenerator map in mapGenerators) // Crates all the dungeon maps
             {
-                map.createMap();
+                map.createMap(); // Create a new map
             }
         }
     }

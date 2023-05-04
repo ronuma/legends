@@ -4,26 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// This sript of creating a dialogue box for the game, and to create the animations of the text
 public class Dialogue : MonoBehaviour
 {
-    public GameObject window;
-    public GameObject indicator;
-    public TMP_Text textDialague;
-    public List<string> dialogueList;
+    public GameObject window; // the dialogue box
+    public GameObject indicator; // the indicator of the dialogue box
+    public TMP_Text textDialague; // the text of the dialogue box
+    public List<string> dialogueList; // the list of all the dialogues of the NPC
 
-    private int dialogueIndex = 0;
-    private int characterIndex = 0;
+    private int dialogueIndex = 0; // the index of the dialogue
+    private int characterIndex = 0; // the index of the character
 
-    private bool WaitForInput = false;
+    private bool WaitForInput = false; 
 
     void Start()
     {
-        HideDialogue();
+        HideDialogue(); // hide the dialogue box when the NPC is created
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && WaitForInput)
+        if (Input.GetKeyDown(KeyCode.P) && WaitForInput) 
+        // if the player presses P and the prevoius dialogue has finished
         {
                 if (dialogueIndex < dialogueList.Count-1)
                 {
@@ -31,8 +33,8 @@ public class Dialogue : MonoBehaviour
                     textDialague.text = string.Empty;
                     dialogueIndex++;
                     characterIndex = 0;
-                    StartCoroutine(ShowText());
-                }
+                    StartCoroutine(ShowText()); // show the next dialogue
+                } //this function is in charge of showing erasing the dialogue to show the next one
                 else
                 {
                     HideDialogue();
@@ -60,6 +62,9 @@ public class Dialogue : MonoBehaviour
 
 
     IEnumerator ShowText()
+    //this function is in charge of showing the text of the dialogue
+    //it shows the text letter by letter by moving their index
+    //it also waits for the player to press P to move the next dialogue
     { 
         if (!WaitForInput)
         {
